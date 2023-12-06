@@ -2,15 +2,14 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <!-- Basehref -->
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- Title, Keywords, Description -->
-<title>Bảng báo giá</title>
-<meta name="keywords" content="Bảng báo giá keywords"/>
-<meta name="description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.."/>
+<title>VI TÍNH PHÁT NĂNG</title>
+<meta name="keywords" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN"/>
+<meta name="description" content="VI TÍNH PHÁT NĂNG Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ"/>
 
 <!-- Robots -->
 <meta name="robots" content="index,follow" />
@@ -34,48 +33,46 @@
 <!-- Facebook -->
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
-<meta property="og:image:alt" content="Bảng báo giá" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="522" />
-<meta property="og:image:height" content="222" />
+<meta property="og:title" content="VI TÍNH PHÁT NĂNG" />
+<meta property="og:description" content="VI TÍNH PHÁT NĂNG Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ" />
+<meta property="og:url" content="https://phatnang.com/gioi-thieu" />
+<meta property="og:image" content="https://phatnang.com/thumbs/1200x1600x2/upload/news/829f46d195c25f9c06d3-2249.jpg" />
+<meta property="og:image:alt" content="VI TÍNH PHÁT NĂNG" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1600" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="ngodinhnhan82@gmail.com" />
 <meta name="twitter:creator" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
+<meta property="og:url" content="https://phatnang.com/gioi-thieu" />
+<meta property="og:title" content="VI TÍNH PHÁT NĂNG" />
+<meta property="og:description" content="VI TÍNH PHÁT NĂNG Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ" />
+<meta property="og:image" content="https://phatnang.com/thumbs/1200x1600x2/upload/news/829f46d195c25f9c06d3-2249.jpg" />
 
 <!-- Canonical -->
-<link rel="canonical" href="https://phatnang.com/bang-gia" />
-
 <!-- Chống đổi màu trên IOS -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=0PxwRkmRnK" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=RSweNhhXgu" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=eiLINHRamu" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=iKFU0YEGqR" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=wjnCuxwwh0" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=0IeiFDWHXT" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=H1RyswH8kY" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=eX3BDGQI7j" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=xwB6jnIyOI" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=XP5pnOfW9" rel="stylesheet">
-<link href="./assets/css/font.css?v=wk9fwyfW7g" rel="stylesheet">
-<link href="./assets/css/style.css?v=ELfsMSzFEW" rel="stylesheet">
+<link href="./assets/css/animate.min.css?v=eKJECSBB6c" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap.css?v=IhzbLqWmKa" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap-icons.css?v=fzOZ8WOTU" rel="stylesheet">
+<link href="./assets/fontawesome512/all.css?v=oomi6voOEV" rel="stylesheet">
+<link href="./assets/mmenu/mmenu.css?v=rvunTBXkrM" rel="stylesheet">
+<link href="./assets/magiczoomplus/magiczoomplus.css?v=NbV3ctVCKK" rel="stylesheet">
+<link href="./assets/photobox/photobox.css?v=NZYUuEwos" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.css?v=MBRb7AG4" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.style.css?v=49sVRsCnv" rel="stylesheet">
+<link href="./assets/slick/slick.css?v=Wrpy6iuwth" rel="stylesheet">
+<link href="./assets/slick/slick-theme.css?v=4D57b5r9m7" rel="stylesheet">
+<link href="./assets/slick/slick-style.css?v=SGK1UWelot" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.carousel.css?v=Ixl9Qwi9tJ" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.theme.default.css?v=f9apppX6iZ" rel="stylesheet">
+<link href="./assets/css/font.css?v=8K3EffpWGM" rel="stylesheet">
+<link href="./assets/css/style.css?v=9o4QcxadFe" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -140,7 +137,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
                         <div class="menusp1  ">
                                     <ul class="menusp2">
-                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701833404" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
+                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701826866" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -173,7 +170,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701833404" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
+                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701826866" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -209,11 +206,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701833404" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
+                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701826866" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
                                                 </li>
-                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701833404" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
+                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701826866" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
                                                 </li>
-                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701833404" alt="Laptop"/>Laptop</a>
+                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701826866" alt="Laptop"/>Laptop</a>
                                                     <ul>
                                                             <li><a class="transition" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
                                                                 </li>
@@ -225,11 +222,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701833404" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
+                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701826866" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
                                                 </li>
-                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701833404" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
+                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701826866" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
                                                 </li>
-                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701833404" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
+                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701826866" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
                                                     <ul>
                                                             <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
                                                                 </li>
@@ -241,11 +238,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
-            <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+            <li><a class="transition active" href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
             <li class="line"></li>
             <li><a class="transition " href="san-pham" title="Sản phẩm">Sản phẩm</a></li>
             <li class="line"></li>
@@ -258,7 +255,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res menu-res0">
+</div><div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">
@@ -366,8 +363,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                         </ul>
                                 </li>
                         <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
-            <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition active" href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
             <li><a class="transition " href="san-pham" title="Sản phẩm">Sản phẩm</a>
             </li>
             <li><a class="transition " href="thanh-ly-phong-net" title="Thanh lý phòng net">Thanh lý phòng net</a></li>
@@ -376,20 +373,257 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </nav>
-</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/bang-gia"><span>Bảng báo giá</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"B\u1ea3ng b\u00e1o gi\u00e1","item":"https:\/\/phatnang.com\/bang-gia"}]}</script></div></div> 
+</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/gioi-thieu"><span>Giới thiệu</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"Gi\u1edbi thi\u1ec7u","item":"https:\/\/phatnang.com\/gioi-thieu"}]}</script></div></div> 
     <div class="wrap-main  w-clear">
-         
-            <h1 class="title-main"><span>Bảng báo giá</span></h1>
-<div class="" style="position: relative;">
-     
-    <div class="baotimkiem">
-    <input id="search_name" class="search_title" placeholder="Nhập tên sản phẩm cần tìm" style="width:100%;margin-top:5px;font-size:14px;font-weight:600;color:#000;border:1px solid #f00;border-radius:5px;padding:8px 10px;margin-bottom:5px;" value="" onkeypress="doEnter1(event,'search_name');">
-    <i class="fa fa-search timsp" style="position: absolute;top: 14px;right: 15px;font-size: 20px;color: #f00;"></i>
+                <div class="d-flex flex-wrap align-items-start justify-content-between">
+            <div id="right"><h1 class="title-main"><span>VI TÍNH PHÁT NĂNG</span></h1>
+<div class="content-main baonoidung noidunggioithieu w-clear"><p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="color: rgb(0, 0, 0); font-weight: 400; font-size: 22px;"><strong><span style="color:blue;"><span style="font-family:Verdana,sans-serif;">- CHUYÊN CUNG CẤP LINH KIỆN MÁY TÍNH ,SỈ VÀ LẺ TẤT CẢ CÁC SẢN PHẨM CŨ VÀ MỚI</span></span></strong></span><br />
+<span style="font-size: 22px;"><font face="Verdana, Arial, Helvetica, sans-serif" style=""><strong style="color: rgb(0, 51, 204); font-weight: 400;">-</strong><font color="#000000"> </font></font><span style="color: rgb(0, 0, 255); font-weight: bold; font-family: Verdana, sans-serif;">NHẬN THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC</span></span></p>
+
+<p style="color:rgb(0, 0, 0);font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:justify;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;"><span style="font-size:22px;"><span style="color:#0000ff;"><strong><span style="font-family:Verdana,sans-serif;">ĐT : 0938948862 NHẪN </span></strong></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">Quý khách mua hàng số lượng </span></span></strong></span><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">hay lắp phòng nét</span></span></strong></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">Liên hệ: 0938 94 88 62  MR :NHẪN </span></span></strong></span><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">để được giá tốt nhất</span></span></strong></span></p>
+
+<hr />
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><b style="color: rgb(255, 0, 0); font-family: Roboto, sans-serif; font-size: 22px;">THỜI GIAN LÀM VIỆC</b></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- TỪ THỨ 2 ĐẾN THỨ 7</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- SÁNG 7h30 GIỜ ĐẾN 19 GIỜ TỐI</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- LÀM LUÔN TRƯA</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- CHỦ NHẬT 9 GIỜ ĐẾN 4H CHIỀU</strong> </span></span></span></p>
+
+<hr />
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><u><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>CHUYÊN CUNG CẤP LINH KIỆN MÁY TÍNH ,SỈ VÀ LẺ </strong></span></span></span></u></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- TẤT CẢ CÁC SẢNG PHẨM MỚI VÀ CỦ</strong><br />
+<strong>- NHẬN THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>Liên hệ: </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0938 94 88 62 vs 0982 223 762  MR :NHẪN </strong></span></span></span><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>để được giá tốt nhất.</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Địa chỉ: 592 Khu Phố 9 Đường Phú Lợi, Phường Phú Hòa, Tp Thủ Dầu Một, Bình Dương</span></span></span></p>
+
+<p><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Điện Thoại : 0938 948 862 vs 0982 223 762</span></span></span></p>
+
+<p><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Email: </span><a href="mailto:ngodinhnhan82@gmail.com" target="_blank"><span style="color:#e74c3c;">ngodinhnhan82@gmail.com</span></a></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>NV BÁN HÀNG: </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0938.948.862     : MR NHẪN</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>KỶ  THUẬT      : </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0937 629 235     : MR THUẬN</strong></span></span></span></p>
+
+<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>Bảo Hành         : </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0937 629 235    : MR THUẬN</strong></span></span></span></p>
+</div>
+<div class="share">
+	<b>Chia sẻ:</b>
+	<div class="social-plugin w-clear">
+        <div class="addthis_inline_share_toolbox_inq8">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        </div>
+        <div class="zalo-share-button" data-href="https://phatnang.com/gioi-thieu" data-oaid="579745863508352884" data-layout="2" data-color="blue" data-customize="true">Chia sẻ</div>
     </div>
-    <div class="table-responsive">
-    <div class="showbanggia"></div>
-    </div>
-    </div>            </div>
+</div></div>
+            <div id="left"><div class="danhmucct">
+    <div class="tieude">Danh mục sản phẩm</div>
+    <div class="danhmucl danhmuc">
+                    <ul>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition  acap text-decoration-none" title="Linh Kiện Mới" href="linh-kien-moi">Linh Kiện Mới</a>
+                                                    <span class="icon-plus-submenu plus-nClick2"></span>
+                                            </h2>
+                                    <ul>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="Intel Pentium" href="cap-3">Intel Pentium</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="Intel Core i5" href="intel-core-i5">Intel Core i5</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="Intel Core i7" href="intel-core-i7">Intel Core i7</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="MAINBOARD -BO MẠCH CHỦ" href="mainboard-bo-mach-chu">MAINBOARD -BO MẠCH CHỦ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN-GIGABYTE" href="main-gigabyte">MAIN-GIGABYTE</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN-ASUS" href="main-asus">MAIN-ASUS</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN-MSI" href="main-msi">MAIN-MSI</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN-COLOFULL" href="main-colofull">MAIN-COLOFULL</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="BỘ NHỚ RAM" href="bo-nho-ram">BỘ NHỚ RAM</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="DDR4 PC" href="ddr4-pc">DDR4 PC</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="DDR3-PC" href="ddr3-pc">DDR3-PC</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="DDR3 SEVER" href="ddr3-sever">DDR3 SEVER</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="VGA-CARD MÀNG HÌNH" href="vga-card-mang-hinh">VGA-CARD MÀNG HÌNH</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-GIGABYTE NEW" href="vga-gigabyte-new">VGA-GIGABYTE NEW</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-ASUS NEW" href="vga-asus-new">VGA-ASUS NEW</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                        </ul>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition  acap text-decoration-none" title="Linh Kiện Cũ" href="linh-kien-cu">Linh Kiện Cũ</a>
+                                                    <span class="icon-plus-submenu plus-nClick2"></span>
+                                            </h2>
+                                    <ul>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="CPU-INTEL PENTIUM" href="cpu-intel-pentium">CPU-INTEL PENTIUM</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="CPU-INTEL CORE I3" href="cpu-intel-core-i3">CPU-INTEL CORE I3</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="CPU-INTEL CORE I5" href="cpu-intel-core-i5">CPU-INTEL CORE I5</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="CPU-INTEL CORE I7" href="cpu-intel-core-i7">CPU-INTEL CORE I7</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="MAINBOARD -BO MẠCH CHỦ CŨ" href="mainboard-bo-mach-chu-cu">MAINBOARD -BO MẠCH CHỦ CŨ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN-GIGABYTE-CŨ" href="main-gigabyte-cu">MAIN-GIGABYTE-CŨ</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN ASUS CŨ" href="main-asus-cu">MAIN ASUS CŨ</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN MSI CŨ" href="main-msi-cu">MAIN MSI CŨ</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="MAIN COLOFULL CŨ" href="main-colofull-cu">MAIN COLOFULL CŨ</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="BỘ NHỚ RAM CŨ" href="bo-nho-ram-cu">BỘ NHỚ RAM CŨ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="RAM DDR4 PC" href="ram-ddr4-pc">RAM DDR4 PC</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="RAM DDR3 PC" href="ram-ddr3-pc">RAM DDR3 PC</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="RAM SEVER CŨ" href="ram-sever-cu">RAM SEVER CŨ</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition acap text-decoration-none" title="VGA-CARD MÀNG HÌNH CŨ" href="vga-card-mang-hinh-cu">VGA-CARD MÀNG HÌNH CŨ</a>
+                                                                    <span class="icon-plus-submenu plus-nClick3"></span>
+                                                            </h2>
+                                                            <ul>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-GIGABYTE" href="vga-gigabyte">VGA-GIGABYTE</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-ASUS" href="vga-asus">VGA-ASUS</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-MSI" href="vga-msi">VGA-MSI</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-COLOFULL" href="vga-colofull">VGA-COLOFULL</a></h2></li>
+                                                                    <li><h2><a class="transition text-decoration-none" title="VGA-ZOTAC" href="vga-zotac">VGA-ZOTAC</a></h2></li>
+                                                                </ul>
+                                                    </li>
+                                        </ul>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition   text-decoration-none" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net">Thanh Lý Phòng Net</a>
+                                            </h2>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition   text-decoration-none" title="Màn Hình Máy Tính" href="man-hinh-may-tinh">Màn Hình Máy Tính</a>
+                                            </h2>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition  acap text-decoration-none" title="Laptop" href="laptop">Laptop</a>
+                                                    <span class="icon-plus-submenu plus-nClick2"></span>
+                                            </h2>
+                                    <ul>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
+                                                            </h2>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="LAPTOP ASUS" href="laptop-asus">LAPTOP ASUS</a>
+                                                            </h2>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="LAPTOP HP" href="laptop-hp">LAPTOP HP</a>
+                                                            </h2>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="LINH KIỆN LAPTOP" href="linh-kien-laptop">LINH KIỆN LAPTOP</a>
+                                                            </h2>
+                                                    </li>
+                                        </ul>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition   text-decoration-none" title="Ổ Cứng PC" href="o-cung-pc">Ổ Cứng PC</a>
+                                            </h2>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition   text-decoration-none" title="Chuột, Bàn Phím" href="chuot-ban-phim">Chuột, Bàn Phím</a>
+                                            </h2>
+                                </li>
+                            <li class="has-submenu level1">
+                    <h2>
+                        <a class="transition  acap text-decoration-none" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh">Thiết Bị Âm Thanh</a>
+                                                    <span class="icon-plus-submenu plus-nClick2"></span>
+                                            </h2>
+                                    <ul>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
+                                                            </h2>
+                                                    </li>
+                                            <li class="has-submenu level2">
+                            <h2>
+                                <a class="transition  text-decoration-none" title="Thiết bị âm Thanh-TAI NGHE" href="thiet-bi-am-thanh-tai-nghe">Thiết bị âm Thanh-TAI NGHE</a>
+                                                            </h2>
+                                                    </li>
+                                        </ul>
+                                </li>
+                        </ul>
+            </div>
+</div>
+
+<div class="danhmucct">
+    <div class="tieude">Hỗ trợ khách hàng</div>
+    <div id="tinmoi">
+                    <div class="item_ht d-flex flex-wrap justify-content-between align-items-center">
+                <a class="img" href="https://zalo.me/0938948862"><img src="assets/images/icon-zalo.jpg" alt="Zalo" /></a>
+                <div class="ttht">
+                    <a class="ten" href="tel:09389488620982223762" title="BỘ PHẬN KINH DOANH SỈ">BỘ PHẬN KINH DOANH SỈ</a>
+                    <a class="mota mb-0" href="tel:09389488620982223762">Mr. Nhẫn: 0938 948 862 OR 0982 223 762</a>
+                </div>
+            </div>
+            </div>
+</div>
+</div>
+        </div>
+            </div>
     <div class="footer">
     <div class="footer-article">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
@@ -461,13 +695,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
             <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by NiNa Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
-                <span>Đang online: 3</span>
+                <span>Đang online: 4</span>
                 <b>|</b>
-                <span>Tuần: 628</span>
+                <span>Tuần: 610</span>
                 <b>|</b>
-                <span>Tháng: 1647</span>
+                <span>Tháng: 1629</span>
                 <b>|</b>
-                <span>Tổng: 189400</span>
+                <span>Tổng: 189382</span>
             </p>
         </div>
     </div>
@@ -536,17 +770,17 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=z3AnKPb"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=wLGhj7zdsm"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=8ekYeDrIyB"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=QNGHYJM31g"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=wNFvOzVA"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=6WRWiHWbNJ"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=WqhM178G7r"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=MqDEurtv4g"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=wXeXy08zSm"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=lFQwgCN49q"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=1xHEjUJ4KX"></script>
+<script type="text/javascript" src="./assets/js/jquery.min.js?v=wo8W5Bi7P4"></script>
+<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=cxvUU68lH"></script>
+<script type="text/javascript" src="./assets/js/wow.min.js?v=4XIcxCZek"></script>
+<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=Njw6DxvYy0"></script>
+<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=Dz6Skfty5L"></script>
+<script type="text/javascript" src="./assets/slick/slick.js?v=B83W32zT8v"></script>
+<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=tJMbPCz45D"></script>
+<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=oV69ToYhaQ"></script>
+<script type="text/javascript" src="./assets/photobox/photobox.js?v=CwAn6D6pXj"></script>
+<script type="text/javascript" src="./assets/js/functions.js?v=jxDw40pCaP"></script>
+<script type="text/javascript" src="./assets/js/apps.js?v=ZYaCwExFl3"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->

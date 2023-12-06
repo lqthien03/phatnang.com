@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'o';
+    font-display: block;
+    src: url('../fonts/Oswald-Regular.woff');
+}
+
+@font-face {
+    font-family: 'ob';
+    font-display: block;
+    src: url('../fonts/Oswald-Bold.woff');
+}
+
+@font-face {
+    font-family: 'uh';
+    font-display: block;
+    src: url('../fonts/utm-helvetins.woff');
+}

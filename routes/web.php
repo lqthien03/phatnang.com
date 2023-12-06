@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('bang-gia', function () {
+    return view('quotation');
+});
+Route::get('gioi-thieu', function () {
+    return view('introduce');
+});
+Route::get('san-pham', function () {
+    return view('products');
+});
+Route::get('thanh-ly-phong-net', function () {
+    return view('quotation');
+});
+Route::get('tin-tuc', function () {
+    return view('blog');
+});
+Route::get('video', function () {
+    return view('video');
+});
+Route::get('lien-he', function () {
+    return view('contact');
+});
+Route::get('test', function () {
+    return view('test');
+});

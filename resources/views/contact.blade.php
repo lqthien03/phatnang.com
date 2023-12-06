@@ -3,14 +3,15 @@
 <html lang="vi">
 <head>
     <!-- Basehref -->
+<base href="https://phatnang.com/"/>
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- Title, Keywords, Description -->
-<title>Bảng báo giá</title>
-<meta name="keywords" content="Bảng báo giá keywords"/>
-<meta name="description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.."/>
+<title>Liên Hệ  VI TÍNH PHÁT NĂNG</title>
+<meta name="keywords" content="Liên Hệ keywords 1"/>
+<meta name="description" content="Liên Hệ  VI TÍNH PHÁT NĂNG để nhận báo giá báo hành tham khảo và được tư vấn các thông tin về sản phẩm thiết bị tin học"/>
 
 <!-- Robots -->
 <meta name="robots" content="index,follow" />
@@ -32,50 +33,50 @@
 <meta name="copyright" content="VI TÍNH PHÁT NĂNG - [ngodinhnhan82@gmail.com]" />
 
 <!-- Facebook -->
-<meta property="og:type" content="article" />
+<meta property="og:type" content="object" />
 <meta property="og:site_name" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
-<meta property="og:image:alt" content="Bảng báo giá" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="522" />
-<meta property="og:image:height" content="222" />
+<meta property="og:title" content="Liên Hệ  VI TÍNH PHÁT NĂNG" />
+<meta property="og:description" content="Liên Hệ  VI TÍNH PHÁT NĂNG để nhận báo giá báo hành tham khảo và được tư vấn các thông tin về sản phẩm thiết bị tin học" />
+<meta property="og:url" content="https://phatnang.com/lien-he" />
+<meta property="og:image" content="https://phatnang.com/thumbs/720x960x2/upload/news/13-4901.jpg" />
+<meta property="og:image:alt" content="Liên Hệ  VI TÍNH PHÁT NĂNG" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="720" />
+<meta property="og:image:height" content="960" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="ngodinhnhan82@gmail.com" />
 <meta name="twitter:creator" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
+<meta property="og:url" content="https://phatnang.com/lien-he" />
+<meta property="og:title" content="Liên Hệ  VI TÍNH PHÁT NĂNG" />
+<meta property="og:description" content="Liên Hệ  VI TÍNH PHÁT NĂNG để nhận báo giá báo hành tham khảo và được tư vấn các thông tin về sản phẩm thiết bị tin học" />
+<meta property="og:image" content="https://phatnang.com/thumbs/720x960x2/upload/news/13-4901.jpg" />
 
 <!-- Canonical -->
-<link rel="canonical" href="https://phatnang.com/bang-gia" />
+<link rel="canonical" href="https://phatnang.com/lien-he" />
 
 <!-- Chống đổi màu trên IOS -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=0PxwRkmRnK" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=RSweNhhXgu" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=eiLINHRamu" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=iKFU0YEGqR" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=wjnCuxwwh0" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=0IeiFDWHXT" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=H1RyswH8kY" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=eX3BDGQI7j" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=xwB6jnIyOI" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=XP5pnOfW9" rel="stylesheet">
-<link href="./assets/css/font.css?v=wk9fwyfW7g" rel="stylesheet">
-<link href="./assets/css/style.css?v=ELfsMSzFEW" rel="stylesheet">
+<link href="./assets/css/animate.min.css?v=pY0383YLao" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap.css?v=9bklMXNVA" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap-icons.css?v=mhP2B2I23V" rel="stylesheet">
+<link href="./assets/fontawesome512/all.css?v=XciDM0wNw3" rel="stylesheet">
+<link href="./assets/mmenu/mmenu.css?v=yaquvIWfw8" rel="stylesheet">
+<link href="./assets/magiczoomplus/magiczoomplus.css?v=Li1IuNis2R" rel="stylesheet">
+<link href="./assets/photobox/photobox.css?v=fa212PnidQ" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.css?v=ITLYA0XqUw" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.style.css?v=voBWFkJHsV" rel="stylesheet">
+<link href="./assets/slick/slick.css?v=HKPlRKeaiR" rel="stylesheet">
+<link href="./assets/slick/slick-theme.css?v=VQYk7JpamE" rel="stylesheet">
+<link href="./assets/slick/slick-style.css?v=CT5lhj3bNg" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.carousel.css?v=YDk4udqG5" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.theme.default.css?v=sGeGinWkn5" rel="stylesheet">
+<link href="./assets/css/font.css?v=1iQ39utGFW" rel="stylesheet">
+<link href="./assets/css/style.css?v=yjnWf5Z9wv" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -140,7 +141,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
                         <div class="menusp1  ">
                                     <ul class="menusp2">
-                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701833404" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
+                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827045" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -173,7 +174,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701833404" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
+                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701827045" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -209,11 +210,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701833404" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
+                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701827045" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
                                                 </li>
-                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701833404" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
+                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701827045" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
                                                 </li>
-                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701833404" alt="Laptop"/>Laptop</a>
+                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701827045" alt="Laptop"/>Laptop</a>
                                                     <ul>
                                                             <li><a class="transition" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
                                                                 </li>
@@ -225,11 +226,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701833404" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
+                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701827045" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
                                                 </li>
-                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701833404" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
+                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701827045" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
                                                 </li>
-                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701833404" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
+                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701827045" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
                                                     <ul>
                                                             <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
                                                                 </li>
@@ -241,9 +242,9 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
             <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
             <li class="line"></li>
@@ -255,10 +256,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li class="line"></li>
             <li><a class="transition " href="video" title="Video">Video</a></li>
             <li class="line"></li>
-            <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
+            <li><a class="transition active" href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res menu-res0">
+</div><div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">
@@ -366,30 +367,107 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                         </ul>
                                 </li>
                         <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
             <li><a class="transition " href="san-pham" title="Sản phẩm">Sản phẩm</a>
             </li>
             <li><a class="transition " href="thanh-ly-phong-net" title="Thanh lý phòng net">Thanh lý phòng net</a></li>
             <li><a class="transition " href="tin-tuc" title="Tin công nghệ">Tin công nghệ</a></li>
             <li><a class="transition " href="video" title="Video">Video</a></li>
-            <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
+            <li><a class="transition active" href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </nav>
-</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/bang-gia"><span>Bảng báo giá</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"B\u1ea3ng b\u00e1o gi\u00e1","item":"https:\/\/phatnang.com\/bang-gia"}]}</script></div></div> 
+</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/lien-he"><span>Liên hệ</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"Li\u00ean h\u1ec7","item":"https:\/\/phatnang.com\/lien-he"}]}</script></div></div> 
     <div class="wrap-main  w-clear">
          
-            <h1 class="title-main"><span>Bảng báo giá</span></h1>
-<div class="" style="position: relative;">
-     
-    <div class="baotimkiem">
-    <input id="search_name" class="search_title" placeholder="Nhập tên sản phẩm cần tìm" style="width:100%;margin-top:5px;font-size:14px;font-weight:600;color:#000;border:1px solid #f00;border-radius:5px;padding:8px 10px;margin-bottom:5px;" value="" onkeypress="doEnter1(event,'search_name');">
-    <i class="fa fa-search timsp" style="position: absolute;top: 14px;right: 15px;font-size: 20px;color: #f00;"></i>
+            <h1 class="title-main"><span>Liên hệ</span></h1>
+<div class="content-main w-clear">
+    <div class="top-contact">
+        <div class="article-contact baonoidung"><table style="width: 583px;">
+	<tbody>
+		<tr>
+			<td colspan="2" height="38" style="width: 571px;" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" style="width: 584px;" width="100%">
+				<tbody>
+					<tr>
+						<td colspan="2" height="29" style="width: 578px;" valign="middle"><span style="color:#e74c3c;"><span style="font-size:22px;"><strong>VI TÍNH PHÁT NĂNG</strong></span></span></td>
+					</tr>
+					<tr>
+						<td align="left" height="28" style="width: 145px;" valign="middle" width="97"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">Địa chỉ:</span></span></td>
+						<td style="width: 430px;" valign="middle" width="314"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">592 Đường Phú Lợi, KP 9, P Phú Hòa, Tp Thủ Dầu Một, Bình Dương.</span></span></td>
+					</tr>
+					<tr>
+						<td align="left" height="33" style="width: 145px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">Điện Thoại:</span></span></td>
+						<td style="width: 430px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">0938 948 862 vs 0982 223 762 Mr NHẪN</span></span></td>
+					</tr>
+					<tr>
+						<td align="left" height="32" style="width: 145px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">Zalo:</span></span></td>
+						<td style="width: 430px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">0938 948 862 Nhẫn</span></span></td>
+					</tr>
+					<tr>
+						<td align="left" height="32" style="width: 145px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">ĐT Đặt Hàng:</span></span></td>
+						<td style="width: 430px;" valign="middle">0982.223.762 Nhẫn</td>
+					</tr>
+					<tr>
+						<td align="left" height="32" style="width: 145px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">Bảo Hành or Kỹ Thuật:</span></span></td>
+						<td style="width: 430px;" valign="middle"><span style="font-size:14px;"><span style="font-family:Tahoma,Geneva,sans-serif;">0937629235 Mr Thuận</span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="color:#e74c3c;"><span style="font-size:20px;">NHẬN: THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC... <strong>Liên hệ: 0938 94 88 62  MR :NHẪN </strong><strong>sẽ có giá tốt nhất cho bạn</strong></span></span></p>
+
+<hr />
+<table>
+	<tbody>
+		<tr>
+			<td colspan="2" height="38" valign="top"><em>Quý khách có thể liên hệ với chúng tôi từ website này bằng cách điền đầy đủ những thông tin vào form liên hệ bên dưới. Chúng tôi sẽ liên hệ với Quý khách trong thời gian sớm nhất. Xin chân thành cảm ơn !</em></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+        <form class="form-contact validation-contact" novalidate method="post" action="" enctype="multipart/form-data">
+            <div class="row">
+                <div class="input-contact col-sm-6">
+                    <input type="text" class="form-control" id="ten" name="ten" placeholder="Họ tên" required />
+                    <div class="invalid-feedback">Vui lòng nhập họ và tên</div>
+                </div>
+                <div class="input-contact col-sm-6">
+                    <input type="number" class="form-control" id="dienthoai" name="dienthoai" placeholder="Số điện thoại" required />
+                    <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+                </div>         
+            </div>
+            <div class="row">
+                <div class="input-contact col-sm-6">
+                    <input type="text" class="form-control" id="diachi" name="diachi" placeholder="Địa chỉ" required />
+                    <div class="invalid-feedback">Vui lòng nhập địa chỉ</div>
+                </div>
+                <div class="input-contact col-sm-6">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                    <div class="invalid-feedback">Vui lòng nhập địa chỉ email</div>
+                </div>
+            </div>
+            <div class="input-contact">
+                <input type="text" class="form-control" id="tieude" name="tieude" placeholder="Chủ đề" required />
+                <div class="invalid-feedback">Vui lòng nhập chủ đề</div>
+            </div>
+            <div class="input-contact">
+                <textarea class="form-control" id="noidung" name="noidung" placeholder="Nội dung" required ></textarea>
+                <div class="invalid-feedback">Vui lòng nhập nội dung</div>
+            </div>
+            <input type="submit" class="btn btn-primary" name="submit-contact" value="Gửi" disabled />
+            <input type="reset" class="btn btn-secondary" value="Nhập lại" />
+            <input type="hidden" name="recaptcha_response_contact" id="recaptchaResponseContact">
+        </form>
     </div>
-    <div class="table-responsive">
-    <div class="showbanggia"></div>
-    </div>
-    </div>            </div>
+    <div class="bottom-contact"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4691.496414175746!2d106.68598255593402!3d10.987458866906541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d0e80e301f73%3A0xfaac9c83f38b52d7!2zQ-G7rWEgSMOgbmcgVmkgVMOtbmggUGjDoXQgTsSDbmc!5e0!3m2!1svi!2s!4v1639730141241!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+</div>            </div>
     <div class="footer">
     <div class="footer-article">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
@@ -461,13 +539,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
             <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by NiNa Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
-                <span>Đang online: 3</span>
+                <span>Đang online: 4</span>
                 <b>|</b>
-                <span>Tuần: 628</span>
+                <span>Tuần: 610</span>
                 <b>|</b>
-                <span>Tháng: 1647</span>
+                <span>Tháng: 1629</span>
                 <b>|</b>
-                <span>Tổng: 189400</span>
+                <span>Tổng: 189382</span>
             </p>
         </div>
     </div>
@@ -536,18 +614,27 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=z3AnKPb"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=wLGhj7zdsm"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=8ekYeDrIyB"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=QNGHYJM31g"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=wNFvOzVA"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=6WRWiHWbNJ"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=WqhM178G7r"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=MqDEurtv4g"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=wXeXy08zSm"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=lFQwgCN49q"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=1xHEjUJ4KX"></script>
+<script type="text/javascript" src="./assets/js/jquery.min.js?v=3FybuqM869"></script>
+<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=dg3yFICohS"></script>
+<script type="text/javascript" src="./assets/js/wow.min.js?v=I6lzRLOWm"></script>
+<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=fef1GpVEjq"></script>
+<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=wSWoq3kJg"></script>
+<script type="text/javascript" src="./assets/slick/slick.js?v=wZIOWtZXxK"></script>
+<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=TWCp9MVyTT"></script>
+<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=ww29k2sxA2"></script>
+<script type="text/javascript" src="./assets/photobox/photobox.js?v=rWxp9s3EWe"></script>
+<script type="text/javascript" src="./assets/js/functions.js?v=OLmYZKFWJQ"></script>
+<script type="text/javascript" src="./assets/js/apps.js?v=aEeHo9W9kX"></script>
             <!-- Js Google Recaptcha V3 -->
+                        <script src="https://www.google.com/recaptcha/api.js?render=6Le8Fr0dAAAAACLWwRw2xl4W_bgvsQ-hn_fhIqD-"></script>
+        <script type="text/javascript">
+            grecaptcha.ready(function () {
+                    grecaptcha.execute('6Le8Fr0dAAAAACLWwRw2xl4W_bgvsQ-hn_fhIqD-', { action: 'contact' }).then(function (token) {
+                        var recaptchaResponseContact = document.getElementById('recaptchaResponseContact');
+                        recaptchaResponseContact.value = token;
+                    });
+            });
+        </script>
                     
     <!-- Js Structdata -->
 <!-- General -->
