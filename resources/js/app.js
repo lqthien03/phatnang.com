@@ -594,3 +594,10 @@ $(document).ready(function() {
     /*NN_FRAMEWORK.SimplyScroll();*/
     /*NN_FRAMEWORK.DatetimePicker();*/
 });
+import './bootstrap';
+
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
