@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [level1ProductController::class, 'all'],[BlogController::class, 'all']);
+Route::get('/', [level1ProductController::class, 'all'],[DetailProductController::class, 'index'],[BlogController::class, 'all']);
 Route::get('bang-gia', function () {
     return view('quotation');
 });

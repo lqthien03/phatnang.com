@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class DetailProductController extends Controller
 {
+    public function index(){
+        $detail = DetailProduct::all();
+        return view('index', compact('detail'));
+    }
     public function all(){
         $detail = DetailProduct::all();
         return view('products', compact('detail'));
