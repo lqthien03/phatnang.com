@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('tittle');
             $table->string('display');
+            $table->string('number');
+            $table->string('phone');
+            $table->string('zalo'); 
         });
     }
 

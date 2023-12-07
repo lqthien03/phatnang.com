@@ -14,8 +14,14 @@ return new class extends Migration
         Schema::create('level2_products', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('tittle');
+            $table->string('title');
             $table->string('display');
+
+            $table->unsignedBigInteger('level3_product_id');
+            $table->foreign('level3_product_id')->references('id')->on('level3_products');
+
+            $table->unsignedBigInteger('seo_id');
+            $table->foreign('seo_id')->references('id')->on('seos');
         });
     }
 

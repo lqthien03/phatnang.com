@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('level1_products', function (Blueprint $table) {
+        Schema::create('detail_products', function (Blueprint $table) {
             $table->id();
             $table->string('image');
             $table->string('tittle');
+            $table->string('gallery');
             $table->string('outstand');
+            $table->string('new');
+            $table->string('selling');
             $table->string('display');
 
-            // $table->foreignId('id_level_product')->constrained(
-            //     table: 'level2_products', indexName: 'products_level_1and2'
-            // );
-
+            $table->unsignedBigInteger('seo_id');
+            $table->foreign('seo_id')->references('id')->on('seos');
         });
     }
 
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('level1_products');
+        Schema::dropIfExists('detail_products');
     }
 };
