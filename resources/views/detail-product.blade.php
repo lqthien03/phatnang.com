@@ -8,9 +8,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- Title, Keywords, Description -->
-<title>Bảng báo giá</title>
-<meta name="keywords" content="Bảng báo giá keywords"/>
-<meta name="description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.."/>
+<title>VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN</title>
+<meta name="keywords" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN"/>
+<meta name="description" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN"/>
 
 <!-- Robots -->
 <meta name="robots" content="index,follow" />
@@ -34,48 +34,48 @@
 <!-- Facebook -->
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
-<meta property="og:image:alt" content="Bảng báo giá" />
+<meta property="og:title" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN" />
+<meta property="og:description" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN" />
+<meta property="og:url" content="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" />
+<meta property="og:image" content="https://phatnang.com/thumbs/600x320x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png" />
+<meta property="og:image:alt" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="522" />
-<meta property="og:image:height" content="222" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="320" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="ngodinhnhan82@gmail.com" />
 <meta name="twitter:creator" content="VI TÍNH PHÁT NĂNG" />
-<meta property="og:url" content="https://phatnang.com/bang-gia" />
-<meta property="og:title" content="Bảng báo giá" />
-<meta property="og:description" content="Bảng báo giá linh kiện PC bình dương, bảng báo giá linh kiện máy tính bình dương, bảng giá ráp máy bình dương, bảng giá thiết bị tin học bình dương, bảng giá sản phẩm phát năng.." />
-<meta property="og:image" content="https://phatnang.com/thumbs/522x222x2/upload/seopage/bang-gia-sua-may-tinh-tai-nha-la-bao-nhieu-chi-phi-sua-chua-chi-tiet-2020-1-5130.png" />
+<meta property="og:url" content="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" />
+<meta property="og:title" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN" />
+<meta property="og:description" content="VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN" />
+<meta property="og:image" content="https://phatnang.com/thumbs/600x320x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png" />
 
 <!-- Canonical -->
-<link rel="canonical" href="https://phatnang.com/bang-gia" />
+<link rel="canonical" href="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" />
 
 <!-- Chống đổi màu trên IOS -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=0PxwRkmRnK" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=RSweNhhXgu" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=eiLINHRamu" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=iKFU0YEGqR" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=wjnCuxwwh0" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=0IeiFDWHXT" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=H1RyswH8kY" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=eX3BDGQI7j" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=xwB6jnIyOI" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=XP5pnOfW9" rel="stylesheet">
-<link href="./assets/css/font.css?v=wk9fwyfW7g" rel="stylesheet">
-<link href="./assets/css/style.css?v=ELfsMSzFEW" rel="stylesheet">
+<link href="./assets/css/animate.min.css?v=LALrP3HxUp" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap.css?v=5fTMFx225P" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap-icons.css?v=4uo8GPsm0w" rel="stylesheet">
+<link href="./assets/fontawesome512/all.css?v=ozAGgEg8Ip" rel="stylesheet">
+<link href="./assets/mmenu/mmenu.css?v=sHwSwooRMb" rel="stylesheet">
+<link href="./assets/magiczoomplus/magiczoomplus.css?v=owN06x8nY5" rel="stylesheet">
+<link href="./assets/photobox/photobox.css?v=GAGldL7R6A" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.css?v=GJbHPbAiDU" rel="stylesheet">
+<link href="./assets/fancybox3/jquery.fancybox.style.css?v=1IQMumixxL" rel="stylesheet">
+<link href="./assets/slick/slick.css?v=Fl0Cr0Fl7T" rel="stylesheet">
+<link href="./assets/slick/slick-theme.css?v=PUOCncGxWn" rel="stylesheet">
+<link href="./assets/slick/slick-style.css?v=w6h2cj02Sc" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.carousel.css?v=yju87ZQyt" rel="stylesheet">
+<link href="./assets/owlcarousel2/owl.theme.default.css?v=I1IHeMyfFm" rel="stylesheet">
+<link href="./assets/css/font.css?v=SgZ3NQFryW" rel="stylesheet">
+<link href="./assets/css/style.css?v=RQrBC7YjE" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -140,7 +140,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
                         <div class="menusp1  ">
                                     <ul class="menusp2">
-                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701833404" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
+                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701847840" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -173,7 +173,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701833404" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
+                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701847840" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
                                                     <ul>
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
@@ -209,11 +209,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701833404" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
+                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701847840" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
                                                 </li>
-                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701833404" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
+                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701847840" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
                                                 </li>
-                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701833404" alt="Laptop"/>Laptop</a>
+                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701847840" alt="Laptop"/>Laptop</a>
                                                     <ul>
                                                             <li><a class="transition" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
                                                                 </li>
@@ -225,11 +225,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701833404" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
+                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701847840" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
                                                 </li>
-                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701833404" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
+                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701847840" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
                                                 </li>
-                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701833404" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
+                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701847840" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
                                                     <ul>
                                                             <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
                                                                 </li>
@@ -241,13 +241,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
             <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
             <li class="line"></li>
-            <li><a class="transition " href="san-pham" title="Sản phẩm">Sản phẩm</a></li>
+            <li><a class="transition active" href="san-pham" title="Sản phẩm">Sản phẩm</a></li>
             <li class="line"></li>
             <li><a class="transition " href="thanh-ly-phong-net" title="Thanh lý phòng net">Thanh lý phòng net</a></li>
             <li class="line"></li>
@@ -258,7 +258,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res menu-res0">
+</div><div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">
@@ -366,9 +366,9 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                         </ul>
                                 </li>
                         <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
-            <li><a class="transition active" href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
+            <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li><a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-            <li><a class="transition " href="san-pham" title="Sản phẩm">Sản phẩm</a>
+            <li><a class="transition active" href="san-pham" title="Sản phẩm">Sản phẩm</a>
             </li>
             <li><a class="transition " href="thanh-ly-phong-net" title="Thanh lý phòng net">Thanh lý phòng net</a></li>
             <li><a class="transition " href="tin-tuc" title="Tin công nghệ">Tin công nghệ</a></li>
@@ -376,20 +376,169 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </nav>
-</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/bang-gia"><span>Bảng báo giá</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"B\u1ea3ng b\u00e1o gi\u00e1","item":"https:\/\/phatnang.com\/bang-gia"}]}</script></div></div> 
+</div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item "><a class="text-decoration-none" href="https://phatnang.com/san-pham"><span>Sản phẩm</span></a></li><li class="breadcrumb-item "><a class="text-decoration-none" href="https://phatnang.com/laptop"><span>Laptop</span></a></li><li class="breadcrumb-item "><a class="text-decoration-none" href="https://phatnang.com/linh-kien-laptop"><span>LINH KIỆN LAPTOP</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong"><span>CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"S\u1ea3n ph\u1ea9m","item":"https:\/\/phatnang.com\/san-pham"},{"@type":"ListItem","position":2,"name":"Laptop","item":"https:\/\/phatnang.com\/laptop"},{"@type":"ListItem","position":3,"name":"LINH KI\u1ec6N LAPTOP","item":"https:\/\/phatnang.com\/linh-kien-laptop"},{"@type":"ListItem","position":4,"name":"CHUY\u00caN N\u00c2NG C\u1ea4P LAPTOP, THAY TH\u1ebe LINH KI\u1ec6N. GI\u00c1 T\u1ed0T NH\u1ea4T B\u00ccNH D\u01af\u01a0NG","item":"https:\/\/phatnang.com\/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong"}]}</script></div></div> 
     <div class="wrap-main  w-clear">
          
-            <h1 class="title-main"><span>Bảng báo giá</span></h1>
-<div class="" style="position: relative;">
-     
-    <div class="baotimkiem">
-    <input id="search_name" class="search_title" placeholder="Nhập tên sản phẩm cần tìm" style="width:100%;margin-top:5px;font-size:14px;font-weight:600;color:#000;border:1px solid #f00;border-radius:5px;padding:8px 10px;margin-bottom:5px;" value="" onkeypress="doEnter1(event,'search_name');">
-    <i class="fa fa-search timsp" style="position: absolute;top: 14px;right: 15px;font-size: 20px;color: #f00;"></i>
+            <div class="grid-pro-detail w-clear">
+    <div class="left-pro-detail w-clear">
+        <a id="Zoom-1" class="MagicZoom" data-options="zoomMode: true; hint: off; rightClick: true; selectorTrigger: click; expandCaption: false; history: false;" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
+                    <div class="gallery-thumb-pro">
+                <p class="control-carousel prev-carousel prev-thumb-pro transition"><i class="fas fa-chevron-left"></i></p>
+                <div class="owl-carousel owl-theme owl-thumb-pro">
+                    <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
+                                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-7781.jpeg" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-7781.jpeg?v=1701847840">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-7781.jpeg?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                        </a>
+                                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-lap-top-bg2-9554.png" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                        </a>
+                                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png?v=1701847840">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                        </a>
+                                    </div>
+                <p class="control-carousel next-carousel next-thumb-pro transition"><i class="fas fa-chevron-right"></i></p>
+            </div>
+            </div>
+
+    <div class="right-pro-detail w-clear">
+        <h1 class="title-pro-detail">CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG</h1>
+        <ul class="attr-pro-detail">
+                        <li class="w-clear"> 
+                <label class="attr-label-pro-detail">Mã sản phẩm:</label>
+                <div class="attr-content-pro-detail">CHUYÊN NÂNG CẤP LAPTOP, THAY T</div>
+            </li>
+                                    <li class="w-clear"> 
+                <label class="attr-label-pro-detail">Lượt xem:</label>
+                <div class="attr-content-pro-detail">705</div>
+            </li>
+            <li class="w-clear">
+                <label class="attr-label-pro-detail">Giá:</label>
+                <div class="attr-content-pro-detail">
+                                            <span class="price-new-pro-detail">Liên hệ</span>
+                                    </div>
+            </li>
+            <li>
+                <div class="desc-pro-detail baonoidung"><p><span style="font-size:20px;">LIÊN HỆ: Mr THUẬN ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ 0937 629 235</span></p>
+
+<p><span style="font-size:20px;">ZALO: 0937 629 235 THUANPC</span></p>
+</div>
+            </li>
+        </ul>
+        <div class="social-plugin social-plugin-pro-detail w-clear">
+            <div class="addthis_inline_share_toolbox_inq8">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            </div>
+            <div class="zalo-share-button" data-href="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" data-oaid="579745863508352884" data-layout="2" data-color="blue" data-customize="true">Chia sẻ</div>
+        </div>
+        <div class="tags-pro-detail w-clear">
+                    </div>
+    </div> 
+
+
+    <div class="clear"></div>
+
+    <div class="tabs-pro-detail">
+        <ul class="ul-tabs-pro-detail w-clear">
+            <li class="active transition" data-tabs="info-pro-detail">Thông tin sản phẩm</li>
+            <li class="transition" data-tabs="commentfb-pro-detail">Bình luận</li>
+        </ul>
+        <div class="content-tabs-pro-detail info-pro-detail baonoidung active"></div>
+        <div class="content-tabs-pro-detail commentfb-pro-detail"><div class="fb-comments" data-href="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" data-numposts="3" data-colorscheme="light" data-width="100%"></div></div>
     </div>
-    <div class="table-responsive">
-    <div class="showbanggia"></div>
-    </div>
-    </div>            </div>
+</div>
+
+<h2 class="title-main"><span>Sản phẩm cùng loại</span></h2>
+<div class="content-main w-clear">
+        <div class="grid-page">
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/15359-ram-laptop-kingston-4g-d4-2666s19-4970.jpg?v=1701847840" alt="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)">Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-hp-340s-g7-36a43pa" title="Laptop HP 340s G7 36A43PA"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/19822laptophp340sg736a43pa1-7509.jpg?v=1701847840" alt="Laptop HP 340s G7 36A43PA"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-hp-340s-g7-36a43pa" title="Laptop HP 340s G7 36A43PA">Laptop HP 340s G7 36A43PA</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-hp-340s-g7-240q3pa" title="Laptop HP 340s G7 240Q3PA"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/18851018851laptophp340sg7240q3pa1-3836.jpg?v=1701847840" alt="Laptop HP 340s G7 240Q3PA"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-hp-340s-g7-240q3pa" title="Laptop HP 340s G7 240Q3PA">Laptop HP 340s G7 240Q3PA</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-asus-zenbook-flip-13-oled-ux363ea-hp532t" title="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20851laptopasuszenbookflip13ux363eahp532t9-4829.jpg?v=1701847840" alt="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-zenbook-flip-13-oled-ux363ea-hp532t" title="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T">Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-dell-inspiron-n3511a-p112f001abl-core-i3-1115g4-4gb-256gb-intel-uhd-156-inch-fhd-win-10-office-den" title="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3930820677laptopdellinspiron3511p112f001abl1-7302.jpg?v=1701847840" alt="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-inspiron-n3511a-p112f001abl-core-i3-1115g4-4gb-256gb-intel-uhd-156-inch-fhd-win-10-office-den" title="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)">Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="ram-laptop-kingston-8gb-ddr4-2666s19-kvr26s19s68" title="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/18355-kvr26s19s6-8-2832.jpg?v=1701847840" alt="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="ram-laptop-kingston-8gb-ddr4-2666s19-kvr26s19s68" title="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)">Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-asus-vivobook-a515ea-bq1530t" title="Laptop Asus VivoBook A515EA-BQ1530T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20655asusvivobooka515eabq1530t-4559.jpg?v=1701847840" alt="Laptop Asus VivoBook A515EA-BQ1530T"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-vivobook-a515ea-bq1530t" title="Laptop Asus VivoBook A515EA-BQ1530T">Laptop Asus VivoBook A515EA-BQ1530T</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-dell-vostro-3400-70253900-core-i5-1135g7-8gb-256gb-intel-iris-xe-140-inch-fhd-win-10-office" title="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3919744234vostro3400ha1-6175.jpg?v=1701847840" alt="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-vostro-3400-70253900-core-i5-1135g7-8gb-256gb-intel-iris-xe-140-inch-fhd-win-10-office" title="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)">Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-asus-vivobook-a515ea-l11171t" title="Laptop Asus Vivobook A515EA-L11171T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20779asusvivobooka515eal11171t-9105.jpg?v=1701847840" alt="Laptop Asus Vivobook A515EA-L11171T"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-vivobook-a515ea-l11171t" title="Laptop Asus Vivobook A515EA-L11171T">Laptop Asus Vivobook A515EA-L11171T</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-dell-g15-5511a-p105f006agr-core-i7-11800h-8gb-512gb-rtx-3050-4gb-156-inch-fhd-win-11-office-xam" title="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/dell-g15-8099.jpg?v=1701847840" alt="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-g15-5511a-p105f006agr-core-i7-11800h-8gb-512gb-rtx-3050-4gb-156-inch-fhd-win-11-office-xam" title="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)">Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-asus-rog-strix-g15-g513qc-hn015t" title="Laptop Asus ROG Strix G15 G513QC-HN015T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20023laptopasusrogstrixg15g513qchn015t1-3038.jpg?v=1701847840" alt="Laptop Asus ROG Strix G15 G513QC-HN015T"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-rog-strix-g15-g513qc-hn015t" title="Laptop Asus ROG Strix G15 G513QC-HN015T">Laptop Asus ROG Strix G15 G513QC-HN015T</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                    <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="laptop-dell-latitude-3520-70251590-core-i7-1165g7-8gb-256gb-intel-iris-xe-156-inch-fhd-fedora-den" title="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3826320047laptopdelllatitude3520702515901-1786.jpg?v=1701847840" alt="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-latitude-3520-70251590-core-i7-1165g7-8gb-256gb-intel-iris-xe-156-inch-fhd-fedora-den" title="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)">Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)</a></h3>
+                <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
+                                    </p>
+            </div>
+                </div>
+    <div class="clear"></div>
+    <div class="pagination-home"></div>
+</div>
+            </div>
     <div class="footer">
     <div class="footer-article">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
@@ -461,13 +610,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
             <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by Blue WEB Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
-                <span>Đang online: 3</span>
+                <span>Đang online: 11</span>
                 <b>|</b>
-                <span>Tuần: 628</span>
+                <span>Tuần: 676</span>
                 <b>|</b>
-                <span>Tháng: 1647</span>
+                <span>Tháng: 1695</span>
                 <b>|</b>
-                <span>Tổng: 189400</span>
+                <span>Tổng: 189448</span>
             </p>
         </div>
     </div>
@@ -536,20 +685,63 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=z3AnKPb"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=wLGhj7zdsm"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=8ekYeDrIyB"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=QNGHYJM31g"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=wNFvOzVA"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=6WRWiHWbNJ"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=WqhM178G7r"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=MqDEurtv4g"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=wXeXy08zSm"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=lFQwgCN49q"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=1xHEjUJ4KX"></script>
+<script type="text/javascript" src="./assets/js/jquery.min.js?v=FUcSpf8LsJ"></script>
+<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=PWwe9YriL"></script>
+<script type="text/javascript" src="./assets/js/wow.min.js?v=JZXEYIyLDO"></script>
+<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=wBtyL1Sx3x"></script>
+<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=Fslmn0q8i0"></script>
+<script type="text/javascript" src="./assets/slick/slick.js?v=IzmnrqZPdW"></script>
+<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=5pLYIbbkhf"></script>
+<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=GCzGc0T3s8"></script>
+<script type="text/javascript" src="./assets/photobox/photobox.js?v=00HDXcwGfY"></script>
+<script type="text/javascript" src="./assets/js/functions.js?v=7QznYy6yry"></script>
+<script type="text/javascript" src="./assets/js/apps.js?v=YF3DakVWur"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->
+    <!-- Product -->
+    <script type="application/ld+json">
+        {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG",
+    "image": [
+        "https://phatnang.com/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png"
+    ],
+    "description": "VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN",
+    "sku": "SP0279",
+    "mpn": "CHUYÊN NÂNG CẤP LAPTOP, THAY T",
+    "brand": {
+        "@type": "Brand",
+        "name": "Laptop"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "VI TÍNH PHÁT NĂNG"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "89"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong",
+        "priceCurrency": "VND",
+        "priceValidUntil": "2099-11-20",
+        "price": "0",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "availability": "https://schema.org/InStock"
+    }
+}    </script>
 <!-- General -->
 <script type="application/ld+json">
     {

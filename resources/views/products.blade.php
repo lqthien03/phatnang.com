@@ -3,7 +3,7 @@
 <html lang="vi">
 <head>
     <!-- Basehref -->
-<base href="https://phatnang.com/"/>
+
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -61,22 +61,20 @@
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css?v=EEL8Xls47E" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css?v=Jb9aANf430" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css?v=hYCKjcenmy" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css?v=1xNRTJ9pVz" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=K5LirKSL1n" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=HtFBjn1umE" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=wO1lVgukZk" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=UHBGhkpoh" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=0osTC9pMcZ" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=WnMSnwn4eE" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=LAuAutJtNN" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=uPwbDvyotX" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=x5oAKVhSny" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=VCKD7WuW0J" rel="stylesheet">
-<link href="./assets/css/font.css?v=xYwXba8iyY" rel="stylesheet">
-<link href="./assets/css/style.css?v=bqpovw7aNG" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/animate.min.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fontawesome512/all.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/mmenu/mmenu.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}'" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/font.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -384,8 +382,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 <div class="content-main w-clear">
             <div class="grid-page">
 				    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/31136nguonfsphydroseries700wmodelhd70000001-8749.jpg?v=1701826898" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)</a></h3>
+                <a class="pic-product scale-img" href="detail-product" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/31136nguonfsphydroseries700wmodelhd70000001-8749.jpg?v=1701826898" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)</a></h3>
                 <p class="price-product">
                                             <span class="price-new">850.000đ</span>
                                     </p>
@@ -963,7 +961,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     </div>
     <div class="footer-powered">
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
-            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by NiNa Co.,Ltd</p>
+            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by Blue WEB Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
                 <span>Đang online: 4</span>
                 <b>|</b>
@@ -1040,17 +1038,17 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=Tw0W4fR9QU"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=yaOLxRbWIO"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=61P4H5hSX"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=aVBytgbiMx"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=fHEymxdYth"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=AwIrkUWCmw"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=8hU19ZXGuN"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=7uSmK1D77e"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=BvdQJl3LPp"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=IExBfZTfOf"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=5ewxDsPdFD"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/bootstrap/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/mmenu/mmenu.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/owlcarousel2/owl.carousel.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/fancybox3/jquery.fancybox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/magiczoomplus/magiczoomplus.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/photobox/photobox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/functions.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/apps.js') }}"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->

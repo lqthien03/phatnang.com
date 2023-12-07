@@ -3,7 +3,6 @@
 <html lang="vi">
 <head>
     <!-- Basehref -->
-<base href="https://phatnang.com/"/>
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -472,7 +471,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     </div>
     <div class="footer-powered">
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
-            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by NiNa Co.,Ltd</p>
+            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by Blue WEB Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
                 <span>Đang online: 4</span>
                 <b>|</b>

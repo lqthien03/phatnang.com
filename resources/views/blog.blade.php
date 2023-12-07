@@ -3,7 +3,6 @@
 <html lang="vi">
 <head>
     <!-- Basehref -->
-<base href="https://phatnang.com/"/>
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -61,22 +60,22 @@
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css?v=WulHHdl0PZ" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css?v=39MsaD1NF3" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css?v=IR0Z6lMuKY" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css?v=iWQyTYHPnE" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=wNiawvefcT" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=XNzQxABf1j" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=rce17v1cDb" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=19fROBEksd" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=nkpuSwH41" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=WqywKQJHjf" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=uOcVcnmT3N" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=V0ULwd4iTc" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=vEzJUKwH2g" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=Ut0Q4iAXf" rel="stylesheet">
-<link href="./assets/css/font.css?v=O6GJNzufWL" rel="stylesheet">
-<link href="./assets/css/style.css?v=VBksXxti1" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/animate.min.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fontawesome512/all.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/mmenu/mmenu.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/magiczoomplus/magiczoomplus.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/photobox/photobox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/font.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -690,7 +689,7 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
     </div>
     <div class="footer-powered">
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
-            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by NiNa Co.,Ltd</p>
+            <p class="copyright animate__animated animate__fadeInLeft wow">&copy; 2021 Vi Tính Phát Năng. Design by Blue WEB Co.,Ltd</p>
             <p class="statistic animate__animated animate__fadeInRight wow">
                 <span>Đang online: 4</span>
                 <b>|</b>
@@ -767,17 +766,17 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=dKAyXK0Ktv"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=jpqNuBZNQm"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=OL0uJffKLo"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=ELaBvft0p8"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=6qvHfrTWau"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=8oWPSrpCH"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=Y5MGrTk7x"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=ws96Ppddl2"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=Y0KrfqGpw"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=MSnbhW8DWW"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=7to2KPw1J9"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/bootstrap/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/mmenu/mmenu.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/owlcarousel2/owl.carousel.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/fancybox3/jquery.fancybox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/magiczoomplus/magiczoomplus.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/photobox/photobox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/functions.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/apps.js') }}"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->

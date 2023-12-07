@@ -71,8 +71,8 @@
 <link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}'" rel="stylesheet">
-<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}'" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/css/font.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -238,7 +238,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                 </li>
                                                         </ul>
                                                 </li>
-                                        </ul>
+                                            <li><a class="transition" title="Bảng báo giá" href="bang-gia"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701827465" alt="Bảng báo giá"/>Bảng báo giá</a>
+                                                </li>
+
+                                            </ul>
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
@@ -358,13 +361,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                 </li>
                             <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim">Chuột, Bàn Phím</a>
                                 </li>
-                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh">Thiết Bị Âm Thanh</a>
-                                    <ul>
-                                            <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
-                                                </li>
-                                            <li><a class="transition" title="Thiết bị âm Thanh-TAI NGHE" href="thiet-bi-am-thanh-tai-nghe">Thiết bị âm Thanh-TAI NGHE</a>
-                                                </li>
-                                        </ul>
+                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh">Thiết bị âm thanh</a>
+                            <li><a class="transition" title="Bảng báo giá" href="bang-gia">Bảng báo giá</a>
                                 </li>
                         <li><a class="transition active" href="" title="Trang chủ">Trang chủ</a></li>
             <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
@@ -382,7 +380,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
         <div class="owl-carousel owl-theme owl-slideshow">
                             <div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt=""/></a>
+                            <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt=""/></a>
                 </div>
                             <div>
                     <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/829f46d195c25f9c06d3-7017.jpg" alt=""/></a>
@@ -400,7 +398,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div class="owl-carousel owl-theme owl-tieuchi">
                                     <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
                         <a class="img text-decoration-none" title="Đổi Trả Dễ Dàng">
-                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="thumbs/30x39x2/upload/photo/icon201-15340.png" alt="Đổi Trả Dễ Dàng"/>
+                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon201-15340.png') }}" alt="Đổi Trả Dễ Dàng"/>
                         </a>
                         <div class="tttc">
                             <p class="mb-0 ten motdong">Đổi Trả Dễ Dàng</p>
@@ -409,7 +407,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                     </div>
                                     <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
                         <a class="img text-decoration-none" title="Thanh Toán An Toàn">
-                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="thumbs/30x39x2/upload/photo/icon203-37571.png" alt="Thanh Toán An Toàn"/>
+                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-thanhtoanantoan.png') }}" alt="Thanh Toán An Toàn"/>
                         </a>
                         <div class="tttc">
                             <p class="mb-0 ten motdong">Thanh Toán An Toàn</p>
@@ -418,7 +416,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                     </div>
                                     <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
                         <a class="img text-decoration-none" title="Hỗ Trợ 24/7">
-                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="thumbs/30x39x2/upload/photo/icon05-90902.png" alt="Hỗ Trợ 24/7"/>
+                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-hotro247.png') }}" alt="Hỗ Trợ 24/7"/>
                         </a>
                         <div class="tttc">
                             <p class="mb-0 ten motdong">Hỗ Trợ 24/7</p>
@@ -427,7 +425,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                     </div>
                                     <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
                         <a class="img text-decoration-none" title="Giao Hàng Nhanh ">
-                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="thumbs/30x39x2/upload/photo/icon207-75013.png" alt="Giao Hàng Nhanh "/>
+                            <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-giaohangnhanh.png') }}" alt="Giao Hàng Nhanh "/>
                         </a>
                         <div class="tttc">
                             <p class="mb-0 ten motdong">Giao Hàng Nhanh </p>
@@ -455,7 +453,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 		<p class="sltc">Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ</p>
 		<div class="grid-page">
 						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/hp-120g-7970.jpg?v=1701827465" alt="GAMING HEADSET H120G HP"/></a>
+	            <a class="pic-product scale-img" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/g5400v-6520.jpg') }}" alt="GAMING HEADSET H120G HP"/></a>
 	            	            <p class="ma">Mã SP: GAMING HEADSET H120G</p>
 	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP">GAMING HEADSET H120G HP</a></h3>
 	            <p class="price-product">
@@ -465,7 +463,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 	                	            </p>
 	        </div>
 					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-g5400" title="CPU G5400"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/g5400v-6520.jpg?v=1701827465" alt="CPU G5400"/></a>
+	            <a class="pic-product scale-img" href="cpu-g5400" title="CPU G5400"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/g5400v-6520.jpg') }}" alt="CPU G5400"/></a>
 	            	            <p class="ma">Mã SP: G5400</p>
 	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g5400" title="CPU G5400">CPU G5400</a></h3>
 	            <p class="price-product">
@@ -473,7 +471,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 	                	            </p>
 	        </div>
 					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="vision-gaming-vm01" title="VISION GAMING VM01"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/400vm0105-7197.jpg?v=1701827465" alt="VISION GAMING VM01"/></a>
+	            <a class="pic-product scale-img" href="vision-gaming-vm01" title="VISION GAMING VM01"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="827465thumbs/600x577x1/upload/product/400vm0105-7197.jpg?v=1701" alt="VISION GAMING VM01"/></a>
 	            	            <p class="ma">Mã SP: VISION GAMING VM01 CƠ</p>
 	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="vision-gaming-vm01" title="VISION GAMING VM01">VISION GAMING VM01</a></h3>
 	            <p class="price-product">
@@ -684,7 +682,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 </div>
 
  
-<a class="banner1 d-block w-100" href=""><img src="upload/photo/vi-tinh-phat-nang-2624.jpg" class="d-block w-100"/></a>
+<a class="banner1 d-block w-100" href=""><img src="{{ URL::asset('assets/images/banner.jpg') }}" class="d-block w-100"/></a>
 
 <div class="wrap-intro wrap-content">
 	<h2 class="title-main tc"><span>TIN TỨC & VIDEO</span></h2>
@@ -888,7 +886,7 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
 <script type="text/javascript" src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('assets/mmenu/mmenu.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('assets/owlcarousel2/owl.carousel.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}'"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('assets/fancybox3/jquery.fancybox.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('assets/js/functions.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('assets/js/apps.js') }}"></script>
