@@ -241,7 +241,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
             <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>

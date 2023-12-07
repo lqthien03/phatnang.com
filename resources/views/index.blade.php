@@ -143,8 +143,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                     <ul class="menusp2">
                                             <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
                                                     <ul>
-                                                        @foreach($category as $cat)
-                                                    <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">{{$cat->name }}</a>
+                                                        @foreach($level1products as $pro1)
+                                                    <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">{{$pro1->tittle}}</a>
                                                                     <ul>
                                                                             <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
                                                                             <li><a class="transition" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></li>
@@ -469,7 +469,9 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			<p class="clicksp mb-0" data-key="moi" data-ten="san-pham-moi">Sản phẩm mới</p>
 			<p class="clicksp mb-0" data-key="banchay" data-ten="san-pham-ban-chay">Sản phẩm bán chạy</p>
 		</div>
-		<div class="paging-product"></div>
+		<div class="paging-product">
+            
+        </div>
 	</div>
 <div class="khungsp">
 <div class="mod_danhmuc">

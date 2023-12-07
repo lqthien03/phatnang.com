@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('outstand');
             $table->string('display');
 
-            $table->foreignId('id_level_product')->constrained(
-                table: 'level2_products', indexName: 'products_level_1and2'
-            );
+            // $table->foreignId('id_level_product')->constrained(
+            //     table: 'level2_products', indexName: 'products_level_1and2'
+            // );
 
         });
     }

@@ -57,22 +57,22 @@
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css?v=eKJECSBB6c" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css?v=IhzbLqWmKa" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css?v=fzOZ8WOTU" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css?v=oomi6voOEV" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=rvunTBXkrM" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=NbV3ctVCKK" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=NZYUuEwos" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=MBRb7AG4" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=49sVRsCnv" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=Wrpy6iuwth" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=4D57b5r9m7" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=SGK1UWelot" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=Ixl9Qwi9tJ" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=f9apppX6iZ" rel="stylesheet">
-<link href="./assets/css/font.css?v=8K3EffpWGM" rel="stylesheet">
-<link href="./assets/css/style.css?v=9o4QcxadFe" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/animate.min.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fontawesome512/all.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/mmenu/mmenu.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/magiczoomplus/magiczoomplus.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/photobox/photobox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/font.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -373,10 +373,12 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </nav>
+@foreach($introduce as $in)
 </div><div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/gioi-thieu"><span>Giới thiệu</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"Gi\u1edbi thi\u1ec7u","item":"https:\/\/phatnang.com\/gioi-thieu"}]}</script></div></div> 
     <div class="wrap-main  w-clear">
                 <div class="d-flex flex-wrap align-items-start justify-content-between">
-            <div id="right"><h1 class="title-main"><span>VI TÍNH PHÁT NĂNG</span></h1>
+            <div id="right"><h1 class="title-main"><span>{{$in->tittle}}</span></h1>
+@endforeach
 <div class="content-main baonoidung noidunggioithieu w-clear"><p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="color: rgb(0, 0, 0); font-weight: 400; font-size: 22px;"><strong><span style="color:blue;"><span style="font-family:Verdana,sans-serif;">- CHUYÊN CUNG CẤP LINH KIỆN MÁY TÍNH ,SỈ VÀ LẺ TẤT CẢ CÁC SẢN PHẨM CŨ VÀ MỚI</span></span></strong></span><br />
 <span style="font-size: 22px;"><font face="Verdana, Arial, Helvetica, sans-serif" style=""><strong style="color: rgb(0, 51, 204); font-weight: 400;">-</strong><font color="#000000"> </font></font><span style="color: rgb(0, 0, 255); font-weight: bold; font-family: Verdana, sans-serif;">NHẬN THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC</span></span></p>
 
@@ -770,17 +772,17 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=wo8W5Bi7P4"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=cxvUU68lH"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=4XIcxCZek"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=Njw6DxvYy0"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=Dz6Skfty5L"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=B83W32zT8v"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=tJMbPCz45D"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=oV69ToYhaQ"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=CwAn6D6pXj"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=jxDw40pCaP"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=ZYaCwExFl3"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/bootstrap/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/mmenu/mmenu.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/owlcarousel2/owl.carousel.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/fancybox3/jquery.fancybox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/magiczoomplus/magiczoomplus.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/photobox/photobox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/functions.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/apps.js') }}"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->

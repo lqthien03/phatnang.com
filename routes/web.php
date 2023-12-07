@@ -1,6 +1,9 @@
 <?php
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Level1ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\IntroduceController;
+use App\Http\Controllers\DetailProductController;
+use App\Http\Controllers\LiquidationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,19 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [CategoryController::class, 'all'])->name('Category.all');
+Route::get('/', [level1ProductController::class, 'all'],[BlogController::class, 'all']);
 Route::get('bang-gia', function () {
     return view('quotation');
 });
-Route::get('gioi-thieu', function () {
-    return view('introduce');
-});
-Route::get('san-pham', function () {
-    return view('products');
-});
-Route::get('thanh-ly-phong-net', function () {
-    return view('liquidation');
-});
+Route::get('gioi-thieu', [IntroduceController::class, 'all']);
+Route::get('san-pham', [DetailProductController::class, 'all']);
+Route::get('thanh-ly-phong-net', [LiquidationController::class, 'all']);
 Route::get('tin-tuc', function () {
     return view('blog');
 });
@@ -40,10 +37,7 @@ Route::get('lien-he', function () {
 Route::get('test', function () {
     return view('test');
 });
-Route::get('detail-product', function () {
-    return view('detail-product');
-});
-
+Route::get('detail-product/{id}',[DetailProductController::class, 'detail'] );
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

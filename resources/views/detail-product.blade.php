@@ -60,22 +60,22 @@
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    <!-- Css Files -->
-<link href="./assets/css/animate.min.css?v=LALrP3HxUp" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap.css?v=5fTMFx225P" rel="stylesheet">
-<link href="./assets/bootstrap/bootstrap-icons.css?v=4uo8GPsm0w" rel="stylesheet">
-<link href="./assets/fontawesome512/all.css?v=ozAGgEg8Ip" rel="stylesheet">
-<link href="./assets/mmenu/mmenu.css?v=sHwSwooRMb" rel="stylesheet">
-<link href="./assets/magiczoomplus/magiczoomplus.css?v=owN06x8nY5" rel="stylesheet">
-<link href="./assets/photobox/photobox.css?v=GAGldL7R6A" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.css?v=GJbHPbAiDU" rel="stylesheet">
-<link href="./assets/fancybox3/jquery.fancybox.style.css?v=1IQMumixxL" rel="stylesheet">
-<link href="./assets/slick/slick.css?v=Fl0Cr0Fl7T" rel="stylesheet">
-<link href="./assets/slick/slick-theme.css?v=PUOCncGxWn" rel="stylesheet">
-<link href="./assets/slick/slick-style.css?v=w6h2cj02Sc" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.carousel.css?v=yju87ZQyt" rel="stylesheet">
-<link href="./assets/owlcarousel2/owl.theme.default.css?v=I1IHeMyfFm" rel="stylesheet">
-<link href="./assets/css/font.css?v=SgZ3NQFryW" rel="stylesheet">
-<link href="./assets/css/style.css?v=RQrBC7YjE" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/animate.min.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/bootstrap/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fontawesome512/all.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/mmenu/mmenu.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/magiczoomplus/magiczoomplus.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/photobox/photobox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/owlcarousel2/owl.theme.default.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/font.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -387,7 +387,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                 <div class="owl-carousel owl-theme owl-thumb-pro">
                     <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
                                             <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-7781.jpeg" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-7781.jpeg?v=1701847840">
-                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-7781.jpeg?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
                         </a>
                                             <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-lap-top-bg2-9554.png" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840">
                             <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
@@ -401,7 +401,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             </div>
 
     <div class="right-pro-detail w-clear">
-        <h1 class="title-pro-detail">CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG</h1>
+        <h1 class="title-pro-detail">{{$detail->tittle}}</h1>
         <ul class="attr-pro-detail">
                         <li class="w-clear"> 
                 <label class="attr-label-pro-detail">Mã sản phẩm:</label>
@@ -420,7 +420,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li>
                 <div class="desc-pro-detail baonoidung"><p><span style="font-size:20px;">LIÊN HỆ: Mr THUẬN ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ 0937 629 235</span></p>
 
-<p><span style="font-size:20px;">ZALO: 0937 629 235 THUANPC</span></p>
+
+                <p><span style="font-size:20px;">ZALO: 0937 629 235 THUANPC</span></p>
 </div>
             </li>
         </ul>
@@ -446,6 +447,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <div class="content-tabs-pro-detail commentfb-pro-detail"><div class="fb-comments" data-href="https://phatnang.com/chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" data-numposts="3" data-colorscheme="light" data-width="100%"></div></div>
     </div>
 </div>
+
 
 <h2 class="title-main"><span>Sản phẩm cùng loại</span></h2>
 <div class="content-main w-clear">
@@ -685,17 +687,17 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     };
 </script>
 <!-- Js Files -->
-<script type="text/javascript" src="./assets/js/jquery.min.js?v=FUcSpf8LsJ"></script>
-<script type="text/javascript" src="./assets/bootstrap/bootstrap.js?v=PWwe9YriL"></script>
-<script type="text/javascript" src="./assets/js/wow.min.js?v=JZXEYIyLDO"></script>
-<script type="text/javascript" src="./assets/mmenu/mmenu.js?v=wBtyL1Sx3x"></script>
-<script type="text/javascript" src="./assets/owlcarousel2/owl.carousel.js?v=Fslmn0q8i0"></script>
-<script type="text/javascript" src="./assets/slick/slick.js?v=IzmnrqZPdW"></script>
-<script type="text/javascript" src="./assets/fancybox3/jquery.fancybox.js?v=5pLYIbbkhf"></script>
-<script type="text/javascript" src="./assets/magiczoomplus/magiczoomplus.js?v=GCzGc0T3s8"></script>
-<script type="text/javascript" src="./assets/photobox/photobox.js?v=00HDXcwGfY"></script>
-<script type="text/javascript" src="./assets/js/functions.js?v=7QznYy6yry"></script>
-<script type="text/javascript" src="./assets/js/apps.js?v=YF3DakVWur"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/bootstrap/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/mmenu/mmenu.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/owlcarousel2/owl.carousel.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/slick/slick.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/fancybox3/jquery.fancybox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/magiczoomplus/magiczoomplus.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/photobox/photobox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/functions.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('assets/js/apps.js') }}"></script>
             <!-- Js Google Recaptcha V3 -->
                     
     <!-- Js Structdata -->

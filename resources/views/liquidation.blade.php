@@ -242,7 +242,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
             <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
@@ -383,13 +383,15 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div id="right"><h1 class="title-main"><span>Thanh Lý Phòng Net</span></h1>
 <div class="content-main w-clear">
             <div class="grid-page">
+                @foreach($liquidation as $li)
 				    <div class="product animate__animated animate__zoomIn wow">
                 <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/e1b61f2ef53d3f63662c-3714.jpg?v=1701827001" alt="Thanh lý phòng net A- Z"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z">Thanh lý phòng net A- Z</a></h3>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z">{{$li->tittle}}</a></h3>
                 <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
+                                            <span class="price-new">Liên hệ.</span>
                                     </p>
             </div>
+            @endforeach
 				    <div class="product animate__animated animate__zoomIn wow">
                 <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/424be9b53ea6f4f8adb7-7989.jpg?v=1701827001" alt="Thanh lý phòng net A- Z giá cao"/></a>
                 <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao">Thanh lý phòng net A- Z giá cao</a></h3>
