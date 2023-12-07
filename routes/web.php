@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [CategoryController::class, 'all'])->name('Category.all');
-
 Route::get('bang-gia', function () {
     return view('quotation');
 });
@@ -41,7 +40,7 @@ Route::get('lien-he', function () {
 Route::get('test', function () {
     return view('test');
 });
-Route::get('detail-product',function(){
+Route::get('detail-product', function () {
     return view('detail-product');
 });
 
@@ -55,4 +54,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
