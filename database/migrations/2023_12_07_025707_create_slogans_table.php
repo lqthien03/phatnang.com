@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('tittle');
             $table->string('display');
+
+            $table->unsignedBigInteger('seo_id');
+            $table->foreign('seo_id')->references('id')->on('seos');
         });
     }
 

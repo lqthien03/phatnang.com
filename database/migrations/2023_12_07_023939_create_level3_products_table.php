@@ -15,7 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('display');
+            $table->string('display')->nullable;
+
+            $table->unsignedBigInteger('detail_product_id');
+            $table->foreign('detail_product_id')->references('id')->on('detail_products');
+
+            $table->unsignedBigInteger('seo_id');
+            $table->foreign('seo_id')->references('id')->on('seos');
         });
     }
 

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('link');
             $table->string('outstand');
             $table->string('display');
+            $table->string('number');
         });
     }
 

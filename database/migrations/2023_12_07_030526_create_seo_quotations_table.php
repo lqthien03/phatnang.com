@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('seo_quotations', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('tittle');
-            $table->string('keyword');
-            $table->string('description');
+
+            $table->unsignedBigInteger('seo_id');
+            $table->foreign('seo_id')->references('id')->on('seos');
         });
     }
 
