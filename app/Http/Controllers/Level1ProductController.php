@@ -10,4 +10,8 @@ class Level1ProductController extends Controller
         $level1products = Level1Product::all();
         return view('index', compact('level1products'));
     }
+    public function alladmin(){
+        $level1products = Level1Product::all();
+        return view('admin.productlv1', compact('level1products'));
+    }
 }

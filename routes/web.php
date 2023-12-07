@@ -38,7 +38,7 @@ Route::get('test', function () {
     return view('test');
 });
 Route::get('detail-product/{id}',[DetailProductController::class, 'detail'] );
-Route::get('/dashboard', function () {
+Route::get('/admin', function () {
     return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -47,5 +47,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
+Route::get('/productlv1', [level1ProductController::class, 'alladmin']);
+Route::get('/productlv2', function(){
+    return view('admin.productlv2');
+});
+Route::get('/productlv3', function(){
+    return view('admin.productlv3');
+});
+Route::get('bang-gia-admin', [QuotationController::class, 'alladmin']);
 require __DIR__ . '/auth.php';
