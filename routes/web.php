@@ -39,7 +39,7 @@ Route::get('test', function () {
 });
 Route::get('detail-product/{id}',[DetailProductController::class, 'detail'] );
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
