@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-<<<<<<< HEAD
+
+Route::get('/', [CategoryController::class, 'all'])->name('Category.all');
+
 Route::get('bang-gia', function () {
     return view('quotation');
 });
@@ -45,7 +44,6 @@ Route::get('test', function () {
 Route::get('detail-product',function(){
     return view('detail-product');
 });
-=======
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -58,4 +56,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
->>>>>>> 7f0bc8d0a6969907b9d55c18b0b7980c08791254

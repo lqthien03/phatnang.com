@@ -143,6 +143,16 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                     <ul class="menusp2">
                                             <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
                                                     <ul>
+                                                        @foreach($category as $cat)
+                                                    <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">{{$cat->name }}</a>
+                                                                    <ul>
+                                                                            <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
+                                                                            <li><a class="transition" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></li>
+                                                                            <li><a class="transition" title="Intel Core i5" href="intel-core-i5">Intel Core i5</a></li>
+                                                                            <li><a class="transition" title="Intel Core i7" href="intel-core-i7">Intel Core i7</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                        @endforeach
                                                             <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
                                                                     <ul>
                                                                             <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
@@ -378,25 +388,31 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 </div><div class="khungsl">
     <div class="slideshow">
         <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
-        <div class="owl-carousel owl-theme owl-slideshow">
-                            <div>
-                            <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt=""/></a>
-                </div>
-                            <div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/829f46d195c25f9c06d3-7017.jpg" alt=""/></a>
-                </div>
-                            <div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/e1b61f2ef53d3f63662c-8766.jpg" alt=""/></a>
-                </div>
-                            <div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/3-21770.jpg" alt=""/></a>
-                </div>
-                    </div>
+        <div class="owl-carousel owl-theme owl-slideshow owl-loaded">
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2874px, 0px, 0px); transition: all 0s ease 0s; width: 7664px;"><div class="owl-item cloned" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item active" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/829f46d195c25f9c06d3-7017.jpg" alt="VI TÍNH PHÁT NĂNG"></a>
+                </div></div></div></div><div class="owl-nav disabled"></div><div class="owl-dots disabled"></div></div>
         <p class="control-slideshow next-slideshow transition"><i class="fas fa-chevron-right"></i></p>
     </div>
             <div class="mod_tieuchi">
-            <div class="owl-carousel owl-theme owl-tieuchi">
-                                    <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
+                <div class="owl-carousel owl-theme owl-tieuchi owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 970px;">
+                                    <div class="owl-item active item_tc d-flex flex-wrap justify-content-center align-items-center" style="width: 230.5px; margin-right: 12px;">
                         <a class="img text-decoration-none" title="Đổi Trả Dễ Dàng">
                             <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon201-15340.png') }}" alt="Đổi Trả Dễ Dàng"/>
                         </a>
@@ -405,7 +421,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             <p class="mb-0 mota text-split">Đổi trả sản phẩm lỗi</p>
                         </div>
                     </div>
-                                    <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
+                                    <div class="owl-item active item_tc d-flex flex-wrap justify-content-center align-items-center" style="width: 230.5px; margin-right: 12px;">
                         <a class="img text-decoration-none" title="Thanh Toán An Toàn">
                             <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-thanhtoanantoan.png') }}" alt="Thanh Toán An Toàn"/>
                         </a>
@@ -414,7 +430,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             <p class="mb-0 mota text-split">Bảo đảm an toàn 100%</p>
                         </div>
                     </div>
-                                    <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
+                                    <div class="owl-item active item_tc d-flex flex-wrap justify-content-center align-items-center" style="width: 230.5px; margin-right: 12px;">
                         <a class="img text-decoration-none" title="Hỗ Trợ 24/7">
                             <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-hotro247.png') }}" alt="Hỗ Trợ 24/7"/>
                         </a>
@@ -423,7 +439,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             <p class="mb-0 mota text-split">Hỗ trợ tư vấn nhiệt tình</p>
                         </div>
                     </div>
-                                    <div class="item_tc d-flex flex-wrap justify-content-center align-items-center">
+                                    <div class="owl-item active item_tc d-flex flex-wrap justify-content-center align-items-center" style="width: 230.5px; margin-right: 12px;">
                         <a class="img text-decoration-none" title="Giao Hàng Nhanh ">
                             <img onerror="this.src='thumbs/30x39x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/icon-giaohangnhanh.png') }}" alt="Giao Hàng Nhanh "/>
                         </a>
@@ -431,11 +447,20 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                             <p class="mb-0 ten motdong">Giao Hàng Nhanh </p>
                             <p class="mb-0 mota text-split">Giao hàng nhanh chóng</p>
                         </div>
-                    </div>
+                </div>
                             </div>
         </div>
-    </div>
-  
+</div></div></div>
+    <style>
+        .owl-carousel .owl-item{
+            position: relative;
+            min-height:1px;
+            float: left;
+            -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+        }
+    </style>
     <div class="wrap-main wrap-home w-clear">
          
             	<div class="wrap-product wrap-content">
