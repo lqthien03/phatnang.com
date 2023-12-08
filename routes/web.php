@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,6 +46,21 @@ Route::get('detail-product', function () {
     return view('detail-product');
 });
 
+Route::get('/setting', function () {
+    return view('admin.setting');
+});
+
+Route::controller(SettingController::class)->group(function () {
+    Route::get('/setting/{setting}', 'edit')->name('edit.setting');
+    Route::put('/setting/{setting}', 'update')->name('update.setting');
+
+    // Route::get('/progression/detail/{id}', 'Detail_Progression')->name('progression.detail_progression');
+    // Route::get('/progression/add', 'AddProgression')->name('progression.add_progression');
+    // Route::post('progression/store', 'StoreProgression')->name('progression.store');
+    // Route::get('/progression/edit/{id}', 'EditProgression')->name('progression.add');
+    // Route::post('/progression/update', 'UpdateProgression')->name('progresion.update');
+});
+
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -54,5 +70,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 require __DIR__ . '/auth.php';
