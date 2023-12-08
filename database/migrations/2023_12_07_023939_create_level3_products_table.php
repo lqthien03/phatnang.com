@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('level3_products', function (Blueprint $table) {
+        Schema::create('level2_products', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('tittle');
-            $table->string('display')->nullable;
+            $table->string('title');
+            $table->string('display');
 
-            $table->unsignedBigInteger('detail_product_id');
-            $table->foreign('detail_product_id')->references('id')->on('detail_products');
+            $table->unsignedBigInteger('level1_product_id');
+            $table->foreign('level1_product_id')->references('id')->on('level1_products');
 
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('level3_products');
+        Schema::dropIfExists('level2_products');
     }
 };
