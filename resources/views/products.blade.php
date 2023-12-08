@@ -383,7 +383,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div class="grid-page">
                     @foreach($detail as $de)
 				    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/31136nguonfsphydroseries700wmodelhd70000001-8749.jpg?v=1701826898" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
+                <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='{{$de->image}}';" src="{{$de->image}}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
                 <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">{{$de->tittle}}</a></h3>
                 <p class="price-product">
                                             <span class="price-new">{{$de->gallery}}</span>

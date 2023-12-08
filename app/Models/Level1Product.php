@@ -12,4 +12,10 @@ class Level1Product extends Model
         'image',
         'tittle',
     ];
+    public function Level1Childrent(){
+        return $this->hasmany(Level2Product::class, 'level1_product_id');
+    }
+    public function Level1ChildrentProduct(){
+        return $this->hasmany(DetailProduct::class, 'level1_products_id');
+    }
 }

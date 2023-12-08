@@ -381,19 +381,19 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
          
             <div class="grid-pro-detail w-clear">
     <div class="left-pro-detail w-clear">
-        <a id="Zoom-1" class="MagicZoom" data-options="zoomMode: true; hint: off; rightClick: true; selectorTrigger: click; expandCaption: false; history: false;" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
+        <a id="Zoom-1" class="MagicZoom" data-options="zoomMode: true; hint: off; rightClick: true; selectorTrigger: click; expandCaption: false; history: false;" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{$detail->image}}" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
                     <div class="gallery-thumb-pro">
                 <p class="control-carousel prev-carousel prev-thumb-pro transition"><i class="fas fa-chevron-left"></i></p>
                 <div class="owl-carousel owl-theme owl-thumb-pro">
-                    <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
+                        <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701847840"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{$detail->image}}" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
                                             <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-7781.jpeg" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-7781.jpeg?v=1701847840">
-                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{$detail->image}}" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
                         </a>
                                             <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-lap-top-bg2-9554.png" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840">
-                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-lap-top-bg2-9554.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{$detail->image}}" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
                         </a>
                                             <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG?v=1701847840" data-image="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png?v=1701847840">
-                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x2/upload/product/linh-kien-laptop-hcm-hienlaptop-01-5218.png?v=1701847840" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
+                            <img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{$detail->image}}" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">
                         </a>
                                     </div>
                 <p class="control-carousel next-carousel next-thumb-pro transition"><i class="fas fa-chevron-right"></i></p>
@@ -404,7 +404,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
         <h1 class="title-pro-detail">{{$detail->tittle}}</h1>
         <ul class="attr-pro-detail">
                         <li class="w-clear"> 
-                <label class="attr-label-pro-detail">Mã sản phẩm:</label>
+                <label class="attr-label-pro-detail">{{$detail->tittle}}</label>
                 <div class="attr-content-pro-detail">CHUYÊN NÂNG CẤP LAPTOP, THAY T</div>
             </li>
                                     <li class="w-clear"> 

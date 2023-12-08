@@ -135,122 +135,34 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			</p>
 		</div>
 	</div>
-</div><div class="menu">
+</div>
+<div class="menu">
     <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
         <div class="menusp">
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
                         <div class="menusp1 menusp0 active ">
                                     <ul class="menusp2">
-                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
+                                            @foreach($level1products as $pro1)
+                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
+                                                    @if($pro1->Level1Childrent->count())
                                                     <ul>
-                                                        @foreach($level1products as $pro1)
-                                                    <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">{{$pro1->tittle}}</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
-                                                                            <li><a class="transition" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></li>
-                                                                            <li><a class="transition" title="Intel Core i5" href="intel-core-i5">Intel Core i5</a></li>
-                                                                            <li><a class="transition" title="Intel Core i7" href="intel-core-i7">Intel Core i7</a></li>
+                                                    @foreach($pro1->Level1Childrent as $pro2)            
+                                                            <li><a class="transition" title="" href="">{{$pro2->tittle}}</a>
+                                                                    @if($pro2->Level2Childrent->count())
+                                                                        @foreach($pro2->Level2Childrent as $pro3)
+                                                                        <ul>
+                                                                            <li><a class="transition" title="Intel Pentium" href="san-phamss?id={{$pro3->id}}">{{$pro3->tittle}}</a></li>
                                                                         </ul>
+                                                                        @endforeach
+                                                                    @endif
                                                                 </li>
-                                                        @endforeach
-                                                            <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
-                                                                            <li><a class="transition" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></li>
-                                                                            <li><a class="transition" title="Intel Core i5" href="intel-core-i5">Intel Core i5</a></li>
-                                                                            <li><a class="transition" title="Intel Core i7" href="intel-core-i7">Intel Core i7</a></li>
-                                                                        </ul>
                                                                 </li>
-                                                            <li><a class="transition" title="MAINBOARD -BO MẠCH CHỦ" href="mainboard-bo-mach-chu">MAINBOARD -BO MẠCH CHỦ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="MAIN-GIGABYTE" href="main-gigabyte">MAIN-GIGABYTE</a></li>
-                                                                            <li><a class="transition" title="MAIN-ASUS" href="main-asus">MAIN-ASUS</a></li>
-                                                                            <li><a class="transition" title="MAIN-MSI" href="main-msi">MAIN-MSI</a></li>
-                                                                            <li><a class="transition" title="MAIN-COLOFULL" href="main-colofull">MAIN-COLOFULL</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="BỘ NHỚ RAM" href="bo-nho-ram">BỘ NHỚ RAM</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="DDR4 PC" href="ddr4-pc">DDR4 PC</a></li>
-                                                                            <li><a class="transition" title="DDR3-PC" href="ddr3-pc">DDR3-PC</a></li>
-                                                                            <li><a class="transition" title="DDR3 SEVER" href="ddr3-sever">DDR3 SEVER</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="VGA-CARD MÀNG HÌNH" href="vga-card-mang-hinh">VGA-CARD MÀNG HÌNH</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="VGA-GIGABYTE NEW" href="vga-gigabyte-new">VGA-GIGABYTE NEW</a></li>
-                                                                            <li><a class="transition" title="VGA-ASUS NEW" href="vga-asus-new">VGA-ASUS NEW</a></li>
-                                                                        </ul>
-                                                                </li>
+                                                            @endforeach
                                                         </ul>
-                                                </li>
-                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701827465" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="CPU-INTEL PENTIUM" href="cpu-intel-pentium">CPU-INTEL PENTIUM</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I3" href="cpu-intel-core-i3">CPU-INTEL CORE I3</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I5" href="cpu-intel-core-i5">CPU-INTEL CORE I5</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I7" href="cpu-intel-core-i7">CPU-INTEL CORE I7</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="MAINBOARD -BO MẠCH CHỦ CŨ" href="mainboard-bo-mach-chu-cu">MAINBOARD -BO MẠCH CHỦ CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="MAIN-GIGABYTE-CŨ" href="main-gigabyte-cu">MAIN-GIGABYTE-CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN ASUS CŨ" href="main-asus-cu">MAIN ASUS CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN MSI CŨ" href="main-msi-cu">MAIN MSI CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN COLOFULL CŨ" href="main-colofull-cu">MAIN COLOFULL CŨ</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="BỘ NHỚ RAM CŨ" href="bo-nho-ram-cu">BỘ NHỚ RAM CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="RAM DDR4 PC" href="ram-ddr4-pc">RAM DDR4 PC</a></li>
-                                                                            <li><a class="transition" title="RAM DDR3 PC" href="ram-ddr3-pc">RAM DDR3 PC</a></li>
-                                                                            <li><a class="transition" title="RAM SEVER CŨ" href="ram-sever-cu">RAM SEVER CŨ</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="VGA-CARD MÀNG HÌNH CŨ" href="vga-card-mang-hinh-cu">VGA-CARD MÀNG HÌNH CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="VGA-GIGABYTE" href="vga-gigabyte">VGA-GIGABYTE</a></li>
-                                                                            <li><a class="transition" title="VGA-ASUS" href="vga-asus">VGA-ASUS</a></li>
-                                                                            <li><a class="transition" title="VGA-MSI" href="vga-msi">VGA-MSI</a></li>
-                                                                            <li><a class="transition" title="VGA-COLOFULL" href="vga-colofull">VGA-COLOFULL</a></li>
-                                                                            <li><a class="transition" title="VGA-ZOTAC" href="vga-zotac">VGA-ZOTAC</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701827465" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
-                                                </li>
-                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701827465" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
-                                                </li>
-                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701827465" alt="Laptop"/>Laptop</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LAPTOP ASUS" href="laptop-asus">LAPTOP ASUS</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LAPTOP HP" href="laptop-hp">LAPTOP HP</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LINH KIỆN LAPTOP" href="linh-kien-laptop">LINH KIỆN LAPTOP</a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701827465" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
-                                                </li>
-                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701827465" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
-                                                </li>
-                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701827465" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
-                                                                </li>
-                                                            <li><a class="transition" title="Thiết bị âm Thanh-TAI NGHE" href="thiet-bi-am-thanh-tai-nghe">Thiết bị âm Thanh-TAI NGHE</a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                            <li><a class="transition" title="Bảng báo giá" href="bang-gia"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701827465" alt="Bảng báo giá"/>Bảng báo giá</a>
+                                                        @endif
                                                 </li>
 
+                                            @endforeach
                                             </ul>
                             </div>
                     </div>
@@ -272,7 +184,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res ">
+</div>
+<div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">
@@ -385,7 +298,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </nav>
-</div><div class="khungsl">
+</div>
+<div class="khungsl">
     <div class="slideshow">
         <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
         <div class="owl-carousel owl-theme owl-slideshow owl-loaded">
@@ -776,241 +690,31 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
      -->
 	</div>
 </div>  
-<div class="khungsp">
+<div class="khungsp">   
+@foreach($level1products as $pro1)
 <div class="mod_danhmuc">
 	<div class="wrap-content">
-		<h2 class="title-main tc"><span>Linh Kiện Mới</span></h2>
-		<p class="sltc">Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ</p>
+		<h2 class="title-main tc"><span><b> {{$pro1->tittle}} </b></span></h2>
+		<p class="sltc"> Vi Tính Phát Năng chuyên cung cấp máy bộ vi tính, pc, laptop, pc gaming, all in one, máy bộ xeon, máy AMD, linh kiện giá sỉ lẻ cực rẻ</p>
 		<div class="grid-page">
-
+                        @if($pro1->Level1ChildrentProduct->count())
+                        @foreach($pro1->Level1ChildrentProduct as $de)
 						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="" title="GAMING HEADSET H120G HP"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/g5400v-6520.jpg') }}" alt="GAMING HEADSET H120G HP"/></a>
+	            <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><img onerror="this.src='{{$de->image}}';" src="{{$de->image}}" alt="GAMING HEADSET H120G HP"/></a>
 	            	            <p class="ma">Mã SP: GAMING HEADSET H120G</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP">GAMING HEADSET H120G HP</a></h3>
+	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP">{{$de->tittle}}</a></h3>
 	            <p class="price-product">
-	                	                    <span class="price-new">285.000đ</span>
+	                	                    <span class="price-new">{{$de->selling}}</span>
 	                    <span class="price-old">290.000đ</span>
 	                    <span class="price-per">-2%</span>
 	                	            </p>
-	        </div>
-
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-g5400" title="CPU G5400"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/g5400v-6520.jpg') }}" alt="CPU G5400"/></a>
-	            	            <p class="ma">Mã SP: G5400</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g5400" title="CPU G5400">CPU G5400</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="vision-gaming-vm01" title="VISION GAMING VM01"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="827465thumbs/600x577x1/upload/product/400vm0105-7197.jpg?v=1701" alt="VISION GAMING VM01"/></a>
-	            	            <p class="ma">Mã SP: VISION GAMING VM01 CƠ</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="vision-gaming-vm01" title="VISION GAMING VM01">VISION GAMING VM01</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">355.000đ</span>
-	                    <span class="price-old">360.000đ</span>
-	                    <span class="price-per">-1%</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="phat-wifi-pix-link-lv-wr08" title="Phát Wifi PIX-LINK LV-WR08"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/6fe4382b7be81732a1300a1585429f391-1-5201.jpg?v=1701827465" alt="Phát Wifi PIX-LINK LV-WR08"/></a>
-	            	            <p class="ma">Mã SP: Phát Wifi PIX-LINK LV-WR08</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="phat-wifi-pix-link-lv-wr08" title="Phát Wifi PIX-LINK LV-WR08">Phát Wifi PIX-LINK LV-WR08</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">295.000đ</span>
-	                    <span class="price-old">360.000đ</span>
-	                    <span class="price-per">-18%</span>
-	                	            </p>
-	        </div>
+	                    </div>  
+                        @endforeach
+                        @endif
 				</div>
-			</div>
+	</div>
 </div>
-<div class="mod_danhmuc">
-	<div class="wrap-content">
-		<h2 class="title-main tc"><span>Linh Kiện Cũ</span></h2>
-		<p class="sltc"></p>
-		<div class="grid-page">
-						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/31136nguonfsphydroseries700wmodelhd70000001-8749.jpg?v=1701827465" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
-	            	            <p class="ma">Mã SP: HD700 Active PFC</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">850.000đ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="ddr4-gskill-value-8gb-ddr4-2666mhz" title="DDR4- G.SKILL Value 8GB DDR4 2666MHz"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/4008834216f42666c19s8gisha1-9500.jpg?v=1701827465" alt="DDR4- G.SKILL Value 8GB DDR4 2666MHz"/></a>
-	            	            <p class="ma">Mã SP: DDR4- G.SKILL Value 8GB DDR4 2</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="ddr4-gskill-value-8gb-ddr4-2666mhz" title="DDR4- G.SKILL Value 8GB DDR4 2666MHz">DDR4- G.SKILL Value 8GB DDR4 2666MHz</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="ddr4-team-elite-tan-nhiet-ddr4-8gb-bus-2666-con-bao-hanh-hang" title="DDR4-Team Elite Tản nhiệt DDR4 8GB Bus 2666 còn bảo hành hãng"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/748337857a2af91175849a6cabfb5b70-9985.jpg?v=1701827465" alt="DDR4-Team Elite Tản nhiệt DDR4 8GB Bus 2666 còn bảo hành hãng"/></a>
-	            	            <p class="ma">Mã SP: DDR4-Team Elite Tản nhiệt DDR4</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="ddr4-team-elite-tan-nhiet-ddr4-8gb-bus-2666-con-bao-hanh-hang" title="DDR4-Team Elite Tản nhiệt DDR4 8GB Bus 2666 còn bảo hành hãng">DDR4-Team Elite Tản nhiệt DDR4 8GB Bus 2666 còn bảo hành hãng</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-i7-6700" title="CPU-I7 6700"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/0f2d1506150d4b8ac129146d65077f33-2706.jpg?v=1701827465" alt="CPU-I7 6700"/></a>
-	            	            <p class="ma">Mã SP: CPU-I7 6700</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-i7-6700" title="CPU-I7 6700">CPU-I7 6700</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-i5-6500" title="CPU-I5 6500"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/unnamed-1678.jpg?v=1701827465" alt="CPU-I5 6500"/></a>
-	            	            <p class="ma">Mã SP: CPU-I5 6500</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-i5-6500" title="CPU-I5 6500">CPU-I5 6500</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-i3-7100" title="CPU-I3 7100"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/1514349528intel-7th-gen-core-i3-7100-cpu-300px-v1-6775.jpg?v=1701827465" alt="CPU-I3 7100"/></a>
-	            	            <p class="ma">Mã SP: CPU-I3 7100</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-i3-7100" title="CPU-I3 7100">CPU-I3 7100</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="cpu-g4600" title="CPU-G4600"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/2b726091caf987c55c466e8013e8fe3b-5998.jpg?v=1701827465" alt="CPU-G4600"/></a>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g4600" title="CPU-G4600">CPU-G4600</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="main-colofull-h110m-t-plus-v20-cu" title="MAIN COLOFULL H110M-T PLUS V20 CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3975322colorfulh110v20-1-6676.jpg?v=1701827465" alt="MAIN COLOFULL H110M-T PLUS V20 CŨ"/></a>
-	            	            <p class="ma">Mã SP: MAIN COLOFULL H110M-T PLUS V20</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="main-colofull-h110m-t-plus-v20-cu" title="MAIN COLOFULL H110M-T PLUS V20 CŨ">MAIN COLOFULL H110M-T PLUS V20 CŨ</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-				</div>
-		 
-		<a href="linh-kien-cu" class="xemthemsp text-decoration-none">XEM THÊM</a>
-			</div>
-</div>
-<div class="mod_danhmuc">
-	<div class="wrap-content">
-		<h2 class="title-main tc"><span>Thanh Lý Phòng Net</span></h2>
-		<p class="sltc">VI TÍNH PHÁT NĂNG: CHUYÊN THANH LÝ NÉT, CƠ SỞ TRƯỜNG HỌC CÔNG TY. ĐIỆN THOẠI LIÊN HỆ: 0938 948 862 Mr NHẪN</p>
-		<div class="grid-page">
-						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/e1b61f2ef53d3f63662c-3714.jpg?v=1701827465" alt="Thanh lý phòng net A- Z"/></a>
-	            	            <p class="ma">Mã SP: Thanh lý phòng net A- Z</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z">Thanh lý phòng net A- Z</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/424be9b53ea6f4f8adb7-7989.jpg?v=1701827465" alt="Thanh lý phòng net A- Z giá cao"/></a>
-	            	            <p class="ma">Mã SP: Thanh lý phòng net A- Z</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao">Thanh lý phòng net A- Z giá cao</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao-binh-duong" title="Thanh lý phòng net A- Z giá cao  bình dương"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/16-7627.jpg?v=1701827465" alt="Thanh lý phòng net A- Z giá cao  bình dương"/></a>
-	            	            <p class="ma">Mã SP: Thanh lý phòng net A- Z</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao-binh-duong" title="Thanh lý phòng net A- Z giá cao  bình dương">Thanh lý phòng net A- Z giá cao  bình dương</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao-khu-vuc-mien-nam" title="Thanh lý phòng net A- Z giá cao khu vực miền nam"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/aeed8f8c5c9f96c1cf8e-4736.jpg?v=1701827465" alt="Thanh lý phòng net A- Z giá cao khu vực miền nam"/></a>
-	            	            <p class="ma">Mã SP: Thanh lý phòng net A- Z</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao-khu-vuc-mien-nam" title="Thanh lý phòng net A- Z giá cao khu vực miền nam">Thanh lý phòng net A- Z giá cao khu vực miền nam</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-				</div>
-			</div>
-</div>
-<div class="mod_danhmuc">
-	<div class="wrap-content">
-		<h2 class="title-main tc"><span>Màn Hình Máy Tính</span></h2>
-		<p class="sltc"></p>
-		<div class="grid-page">
-						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="lcd-19-vsp-ve19le1902-chinh-hang" title="LCD 19'' VSP VE19(LE1902) Chính hãng"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/vsp-19-9843.jpg?v=1701827465" alt="LCD 19'' VSP VE19(LE1902) Chính hãng"/></a>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-19-vsp-ve19le1902-chinh-hang" title="LCD 19'' VSP VE19(LE1902) Chính hãng">LCD 19'' VSP VE19(LE1902) Chính hãng</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="lcd-20-vsp-vs20" title="LCD 20'' VSP VS20"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/vsp-20-5179.png?v=1701827465" alt="LCD 20'' VSP VS20"/></a>
-	            	            <p class="ma">Mã SP: LCD 20'' VSP VS20</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-20-vsp-vs20" title="LCD 20'' VSP VS20">LCD 20'' VSP VS20</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="lcd-vsp-22-inch-led-monitor-e2210h" title="LCD VSP 22 inch LED Monitor E2210H"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/e2210h01-7272.jpg?v=1701827465" alt="LCD VSP 22 inch LED Monitor E2210H"/></a>
-	            	            <p class="ma">Mã SP: E2210H</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-vsp-22-inch-led-monitor-e2210h" title="LCD VSP 22 inch LED Monitor E2210H">LCD VSP 22 inch LED Monitor E2210H</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="man-hinh-led-monitor-vsp-22inch-v2205h" title="Màn hình LED monitor VSP 22inch V2205H"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/v2205h03-3230.jpg?v=1701827465" alt="Màn hình LED monitor VSP 22inch V2205H"/></a>
-	            	            <p class="ma">Mã SP: V2205H</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-led-monitor-vsp-22inch-v2205h" title="Màn hình LED monitor VSP 22inch V2205H">Màn hình LED monitor VSP 22inch V2205H</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="man-hinh-phang-led-tran-vien-slim-bezel-vsp-v2408s" title="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/v2408s02-7749.jpg?v=1701827465" alt="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S"/></a>
-	            	            <p class="ma">Mã SP: V2408S</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-phang-led-tran-vien-slim-bezel-vsp-v2408s" title="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S">Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-					<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="man-hinh-viewsonic-va2408-h-24-ips-75hz" title="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/aaaa-2490.jpg?v=1701827465" alt="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz"/></a>
-	            	            <p class="ma">Mã SP: VA2408-H 24&quot; IPS 75Hz</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-viewsonic-va2408-h-24-ips-75hz" title="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz">Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">Liên hệ</span>
-	                	            </p>
-	        </div>
-				</div>
-			</div>
-</div>
-<div class="mod_danhmuc">
-	<div class="wrap-content">
-		<h2 class="title-main tc"><span>Thiết Bị Âm Thanh</span></h2>
-		<p class="sltc"></p>
-		<div class="grid-page">
-						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="phone-run-mus-k8-led-gaming" title="PHONE RUN MUS K8 LED GAMING"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/heaphone-run-mus-k804-1-2320.jpg?v=1701827465" alt="PHONE RUN MUS K8 LED GAMING"/></a>
-	            	            <p class="ma">Mã SP: TAI NGHE RUN MUS K8 LED GAMING</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="phone-run-mus-k8-led-gaming" title="PHONE RUN MUS K8 LED GAMING">PHONE RUN MUS K8 LED GAMING</a></h3>
-	            <p class="price-product">
-	                	                    <span class="price-new">255.000đ</span>
-	                    <span class="price-old">260.000đ</span>
-	                    <span class="price-per">-2%</span>
-	                	            </p>
-	        </div>
-				</div>
-			</div>
-</div>
+@endforeach
 </div>
 
  

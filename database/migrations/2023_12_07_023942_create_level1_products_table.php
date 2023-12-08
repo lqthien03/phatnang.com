@@ -26,6 +26,8 @@ return new class extends Migration
             $table->foreign('seo_id')->references('id')->on('seos');
             $table->unsignedBigInteger('level3_products_id');
             $table->foreign('level3_products_id')->references('id')->on('level3_products');
+            $table->unsignedBigInteger('level1_products_id');
+            $table->foreign('level1_products_id')->references('id')->on('level1_products');
         });
     }
 

@@ -20,7 +20,7 @@ return new class extends Migration
 
             // $table->unsignedBigInteger('level2_product_id');
             // $table->foreign('level2_product_id')->references('id')->on('level2_products');
-
+            
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
         });

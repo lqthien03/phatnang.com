@@ -16,4 +16,7 @@ class DetailProduct extends Model
         'new',
         'selling',
     ];
+    public function Level1ChildrentProduct(){
+        return $this->hasmany(DetailProduct::class, 'level1_product_id');
+    }
 }
