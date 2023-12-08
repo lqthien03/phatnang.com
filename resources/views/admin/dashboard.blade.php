@@ -29,6 +29,7 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="sb-nav-fixed">
@@ -92,11 +93,11 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Danh mục cấp 1</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Danh mục cấp 2</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Danh mục cấp 3</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Sản phẩm</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Tag sản phẩm</a>
+                                <a class="nav-link" href="/catagory-level-1">Danh mục cấp 1</a>
+                                <a class="nav-link" href="/catagory-level-2">Danh mục cấp 2</a>
+                                <a class="nav-link" href="/catagory-level-3">Danh mục cấp 3</a>
+                                <a class="nav-link" href="/product">Sản phẩm</a>
+                                <a class="nav-link" href="/tag-product">Tag sản phẩm</a>
                             </nav>
                         </div>
 

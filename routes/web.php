@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Category1Controller;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
@@ -50,6 +52,9 @@ Route::get('/setting', function () {
     return view('admin.setting');
 });
 
+Route::controller(Category1Controller::class)->group(function () {
+    Route::get('/catagory-level-1', 'show')->name('edit.setting');
+});
 Route::controller(SettingController::class)->group(function () {
     Route::get('/setting/{setting}', 'edit')->name('edit.setting');
     Route::put('/setting/{setting}', 'update')->name('update.setting');
@@ -61,10 +66,11 @@ Route::controller(SettingController::class)->group(function () {
     // Route::post('/progression/update', 'UpdateProgression')->name('progresion.update');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
+
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'show'])->middleware(['auth', 'verified'])->name('dashboard');
+});
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
