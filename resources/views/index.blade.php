@@ -17,7 +17,7 @@
 <meta name="robots" content="index,follow" />
 
 <!-- Favicon -->
-<link href="upload/photo/logo-phat-nang-2188.png" rel="shortcut icon" type="image/x-icon" />
+<link href="{{ URL::asset('assets/image/logo-phat-nang-8751.png')}}" rel="shortcut icon" type="image/x-icon" />
 
 <!-- Webmaster Tool -->
 
@@ -120,7 +120,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 	<div class="header-bottom">
 		<div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
 			<div class="hdtrai d-flex flex-wrap align-items-center justify-content-between">
-				<a class="logo-header" href=""><img onerror="this.src='thumbs/122x100x1/assets/images/noimage.png';" src="upload/photo/logo-phat-nang-8751.jpg"/></a>
+				<a class="logo-header" href=""><img onerror="this.src='thumbs/122x100x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/logo-phat-nang-8751.jpg')}}"/></a>
 				<a class="banner-header text-decoration-none" href="">
 					<span>VI TÍNH PHÁT NĂNG</span>
 					Địa chỉ: 592 Đường Phú Lợi, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương				</a>
@@ -143,7 +143,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                         <div class="menusp1 menusp0 active ">
                                     <ul class="menusp2">
                                             @foreach($level1products as $pro1)
-                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
+                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/linhkiencu.png') }}" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
                                                     @if($pro1->Level1Childrent->count())
                                                     <ul>
                                                     @foreach($pro1->Level1Childrent as $pro2)            
@@ -701,8 +701,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                         @foreach($pro1->Level1ChildrentProduct as $de)
 						<div class="product animate__animated animate__zoomIn wow">
 	            <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><img onerror="this.src='{{$de->image}}';" src="{{$de->image}}" alt="GAMING HEADSET H120G HP"/></a>
-	            	            <p class="ma">Mã SP: GAMING HEADSET H120G</p>
-	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP">{{$de->tittle}}</a></h3>
+	            	            <p class="ma"> <b> {{$de->tittel}} </b></p>
+	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><b> {{$de->tittle}} </b></a></h3>
 	            <p class="price-product">
 	                	                    <span class="price-new">{{$de->selling}}</span>
 	                    <span class="price-old">290.000đ</span>

@@ -119,7 +119,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 	<div class="header-bottom">
 		<div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
 			<div class="hdtrai d-flex flex-wrap align-items-center justify-content-between">
-				<a class="logo-header" href=""><img onerror="this.src='thumbs/122x100x1/assets/images/noimage.png';" src="upload/photo/logo-phat-nang-8751.jpg"/></a>
+				<a class="logo-header" href=""><img onerror="this.src='thumbs/122x100x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/logo-phat-nang-8751.jpg')}}"/></a>
 				<a class="banner-header text-decoration-none" href="">
 					<span>VI TÍNH PHÁT NĂNG</span>
 					Địa chỉ: 592 Đường Phú Lợi, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương				</a>
