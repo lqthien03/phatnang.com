@@ -25,6 +25,7 @@ class DetailProductController extends Controller
         return view('products', compact('detail'));
     }
     public function detail($id){
-        return view('detail-product', ['detail' => DetailProduct::findOrFail($id)]);
+        $detail = DetailProduct::findOrFail($id);
+        return view('detail-product', compact('detail'));
     }
 }

@@ -379,7 +379,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
          
             	<div class="wrap-product wrap-content">
 		<div class="tieudetc d-flex flex-wrap align-items-center">
-			<a href="san-pham-moi" class="themsp text-decoration-none">Xem tất cả >></a>
+			<a href="san-pham" class="themsp text-decoration-none">Xem tất cả >></a>
 			<p class="clicksp mb-0" data-key="moi" data-ten="san-pham-moi">Sản phẩm mới</p>
 			<p class="clicksp mb-0" data-key="banchay" data-ten="san-pham-ban-chay">Sản phẩm bán chạy</p>
 		</div>
