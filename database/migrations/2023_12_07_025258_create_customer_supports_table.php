@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('customer_supports', function (Blueprint $table) {
             $table->id();
             $table->string('tittle');
-            $table->string('display');
+            $table->tinyInteger('display');
             $table->string('number');
             $table->string('phone');
-            $table->string('zalo'); 
+            $table->string('zalo');
         });
     }
 

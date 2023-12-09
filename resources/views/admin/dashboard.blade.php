@@ -111,7 +111,7 @@
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                <a class="nav-link collapsed" href="/quotation-level-1" data-bs-toggle="collapse"
                                     data-bs-target="#pagesCollapseAuth" aria-expanded="false"
                                     aria-controls="pagesCollapseAuth">
                                     Danh mục cấp 1
@@ -126,7 +126,7 @@
                             </nav>
                         </div>
                         {{-- /// --}}
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                        <a class="nav-link collapsed" href="/support-customer" data-bs-toggle="collapse"
                             data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Quản lý hỗ trợ khách hàng

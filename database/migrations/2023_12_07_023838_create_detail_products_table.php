@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('image');
             $table->string('tittle');
             $table->string('gallery');
-            $table->string('outstand');
-            $table->string('new');
-            $table->string('selling');
-            $table->string('display');
+            $table->tinyInteger('outstand');
+            $table->tinyInteger('new');
+            $table->tinyInteger('selling');
+            $table->tinyInteger('display');
 
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');

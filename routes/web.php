@@ -6,7 +6,10 @@ use App\Http\Controllers\Category3Controller;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Quotation1Controller;
+use App\Http\Controllers\QuotationController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SupportCustomerController;
 use App\Http\Controllers\TagProductController;
 use App\Models\Tag_Product;
 use Illuminate\Support\Facades\Route;
@@ -73,10 +76,26 @@ Route::controller(TagProductController::class)->group(function () {
     Route::put('/tag-product/{Tag_Product}', 'update')->name('update.tag_product');
 });
 Route::controller(ProductController::class)->group(function () {
-
     Route::get('/product', 'show')->name('show.product');
     Route::get('/product/{Product}', 'edit')->name('edit.product');
     Route::put('/product/{Product}', 'update')->name('update.product');
+});
+
+Route::controller(Quotation1Controller::class)->group(function () {
+    Route::get('/quotation-level-1', 'show')->name('show.quotation');
+    Route::get('/quotation/{Product}', 'edit')->name('edit.product');
+    Route::put('/quotation/{Product}', 'update')->name('update.product');
+});
+Route::controller(QuotationController::class)->group(function () {
+    Route::get('/quotation', 'show')->name('show.quotation');
+    Route::get('/quotation/{Product}', 'edit')->name('edit.product');
+    Route::put('/quotation/{Product}', 'update')->name('update.product');
+});
+
+Route::controller(SupportCustomerController::class)->group(function () {
+    Route::get('/support-customer', 'show')->name('show.quotation');
+    Route::get('/support-customer/create', 'create')->name('create.product');
+    // Route::put('/support-customer', 'update')->name('update.product');
 });
 
 Route::controller(SettingController::class)->group(function () {

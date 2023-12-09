@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('display')->nullable;
+            $table->tinyInteger('display')->nullable;
 
             $table->unsignedBigInteger('detail_product_id');
             $table->foreign('detail_product_id')->references('id')->on('detail_products');

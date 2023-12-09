@@ -365,7 +365,7 @@
                                             <th>Thao tác</th>
                                         </tr>
                                     </tfoot>
-                                    {{-- <tbody>
+                                    <tbody>
                                         @foreach ($category_level2 as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
@@ -380,7 +380,7 @@
                                                 </td>
                                             </tr>
                                     </tbody>
-                                    @endforeach --}}
+                                    @endforeach
                                 </table>
                             </div>
                         </div>

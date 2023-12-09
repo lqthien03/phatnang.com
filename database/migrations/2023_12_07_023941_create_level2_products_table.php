@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('title');
-            $table->string('display');
+            $table->tinyInteger('display');
 
             $table->unsignedBigInteger('level3_product_id');
             $table->foreign('level3_product_id')->references('id')->on('level3_products');

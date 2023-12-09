@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('favicons', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('display');
+            $table->tinyInteger('display');
         });
     }
 

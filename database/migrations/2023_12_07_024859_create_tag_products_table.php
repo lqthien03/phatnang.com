@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('outstand');
-            $table->string('display');
+            $table->tinyInteger('outstand');
+            $table->tinyInteger('display');
         });
     }
 
