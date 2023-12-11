@@ -133,7 +133,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			</p>
 		</div>
 	</div>
-</div><div class="menu">
+</div>
+<div class="menu">
     <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
         <div class="menusp">
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
@@ -182,7 +183,8 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res ">
+</div>
+<div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">
@@ -308,7 +310,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div class="grid-page">
                     @foreach($detail as $de)
 				    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='{{$de->image}}';" src="{{$de->image}}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
+                <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='{{$de->image}}';" src="{{ URL::asset('uploads/images/' . $de->image)}}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"/></a>
                 <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">{{$de->tittle}}</a></h3>
                 <p class="price-product">
                                             <span class="price-new">{{$de->gallery}}</span>

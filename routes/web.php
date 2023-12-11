@@ -8,6 +8,9 @@ use App\Http\Controllers\LiquidationController;
 use App\Http\Controllers\Category1Controller;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\QuotationController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -24,18 +27,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class,'all']);
 // Route::get('/', [level1ProductController::class, 'all'],[DetailProductController::class, 'index'],[BlogController::class, 'all']);
-Route::get('bang-gia', function () {
-    return view('quotation');
-});
+Route::get('bang-gia', [QuotationController::class, 'all']);
 Route::get('gioi-thieu', [IntroduceController::class, 'all']);
 Route::get('san-pham', [DetailProductController::class, 'all']);
 Route::get('san-phams', [DetailProductController::class, 'allinonelv1']);
 Route::get('san-phamss', [DetailProductController::class, 'allinonelv3']);
 
 Route::get('thanh-ly-phong-net', [LiquidationController::class, 'all']);
-Route::get('tin-tuc', function () {
-    return view('blog');
-});
+Route::get('tin-tuc', [BlogController::class, 'all']);
 Route::get('video', function () {
     return view('video');
 });

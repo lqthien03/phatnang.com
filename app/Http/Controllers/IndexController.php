@@ -15,6 +15,7 @@ class IndexController extends Controller
         $level2products = Level2Product::where('level1products_id',0);
         $level3products = Level3Product::where('level2products_id',0);
         $detail = DetailProduct::where('level1_products_id',0)->take(4)->get();
-        return view('index',  compact('level2products'),compact('level1products'), compact('level3products'),compact('detail'));
+        $details = DetailProduct::all();
+        return view('index',  compact('level2products', 'level1products', 'level3products', 'detail', 'details'));
     }
 }

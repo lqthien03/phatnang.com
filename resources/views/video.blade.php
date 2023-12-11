@@ -134,114 +134,40 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			</p>
 		</div>
 	</div>
-</div><div class="menu">
+</div>
+<div class="menu">
     <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
         <div class="menusp">
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
                         <div class="menusp1  ">
-                                    <ul class="menusp2">
-                                            <li><a class="transition" title="Linh Kiện Mới" href="linh-kien-moi"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827028" alt="Linh Kiện Mới"/>Linh Kiện Mới</a>
+                                <ul class="menusp2">
+                                            @foreach($level1products as $pro1)
+                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
+                                                    @if($pro1->Level1Childrent->count())
                                                     <ul>
-                                                            <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="Intel Pentium" href="cap-3">Intel Pentium</a></li>
-                                                                            <li><a class="transition" title="Intel Core i3" href="intel-core-i3">Intel Core i3</a></li>
-                                                                            <li><a class="transition" title="Intel Core i5" href="intel-core-i5">Intel Core i5</a></li>
-                                                                            <li><a class="transition" title="Intel Core i7" href="intel-core-i7">Intel Core i7</a></li>
+                                                    @foreach($pro1->Level1Childrent as $pro2)            
+                                                            <li><a class="transition" title="" href="">{{$pro2->tittle}}</a>
+                                                                    @if($pro2->Level2Childrent->count())
+                                                                        @foreach($pro2->Level2Childrent as $pro3)
+                                                                        <ul>
+                                                                            <li><a class="transition" title="Intel Pentium" href="san-phamss?id={{$pro3->id}}">{{$pro3->tittle}}</a></li>
                                                                         </ul>
+                                                                        @endforeach
+                                                                    @endif
                                                                 </li>
-                                                            <li><a class="transition" title="MAINBOARD -BO MẠCH CHỦ" href="mainboard-bo-mach-chu">MAINBOARD -BO MẠCH CHỦ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="MAIN-GIGABYTE" href="main-gigabyte">MAIN-GIGABYTE</a></li>
-                                                                            <li><a class="transition" title="MAIN-ASUS" href="main-asus">MAIN-ASUS</a></li>
-                                                                            <li><a class="transition" title="MAIN-MSI" href="main-msi">MAIN-MSI</a></li>
-                                                                            <li><a class="transition" title="MAIN-COLOFULL" href="main-colofull">MAIN-COLOFULL</a></li>
-                                                                        </ul>
                                                                 </li>
-                                                            <li><a class="transition" title="BỘ NHỚ RAM" href="bo-nho-ram">BỘ NHỚ RAM</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="DDR4 PC" href="ddr4-pc">DDR4 PC</a></li>
-                                                                            <li><a class="transition" title="DDR3-PC" href="ddr3-pc">DDR3-PC</a></li>
-                                                                            <li><a class="transition" title="DDR3 SEVER" href="ddr3-sever">DDR3 SEVER</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="VGA-CARD MÀNG HÌNH" href="vga-card-mang-hinh">VGA-CARD MÀNG HÌNH</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="VGA-GIGABYTE NEW" href="vga-gigabyte-new">VGA-GIGABYTE NEW</a></li>
-                                                                            <li><a class="transition" title="VGA-ASUS NEW" href="vga-asus-new">VGA-ASUS NEW</a></li>
-                                                                        </ul>
-                                                                </li>
+                                                            @endforeach
                                                         </ul>
+                                                        @endif
                                                 </li>
-                                            <li><a class="transition" title="Linh Kiện Cũ" href="linh-kien-cu"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-103-4878.png?v=1701827028" alt="Linh Kiện Cũ"/>Linh Kiện Cũ</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ" href="cpu-bo-xu-ly-cpu-bo-xu-ly">CPU-BỘ XỬ LÝ CPU-BỘ XỬ LÝ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="CPU-INTEL PENTIUM" href="cpu-intel-pentium">CPU-INTEL PENTIUM</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I3" href="cpu-intel-core-i3">CPU-INTEL CORE I3</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I5" href="cpu-intel-core-i5">CPU-INTEL CORE I5</a></li>
-                                                                            <li><a class="transition" title="CPU-INTEL CORE I7" href="cpu-intel-core-i7">CPU-INTEL CORE I7</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="MAINBOARD -BO MẠCH CHỦ CŨ" href="mainboard-bo-mach-chu-cu">MAINBOARD -BO MẠCH CHỦ CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="MAIN-GIGABYTE-CŨ" href="main-gigabyte-cu">MAIN-GIGABYTE-CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN ASUS CŨ" href="main-asus-cu">MAIN ASUS CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN MSI CŨ" href="main-msi-cu">MAIN MSI CŨ</a></li>
-                                                                            <li><a class="transition" title="MAIN COLOFULL CŨ" href="main-colofull-cu">MAIN COLOFULL CŨ</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="BỘ NHỚ RAM CŨ" href="bo-nho-ram-cu">BỘ NHỚ RAM CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="RAM DDR4 PC" href="ram-ddr4-pc">RAM DDR4 PC</a></li>
-                                                                            <li><a class="transition" title="RAM DDR3 PC" href="ram-ddr3-pc">RAM DDR3 PC</a></li>
-                                                                            <li><a class="transition" title="RAM SEVER CŨ" href="ram-sever-cu">RAM SEVER CŨ</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                            <li><a class="transition" title="VGA-CARD MÀNG HÌNH CŨ" href="vga-card-mang-hinh-cu">VGA-CARD MÀNG HÌNH CŨ</a>
-                                                                    <ul>
-                                                                            <li><a class="transition" title="VGA-GIGABYTE" href="vga-gigabyte">VGA-GIGABYTE</a></li>
-                                                                            <li><a class="transition" title="VGA-ASUS" href="vga-asus">VGA-ASUS</a></li>
-                                                                            <li><a class="transition" title="VGA-MSI" href="vga-msi">VGA-MSI</a></li>
-                                                                            <li><a class="transition" title="VGA-COLOFULL" href="vga-colofull">VGA-COLOFULL</a></li>
-                                                                            <li><a class="transition" title="VGA-ZOTAC" href="vga-zotac">VGA-ZOTAC</a></li>
-                                                                        </ul>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                            <li><a class="transition" title="Thanh Lý Phòng Net" href="thanh-ly-phong-net"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-105-4000.png?v=1701827028" alt="Thanh Lý Phòng Net"/>Thanh Lý Phòng Net</a>
-                                                </li>
-                                            <li><a class="transition" title="Màn Hình Máy Tính" href="man-hinh-may-tinh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-109-5771.png?v=1701827028" alt="Màn Hình Máy Tính"/>Màn Hình Máy Tính</a>
-                                                </li>
-                                            <li><a class="transition" title="Laptop" href="laptop"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-111-3031.png?v=1701827028" alt="Laptop"/>Laptop</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="LAPTOP DELL" href="laptop-dell">LAPTOP DELL</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LAPTOP ASUS" href="laptop-asus">LAPTOP ASUS</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LAPTOP HP" href="laptop-hp">LAPTOP HP</a>
-                                                                </li>
-                                                            <li><a class="transition" title="LINH KIỆN LAPTOP" href="linh-kien-laptop">LINH KIỆN LAPTOP</a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                            <li><a class="transition" title="Ổ Cứng PC" href="o-cung-pc"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-113-5762.png?v=1701827028" alt="Ổ Cứng PC"/>Ổ Cứng PC</a>
-                                                </li>
-                                            <li><a class="transition" title="Chuột, Bàn Phím" href="chuot-ban-phim"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-115-4545.png?v=1701827028" alt="Chuột, Bàn Phím"/>Chuột, Bàn Phím</a>
-                                                </li>
-                                            <li><a class="transition" title="Thiết Bị Âm Thanh" href="thiet-bi-am-thanh"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/untitled-121-1722.png?v=1701827028" alt="Thiết Bị Âm Thanh"/>Thiết Bị Âm Thanh</a>
-                                                    <ul>
-                                                            <li><a class="transition" title="Thiết bị âm Thanh-Loa VI TÍNH" href="thiet-bi-am-thanh-loa-vi-tinh">Thiết bị âm Thanh-Loa VI TÍNH</a>
-                                                                </li>
-                                                            <li><a class="transition" title="Thiết bị âm Thanh-TAI NGHE" href="thiet-bi-am-thanh-tai-nghe">Thiết bị âm Thanh-TAI NGHE</a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
+
+                                            @endforeach
+                                            </ul>                                            
                                         </ul>
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
             <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
@@ -253,12 +179,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <li class="line"></li>
             <li><a class="transition " href="tin-tuc" title="Tin công nghệ">Tin công nghệ</a></li>
             <li class="line"></li>
-            <li><a class="transition active" href="video" title="Video">Video</a></li>
+            <li><a class="transition " href="video" title="Video">Video</a></li>
             <li class="line"></li>
             <li><a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a></li>
         </ul>
     </div>
-</div><div class="menu-res ">
+</div>
+<div class="menu-res ">
     <div class="menu-bar-res">
         <a id="hamburger" href="#menu" title="Menu"><span></span></a>
         <div class="search-grid w-clear">

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('new');
             $table->string('selling');
             $table->string('display');
-
+            $table->string('information');
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
             $table->unsignedBigInteger('level3_products_id');

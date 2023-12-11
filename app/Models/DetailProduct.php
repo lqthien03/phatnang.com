@@ -19,4 +19,8 @@ class DetailProduct extends Model
     public function Level1ChildrentProduct(){
         return $this->hasmany(DetailProduct::class, 'level1_product_id');
     }
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }

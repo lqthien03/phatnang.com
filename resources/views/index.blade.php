@@ -10,7 +10,7 @@
 
 <!-- Title, Keywords, Description -->
 <title>VI TÍNH PHÁT NĂNG | Vi Tính Bình Dương | Thanh Lý Phòng Net Giá Cao</title>
-<meta name="keywords" content=""/>
+<meta name="keywords" content="VI TÍNH PHÁT NĂNG | Vi tính Bình Dương chuyên linh kiện máy tính giá tốt, linh kiện vu tính chất lượng nguồn sẵn, thanh lý phòng net, thanh lý phòng net giá cao, thanh lý phòng nét giá tốt nhất..."/>
 <meta name="description" content="VI TÍNH PHÁT NĂNG | Vi Tính Bình Dương chuyên linh kiện máy tính giá tốt, linh kiện vi tính chất lượng nguồn sẵn, thanh lý phòng net, thanh lý phòng net giá cao, thanh lý phòng nét giá tốt nhất..."/>
 
 <!-- Robots -->
@@ -67,7 +67,7 @@
 <link href="{{ URL::asset('assets/fontawesome512/all.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/mmenu/mmenu.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}'" rel="stylesheet">
+<link href="{{ URL::asset('assets/fancybox3/jquery.fancybox.style.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/slick/slick.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/slick/slick-theme.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/slick/slick-style.css') }}" rel="stylesheet">
@@ -77,6 +77,7 @@
 <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-sB0XIk9v8wsH3S/l3ET1QUJp4A/oP+f5IT5ImoApY2MtqV5tmAGT3xyCjV57RVE9MGEbnMz9vaAA6yZb7wGoRiPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Js Google Analytic -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D6T9J3L9J"></script>
@@ -88,7 +89,7 @@
   gtag('config', 'G-4D6T9J3L9J');
 </script>
 <!-- Js Head -->
-<script type="text/javascript" src="//erasoft.vn/frame/default/js/snow.js"></script>
+<script type="text/javascript" src="http://erasoft.vn/frame/default/js/snow.js"></script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -143,7 +144,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                         <div class="menusp1 menusp0 active ">
                                     <ul class="menusp2">
                                             @foreach($level1products as $pro1)
-                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/linhkiencu.png') }}" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
+                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $pro1->image) }}" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
                                                     @if($pro1->Level1Childrent->count())
                                                     <ul>
                                                     @foreach($pro1->Level1Childrent as $pro2)            
@@ -375,8 +376,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     -webkit-touch-callout: none;
         }
     </style>
-    <div class="wrap-main wrap-home w-clear">
-         
+    <div class="wrap-main wrap-home w-clear">      
             	<div class="wrap-product wrap-content">
 		<div class="tieudetc d-flex flex-wrap align-items-center">
 			<a href="san-pham" class="themsp text-decoration-none">Xem tất cả >></a>
@@ -384,312 +384,60 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			<p class="clicksp mb-0" data-key="banchay" data-ten="san-pham-ban-chay">Sản phẩm bán chạy</p>
 		</div>
 		<div class="paging-product">
-        <!-- <div class="owl-product owl-theme owl-carousel owl-loaded owl-drag">
-      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-932px, 0px, 0px); transition: all 1s ease 0s; width: 10028px;"><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/31136nguonfsphydroseries700wmodelhd70000001-8749.jpg?v=1701935873" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)</a></h3>
-                    <p class="price-product">
+         <div class="owl-product owl-theme owl-carousel owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(-932px, 0px, 0px); transition: all 1s ease 0s; width: 10028px;">
+                    @foreach($details as $de)
+                    <div class="owl-item active" style="width: 215.2px; margin-right: 18px;">
+                        <div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
+                        <a class="pic-product scale-img" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $de->image) }}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"></a>
+                        <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">{{$de->tittle}}</a></h3>
+                        <p class="price-product">
                                             <span class="price-new">850.000đ</span>
                                     </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/e1b61f2ef53d3f63662c-3714.jpg?v=1701935873" alt="Thanh lý phòng net A- Z"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z" title="Thanh lý phòng net A- Z">Thanh lý phòng net A- Z</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/linh-kien-laptop-hcm-hienlaptop-01-7371.png?v=1701935873" alt="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="chuyen-nang-cap-laptop-thay-the-linh-kien-gia-tot-nhat-binh-duong" title="CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG">CHUYÊN NÂNG CẤP LAPTOP, THAY THẾ LINH KIỆN. GIÁ TỐT NHẤT BÌNH DƯƠNG</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="cpu-i5-6500" title="CPU-I5 6500"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/unnamed-1678.jpg?v=1701935873" alt="CPU-I5 6500"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-i5-6500" title="CPU-I5 6500">CPU-I5 6500</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-gigabyte-b365m-d2v-cu" title="MAIN GIGABYTE B365M-D2V CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/500-4584.png?v=1701935873" alt="MAIN GIGABYTE B365M-D2V CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-gigabyte-b365m-d2v-cu" title="MAIN GIGABYTE B365M-D2V CŨ">MAIN GIGABYTE B365M-D2V CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="lcd-27-aoc-i2769v-full-hd-ips" title="LCD 27” AOC I2769V Full HD IPS"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/aoc-27inch-2970.jpg?v=1701935873" alt="LCD 27” AOC I2769V Full HD IPS"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-27-aoc-i2769v-full-hd-ips" title="LCD 27” AOC I2769V Full HD IPS">LCD 27” AOC I2769V Full HD IPS</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="lcd-19-vsp-ve19le1902-chinh-hang" title="LCD 19'' VSP VE19(LE1902) Chính hãng"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/vsp-19-9843.jpg?v=1701935873" alt="LCD 19'' VSP VE19(LE1902) Chính hãng"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-19-vsp-ve19le1902-chinh-hang" title="LCD 19'' VSP VE19(LE1902) Chính hãng">LCD 19'' VSP VE19(LE1902) Chính hãng</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/424be9b53ea6f4f8adb7-7989.jpg?v=1701935873" alt="Thanh lý phòng net A- Z giá cao"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao" title="Thanh lý phòng net A- Z giá cao">Thanh lý phòng net A- Z giá cao</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="nguon-jetek-q9800-gaming-80-plus-gold" title="Nguồn Jetek Q9800-Gaming (80 Plus Gold)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/7bdb691854a9b9aa809c32502ed3fec2-8809.jpg?v=1701935873" alt="Nguồn Jetek Q9800-Gaming (80 Plus Gold)"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-jetek-q9800-gaming-80-plus-gold" title="Nguồn Jetek Q9800-Gaming (80 Plus Gold)">Nguồn Jetek Q9800-Gaming (80 Plus Gold)</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">750.000đ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="ddr4-teamgroup-elite-plus-4gb" title="DDR4-TEAMGROUP Elite Plus 4GB"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/2872913156861378590-5985.png?v=1701935873" alt="DDR4-TEAMGROUP Elite Plus 4GB"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="ddr4-teamgroup-elite-plus-4gb" title="DDR4-TEAMGROUP Elite Plus 4GB">DDR4-TEAMGROUP Elite Plus 4GB</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="cpu-i3-6100" title="CPU-I3 6100"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/8ba249a3ab67321494cf6123e9670fdd-2677.jpg?v=1701935873" alt="CPU-I3 6100"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-i3-6100" title="CPU-I3 6100">CPU-I3 6100</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="cpu-g4560" title="CPU-G4560"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/21712intelg4560-5946.jpg?v=1701935873" alt="CPU-G4560"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g4560" title="CPU-G4560">CPU-G4560</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="lcd-20-vsp-vs20" title="LCD 20'' VSP VS20"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/vsp-20-5179.png?v=1701935873" alt="LCD 20'' VSP VS20"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-20-vsp-vs20" title="LCD 20'' VSP VS20">LCD 20'' VSP VS20</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="lcd-vsp-22-inch-led-monitor-e2210h" title="LCD VSP 22 inch LED Monitor E2210H"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/e2210h01-7272.jpg?v=1701935873" alt="LCD VSP 22 inch LED Monitor E2210H"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-vsp-22-inch-led-monitor-e2210h" title="LCD VSP 22 inch LED Monitor E2210H">LCD VSP 22 inch LED Monitor E2210H</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao-binh-duong" title="Thanh lý phòng net A- Z giá cao  bình dương"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/16-7627.jpg?v=1701935873" alt="Thanh lý phòng net A- Z giá cao  bình dương"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao-binh-duong" title="Thanh lý phòng net A- Z giá cao  bình dương">Thanh lý phòng net A- Z giá cao  bình dương</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="cpu-g4400" title="CPU G4400"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/0557ce8cb6a616ab15f01ba8b583670djpg800x800q100-4900.jpg?v=1701935873" alt="CPU G4400"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g4400" title="CPU G4400">CPU G4400</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h110m-k-cu" title="MAIN ASUS H110M-K CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/43691giant117307-5590.jpg?v=1701935873" alt="MAIN ASUS H110M-K CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h110m-k-cu" title="MAIN ASUS H110M-K CŨ">MAIN ASUS H110M-K CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-gigabyte-h110m-ds2-cu" title="MAIN GIGABYTE H110M - DS2 CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/500-2-2628.png?v=1701935873" alt="MAIN GIGABYTE H110M - DS2 CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-gigabyte-h110m-ds2-cu" title="MAIN GIGABYTE H110M - DS2 CŨ">MAIN GIGABYTE H110M - DS2 CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="phone-run-mus-k8-led-gaming" title="PHONE RUN MUS K8 LED GAMING"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/heaphone-run-mus-k804-1-2320.jpg?v=1701935873" alt="PHONE RUN MUS K8 LED GAMING"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="phone-run-mus-k8-led-gaming" title="PHONE RUN MUS K8 LED GAMING">PHONE RUN MUS K8 LED GAMING</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">255.000đ</span>
-                            <span class="price-old">260.000đ</span>
-                            <span class="price-per">-2%</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-led-monitor-vsp-22inch-v2205h" title="Màn hình LED monitor VSP 22inch V2205H"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/v2205h03-3230.jpg?v=1701935873" alt="Màn hình LED monitor VSP 22inch V2205H"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-led-monitor-vsp-22inch-v2205h" title="Màn hình LED monitor VSP 22inch V2205H">Màn hình LED monitor VSP 22inch V2205H</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="thanh-ly-phong-net-a-z-gia-cao-khu-vuc-mien-nam" title="Thanh lý phòng net A- Z giá cao khu vực miền nam"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/aeed8f8c5c9f96c1cf8e-4736.jpg?v=1701935873" alt="Thanh lý phòng net A- Z giá cao khu vực miền nam"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="thanh-ly-phong-net-a-z-gia-cao-khu-vuc-mien-nam" title="Thanh lý phòng net A- Z giá cao khu vực miền nam">Thanh lý phòng net A- Z giá cao khu vực miền nam</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h110m-e-cu" title="MAIN ASUS H110M-E CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/unnamed-3350.jpg?v=1701935873" alt="MAIN ASUS H110M-E CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h110m-e-cu" title="MAIN ASUS H110M-E CŨ">MAIN ASUS H110M-E CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/hp-120g-7970.jpg?v=1701935873" alt="GAMING HEADSET H120G HP"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="gaming-headset-h120g-hp" title="GAMING HEADSET H120G HP">GAMING HEADSET H120G HP</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">285.000đ</span>
-                            <span class="price-old">290.000đ</span>
-                            <span class="price-per">-2%</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-phang-led-tran-vien-slim-bezel-vsp-v2408s" title="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/v2408s02-7749.jpg?v=1701935873" alt="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-phang-led-tran-vien-slim-bezel-vsp-v2408s" title="Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S">Màn hình phẳng LED tràn viền Slim Bezel VSP V2408S</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h110m-d-cu" title="MAIN ASUS H110M-D CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3576-p2-1557217394-1016.jpg?v=1701935873" alt="MAIN ASUS H110M-D CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h110m-d-cu" title="MAIN ASUS H110M-D CŨ">MAIN ASUS H110M-D CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-gigabyte-h81-ds2-cu" title=" MAIN GIGABYTE-H81 DS2 CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/8480big-6826.jpg?v=1701935873" alt=" MAIN GIGABYTE-H81 DS2 CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-gigabyte-h81-ds2-cu" title=" MAIN GIGABYTE-H81 DS2 CŨ"> MAIN GIGABYTE-H81 DS2 CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="cpu-g5400" title="CPU G5400"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/g5400v-6520.jpg?v=1701935873" alt="CPU G5400"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="cpu-g5400" title="CPU G5400">CPU G5400</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h81m-k-cu" title="MAIN ASUS H81M-K CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/line-1771.jpg?v=1701935873" alt="MAIN ASUS H81M-K CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h81m-k-cu" title="MAIN ASUS H81M-K CŨ">MAIN ASUS H81M-K CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-gigabyte-h61-ds2-cu" title="MAIN GIGABYTE-H61 DS2 CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/unnamed-7992.jpg?v=1701935873" alt="MAIN GIGABYTE-H61 DS2 CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-gigabyte-h61-ds2-cu" title="MAIN GIGABYTE-H61 DS2 CŨ">MAIN GIGABYTE-H61 DS2 CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="vision-gaming-vm01" title="VISION GAMING VM01"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/400vm0105-7197.jpg?v=1701935873" alt="VISION GAMING VM01"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="vision-gaming-vm01" title="VISION GAMING VM01">VISION GAMING VM01</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">355.000đ</span>
-                            <span class="price-old">360.000đ</span>
-                            <span class="price-per">-1%</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-viewsonic-va2408-h-24-ips-75hz" title="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/aaaa-2490.jpg?v=1701935873" alt="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-viewsonic-va2408-h-24-ips-75hz" title="Màn hình ViewSonic VA2408-H 24&quot; IPS 75Hz">Màn hình ViewSonic VA2408-H 24" IPS 75Hz</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="phat-wifi-pix-link-lv-wr08" title="Phát Wifi PIX-LINK LV-WR08"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/6fe4382b7be81732a1300a1585429f391-1-5201.jpg?v=1701935873" alt="Phát Wifi PIX-LINK LV-WR08"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="phat-wifi-pix-link-lv-wr08" title="Phát Wifi PIX-LINK LV-WR08">Phát Wifi PIX-LINK LV-WR08</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">295.000đ</span>
-                            <span class="price-old">360.000đ</span>
-                            <span class="price-per">-18%</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h81m-d-cu" title="MAIN ASUS H81M-D CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/a97e412a8eb00f798df1b62b06296233-6199.jpg?v=1701935873" alt="MAIN ASUS H81M-D CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h81m-d-cu" title="MAIN ASUS H81M-D CŨ">MAIN ASUS H81M-D CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-lcd-27-lg-27ea33va-ips" title="Màn hình LCD 27” LG 27EA33VA IPS"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/man-hinh-lcd-27-lg-27ea33va-ips-cu-black30201-6868.jpg?v=1701935873" alt="Màn hình LCD 27” LG 27EA33VA IPS"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-lcd-27-lg-27ea33va-ips" title="Màn hình LCD 27” LG 27EA33VA IPS">Màn hình LCD 27” LG 27EA33VA IPS</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h81m-e-cu" title="MAIN ASUS H81M-E CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/b8931518b7694c6980651c129f32b807-9837.jpg?v=1701935873" alt="MAIN ASUS H81M-E CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h81m-e-cu" title="MAIN ASUS H81M-E CŨ">MAIN ASUS H81M-E CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-benq-gl2760h-led-full-hd-27-inch" title="Màn hình BenQ GL2760H LED Full HD - 27 Inch"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/24-benq-6169.jpg?v=1701935873" alt="Màn hình BenQ GL2760H LED Full HD - 27 Inch"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-benq-gl2760h-led-full-hd-27-inch" title="Màn hình BenQ GL2760H LED Full HD - 27 Inch">Màn hình BenQ GL2760H LED Full HD - 27 Inch</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h61m-k-cu" title="MAIN ASUS H61M-K CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/12938145490h61mk-1886.jpg?v=1701935873" alt="MAIN ASUS H61M-K CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h61m-k-cu" title="MAIN ASUS H61M-K CŨ">MAIN ASUS H61M-K CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="vga-palit-gtx-1050ti-4g-dual-2-fan" title="VGA Palit GTX 1050Ti 4G DUAL (2 fan)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/palit1050tidualfan-7536.jpg?v=1701935873" alt="VGA Palit GTX 1050Ti 4G DUAL (2 fan)"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="vga-palit-gtx-1050ti-4g-dual-2-fan" title="VGA Palit GTX 1050Ti 4G DUAL (2 fan)">VGA Palit GTX 1050Ti 4G DUAL (2 fan)</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">2.650.000đ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="main-asus-h61m-d-cu" title="MAIN ASUS H61M-D CŨ"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/htb18tqkxpluk1rjy0fhq6xpdfxap-9568.jpg?v=1701935873" alt="MAIN ASUS H61M-D CŨ"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="main-asus-h61m-d-cu" title="MAIN ASUS H61M-D CŨ">MAIN ASUS H61M-D CŨ</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-led-lg-24-inch-24m47vq-p" title="Màn hình LED LG 24 inch 24M47VQ-P"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/lcd-lg-24m47-7267.jpg?v=1701935873" alt="Màn hình LED LG 24 inch 24M47VQ-P"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-led-lg-24-inch-24m47vq-p" title="Màn hình LED LG 24 inch 24M47VQ-P">Màn hình LED LG 24 inch 24M47VQ-P</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="lcd-22aoc-2270sw" title="LCD 22AOC 2270SW"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/man-hinh-aoc-22-6580.jpg?v=1701935873" alt="LCD 22AOC 2270SW"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="lcd-22aoc-2270sw" title="LCD 22AOC 2270SW">LCD 22AOC 2270SW</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-may-tinh-philips-224e5qhsb" title="Màn hình máy tính Philips 224E5QHSB"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/22-philip-ips-8145.jpg?v=1701935873" alt="Màn hình máy tính Philips 224E5QHSB"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-may-tinh-philips-224e5qhsb" title="Màn hình máy tính Philips 224E5QHSB">Màn hình máy tính Philips 224E5QHSB</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div><div class="owl-item" style="width: 215.2px; margin-right: 18px;"><div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                    <a class="pic-product scale-img" href="man-hinh-may-tinh-aoc-e2360sd-23-inch-led" title="Màn hình máy tính AOC E2360SD 23 inch LED"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/23-aoc-1908.jpg?v=1701935873" alt="Màn hình máy tính AOC E2360SD 23 inch LED"></a>
-                    <h3 class="name-product"><a class="text-split text-decoration-none" href="man-hinh-may-tinh-aoc-e2360sd-23-inch-led" title="Màn hình máy tính AOC E2360SD 23 inch LED">Màn hình máy tính AOC E2360SD 23 inch LED</a></h3>
-                    <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+                        </div>
+                    </div>
+                    @endforeach
+                    
+            </div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
         </div>
         <script>
-	$('.owl-product').owlCarousel({
-        rewind: true,
-        autoplay: true,
-        loop: false,
-        lazyLoad: true,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 250,
-        autoplaySpeed: 1000,
-        nav: false,
-        dots: false,
-        responsiveClass:true,
-        responsiveRefreshRate: 200,
-        responsive: {
-            0: {
-                items: 2,
-                margin: 10
-            },
-            568: {
-                items: 3,
-                margin: 10
-            },
-            800: {
-                items: 4,
-                margin: 10
-            },
-            1025: {
-                items: 5,
-                margin: 18
+            $('.owl-product').owlCarousel({
+            rewind: true,
+            autoplay: true,
+            loop: false,
+            lazyLoad: true,
+            mouseDrag: true,
+            touchDrag: true,
+            smartSpeed: 250,
+            autoplaySpeed: 1000,
+            nav: false,
+            dots: false,
+            responsiveClass:true,
+            responsiveRefreshRate: 200,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 10
+                },
+                568: {
+                    items: 3,
+                    margin: 10
+                },
+                800: {
+                    items: 4,
+                    margin: 10
+                },
+                1025: {
+                    items: 5,
+                    margin: 18
+                }
             }
-        }
-    });
-</script>
-     -->
-	</div>
-</div>  
+            });
+        </script>
+	    </div>
+                </div>
+    </div>
 <div class="khungsp">   
 @foreach($level1products as $pro1)
 <div class="mod_danhmuc">
@@ -700,7 +448,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                         @if($pro1->Level1ChildrentProduct->count())
                         @foreach($pro1->Level1ChildrentProduct as $de)
 						<div class="product animate__animated animate__zoomIn wow">
-	            <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><img onerror="this.src='{{$de->image}}';" src="{{$de->image}}" alt="GAMING HEADSET H120G HP"/></a>
+	            <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><img onerror="this.src='{{$de->image}}';" src="{{ URL::asset('uploads/images/' . $de->image) }}" alt="GAMING HEADSET H120G HP"/></a>
 	            	            <p class="ma"> <b> {{$de->tittel}} </b></p>
 	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><b> {{$de->tittle}} </b></a></h3>
 	            <p class="price-product">

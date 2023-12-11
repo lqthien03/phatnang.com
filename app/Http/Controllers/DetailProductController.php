@@ -37,7 +37,10 @@ class DetailProductController extends Controller
         return view('products', compact('detail','level1products','level2products','level3products'));
     }
     public function detail($id){
+        $level1products = Level1Product::all();
+        $level2products = Level2Product::where('level1products_id',0);
+        $level3products = Level3Product::where('level2products_id',0);
         $detail = DetailProduct::findOrFail($id);
-        return view('detail-product', compact('detail'));
+        return view('detail-product', compact('detail', 'level1products', 'level2products', 'level3products'));
     }
 }
