@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
+            $table->string('tittle');
             $table->string('content');
             $table->string('image');
             $table->tinyInteger('display');

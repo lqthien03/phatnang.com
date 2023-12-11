@@ -12,7 +12,7 @@ class Category2Controller extends Controller
     {
         $category_level2 = Level2_Product::all();
 
-        // dd($category_level1);
+        dd($category_level2);
         return view('admin.category.category_level2', compact('category_level2'));
     }
     public function create()

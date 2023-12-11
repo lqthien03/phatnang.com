@@ -12,7 +12,6 @@ class Category1Controller extends Controller
     public function show()
     {
         $category_level1 = Level1_Product::all();
-        // dd($category_level1);
         return view('admin.category.category_level1', compact('category_level1'));
     }
     public function create()

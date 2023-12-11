@@ -264,7 +264,7 @@
                                     Tin tức
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                <a class="nav-link collapsed" href="/policy" data-bs-toggle="collapse"
                                     data-bs-target="#pagesCollapseAuth" aria-expanded="false"
                                     aria-controls="pagesCollapseAuth">
                                     Chính sách

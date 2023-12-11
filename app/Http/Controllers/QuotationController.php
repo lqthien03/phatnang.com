@@ -41,6 +41,7 @@ class QuotationController extends Controller
     }
     public function update()
     {
+        
     }
     public function destroy($id)
     {
