@@ -14,17 +14,30 @@ class QuotationController extends Controller
     }
     public function create()
     {
+        $quatation = Quotation::all();
+        return view('admin.quotation.quotation_create', compact('quatation'));
     }
-    public function store()
+    public function store(Request $request)
     {
+        $request->validate([
+            'image' => 'required',
+            'tittle' => 'required',
+            'display' => 'required',
+        ]);
+
+        $quatation = Quotation::create($request->all());
+        return redirect()->route('create.quotation')->with('success', 'Bản ghi đã được tạo thành công!');
     }
-    public function edit()
+    public function edit(Quotation $quotation)
     {
     }
     public function update()
     {
     }
-    public function delete()
+    public function destroy($id)
     {
+        $quatation = Quotation::find($id);
+        $quatation->delete();
+        return back();
     }
 }

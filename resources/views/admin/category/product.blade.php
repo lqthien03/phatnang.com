@@ -367,8 +367,8 @@
                                             <th>Thao tác</th>
                                         </tr>
                                     </tfoot>
-                                    {{-- <tbody>
-                                        @foreach ($category_level3 as $item)
+                                    <tbody>
+                                        @foreach ($product as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>{{ $item->image }}</td>
@@ -376,13 +376,24 @@
                                                 <td>{{ $item->outstand }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
+                                                    <a href="/product/edit/{{ $item->id }}"><i
+                                                            class='bx bxs-edit bx-sm'></i></a>
+                                                    <form method="POST"
+                                                        action="{{ route('delete.product', ['id' => $item->id]) }}"
+                                                        style="display: inline;"
+                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit"
+                                                            style="background: none; border: none; cursor: pointer;">
+                                                            <i class='bx bxs-trash-alt bx-sm'
+                                                                style='color:#ff0000'></i>
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                     </tbody>
-                                    @endforeach --}}
+                                    @endforeach
                                 </table>
                             </div>
                         </div>
