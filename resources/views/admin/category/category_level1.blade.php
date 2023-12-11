@@ -313,33 +313,7 @@
             <main>
                 <div id="" class="container-fluid px-4">
                     <section class="content">
-                        {{-- <table class="table rounded table-bordered mt-2">
-                            <thead>
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Hình</th>
-                                    <th scope="col">Tiêu đề</th>
-                                    <th scope="col">Nổi bật</th>
-                                    <th scope="col">Hiển thị</th>
-                                    <th scope="col">Thao tác</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($category_level1 as $item)
-                                    <tr>
-                                        <th scope="row">{{ $item->id }}</th>
-                                        <td>{{ $item->image }}</td>
-                                        <td>{{ $item->tittle }}</td>
-                                        <td>{{ $item->outstand }}</td>
-                                        <td>{{ $item->display }}</td>
-                                        <td>
-                                            <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                            <a href=""><i class='bx bxs-trash-alt bx-sm'></i></a>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                            @endforeach
-                        </table> --}}
+
                         <div class="card mb-4 mt-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
@@ -834,9 +808,20 @@
                                                 <td>{{ $item->outstand }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
+                                                    <a href="/catagory-level-1/edit/{{ $item->id }}"><i
+                                                            class='bx bxs-edit bx-sm'></i></a>
+                                                    <form method="POST"
+                                                        action="{{ route('delete.policy', ['id' => $item->id]) }}"
+                                                        style="display: inline;"
+                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit"
+                                                            style="background: none; border: none; cursor: pointer;">
+                                                            <i class='bx bxs-trash-alt bx-sm'
+                                                                style='color:#ff0000'></i>
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                     </tbody>

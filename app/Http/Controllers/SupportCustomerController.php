@@ -10,11 +10,12 @@ class SupportCustomerController extends Controller
     public function show()
     {
         $support = SupportCustomer::all();
-        return view('admin.customer_support',compact('support'));
+        return view('admin.customer_support', compact('support'));
     }
     public function create()
     {
-        return view('admin.customer_support_create');
+        $support = SupportCustomer::all();
+        return view('admin.customer_support_create', compact('support'));
     }
     public function store()
     {
@@ -25,7 +26,10 @@ class SupportCustomerController extends Controller
     public function update()
     {
     }
-    public function delete()
+    public function delete($id)
     {
+        $support = SupportCustomer::find($id);
+        $support->delete();
+        return back();
     }
 }

@@ -318,15 +318,19 @@
             <main>
                 <div id="" class="container-fluid px-4">
                     <section class="content">
+                        <button type="button" class="btn btn-success mt-3"><a href="/support-customer/create">Thêm
+                                mới</a></button>
+                        {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                         <div class="card mb-4 mt-4">
-                            <div class="card-footer text-sm sticky-top">
+                            {{-- <div class="card-footer text-sm sticky-top">
                                 <a class="btn btn-sm bg-primary " href="/support-customer/create" title="Thêm mới"><i
                                         class="fas fa-plus mr-2"></i>Thêm mới</a>
                                 <a class="btn btn-sm bg-danger " id="delete-all"
                                     data-url="index.php?com=news&act=delete&type=ho-tro-khach-hang&p=1"
                                     title="Xóa tất cả"><i class="far fa-trash-alt mr-2"></i>Xóa tất cả</a>
 
-                            </div>
+                            </div> --}}
+
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
                                 DataTable Example
@@ -359,9 +363,20 @@
                                                 <td>{{ $item->phone }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
+                                                    <a href="/support-customer/edit/{{ $item->id }}"><i
+                                                            class='bx bxs-edit bx-sm'></i></a>
+                                                    <form method="POST"
+                                                        action="{{ route('delete.support_customer', ['id' => $item->id]) }}"
+                                                        style="display: inline;"
+                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit"
+                                                            style="background: none; border: none; cursor: pointer;">
+                                                            <i class='bx bxs-trash-alt bx-sm'
+                                                                style='color:#ff0000'></i>
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                     </tbody>

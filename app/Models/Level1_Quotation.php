@@ -11,7 +11,7 @@ class Level1_Quotation extends Model
 
     public $table = "level1_quotations";
     protected $fillable = [
-        'image',
+        // 'image',
         'tittle',
         'display',
         'seo_id',

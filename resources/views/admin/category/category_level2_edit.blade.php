@@ -12,6 +12,83 @@
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f7fb;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .card .card-header h5:after {
+            content: "";
+            background-color: #d2d2d2;
+            width: 101px;
+            height: 1px;
+            position: absolute;
+            bottom: 6px;
+            left: 20px;
+        }
+
+        .card .card-block {
+            padding: 1.25rem;
+        }
+
+        .dropzone.dz-clickable {
+            cursor: pointer;
+        }
+
+        .dropzone {
+            min-height: 150px;
+            border: 1px solid rgba(42, 42, 42, 0.05);
+            background: rgba(204, 204, 204, 0.15);
+            padding: 20px;
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+            box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+
+        .btn-primary,
+        .sweet-alert button.confirm,
+        .wizard>.actions a {
+            background-color: #4099ff;
+            border-color: #4099ff;
+            color: #fff;
+            cursor: pointer;
+            -webkit-transition: all ease-in .3s;
+            transition: all ease-in .3s;
+        }
+
+        .btn {
+            border-radius: 2px;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 10px 19px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -311,110 +388,138 @@
         {{-- main --}}
         <div id="layoutSidenav_content">
             <main>
-                <div id="" class="container-fluid px-4">
+                <div id="" class="container-fluid px-4 row">
+                    <div class="col-8">
+                        <section class="content">
+                            <div class="card mb-4 mt-4">
+                                <div class="card-header">
+                                    <i class="fas fa-table me-1"></i>
+                                    Nội dung sản phẩm
+                                </div>
+                                <div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                đề</b></label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
+                                                tả</b></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section class="">
+                            <div class="row d-flex justify-content-center mt-4">
+
+                                <div class="col-md-10">
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>File Upload</h5>
+                                        </div>
+                                        <div class="card-block">
+                                            <form action="#" class="dropzone dz-clickable">
+
+                                                <div class="dz-default dz-message"><span>Drop files here to
+                                                        upload</span></div>
+                                            </form>
+                                            <div class="text-center m-t-20">
+                                                <button class="btn btn-primary">Upload Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- <div class="card card-primary card-outline text-sm">
+                                <div class="card-header">
+                                    <h3 class="card-title">Hình ảnh Sản phẩm cấp 1</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
+                                                class="fas fa-minus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="photoUpload-zone">
+                                        <div class="photoUpload-detail" id="photoUpload-preview"><img class="rounded"
+                                                src="../upload/product/dm01-1892.png"
+                                                onerror="src='assets/images/noimage.png'" alt="Alt Photo" /></div>
+                                        <label class="photoUpload-file" id="photo-zone" for="file-zone">
+                                            <input type="file" name="file" id="file-zone">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <p class="photoUpload-drop">Kéo và thả hình vào đây</p>
+                                            <p class="photoUpload-or">hoặc</p>
+                                            <p class="photoUpload-choose btn btn-sm bg-gradient-success">Chọn hình</p>
+                                        </label>
+                                        <div class="photoUpload-dimension">Width: 26 px - Height: 25 px
+                                            (.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF)</div>
+                                    </div>
+                                </div>
+                            </div> --}}
+                    </div>
+                    </section>
                     <section class="content">
-                        {{-- <table class="table rounded table-bordered mt-2">
-                            <thead>
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Hình</th>
-                                    <th scope="col">Tiêu đề</th>
-                                    <th scope="col">Nổi bật</th>
-                                    <th scope="col">Hiển thị</th>
-                                    <th scope="col">Thao tác</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($category_level1 as $item)
-                                    <tr>
-                                        <th scope="row">{{ $item->id }}</th>
-                                        <td>{{ $item->image }}</td>
-                                        <td>{{ $item->tittle }}</td>
-                                        <td>{{ $item->outstand }}</td>
-                                        <td>{{ $item->display }}</td>
-                                        <td>
-                                            <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                            <a href=""><i class='bx bxs-trash-alt bx-sm'></i></a>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                            @endforeach
-                        </table> --}}
                         <div class="card mb-4 mt-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                            <div class=" row card-header">
+                                <div class="col-6">
+                                    <i class="fas fa-table me-1"></i>Nội dung SEO
+                                </div>
+                                <div class="col-6 text-end">
+                                    <button type="button" class="btn btn-success">Success</button>
+                                </div>
+
                             </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        @foreach ($category_level2 as $item)
-                                            <tr>
-                                                <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
-                                                <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->outstand }}</td>
-                                                <td>{{ $item->display }}</td>
-                                                <td>
-                                                    <a href="/catagory-level-1/edit/{{ $item->id }}"><i
-                                                            class='bx bxs-edit bx-sm'></i></a>
-                                                    <form method="POST"
-                                                        action="{{ route('delete.policy', ['id' => $item->id]) }}"
-                                                        style="display: inline;"
-                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit"
-                                                            style="background: none; border: none; cursor: pointer;">
-                                                            <i class='bx bxs-trash-alt bx-sm'
-                                                                style='color:#ff0000'></i>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                    </tbody>
-                                    @endforeach
-                                </table>
+
+                            <div>
+                                <div class="mb-3 ms-3 me-3">
+                                    <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
+                                            (vi):</b></label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="">
+                                </div>
+                                <div class="mb-3 ms-3 me-3">
+                                    <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
+                                            (vi):</b></label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="">
+                                </div>
+                                <div class="mb-3 ms-3 me-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label"><b>SEO Description
+                                            (vi):</b></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
                             </div>
+
                         </div>
                     </section>
                 </div>
-            </main>
-            @if ($errors->any())
-                @foreach ($errors->all() as $error)
-                    <p>{{ $error }}</p>
-                @endforeach
-            @endif
+
+
         </div>
+        </main>
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                <p>{{ $error }}</p>
+            @endforeach
+        @endif
+    </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        </script>
-        <script src="{{ url('js/scripts.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
-        <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous"></script>
-        <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="{{ url('js/scripts.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
 </body>
 
