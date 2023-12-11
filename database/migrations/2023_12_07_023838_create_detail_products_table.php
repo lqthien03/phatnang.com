@@ -15,8 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('outstand');
-            $table->string('display');
+            $table->string('gallery');
+            $table->tinyInteger('outstand');
+            $table->tinyInteger('new');
+            $table->tinyInteger('selling');
+            $table->tinyInteger('display');
 
             // $table->unsignedBigInteger('level2_product_id');
             // $table->foreign('level2_product_id')->references('id')->on('level2_products');

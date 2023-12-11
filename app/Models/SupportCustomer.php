@@ -5,14 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Quotation extends Model
+class SupportCustomer extends Model
 {
     use HasFactory;
 
-    public $table = "detail_quotations";
+    public $table = "customer_supports";
     protected $fillable = [
         'tittle',
         'display',
-        'seo_id',
+        'number',
+        'phone',
+        'zalo',
     ];
 }

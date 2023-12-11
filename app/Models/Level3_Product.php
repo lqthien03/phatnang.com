@@ -5,14 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Quotation extends Model
+class Level3_Product extends Model
 {
     use HasFactory;
 
-    public $table = "detail_quotations";
+    public $table = "level3_products";
     protected $fillable = [
+        'image',
         'tittle',
         'display',
+        'detail_product_id',
         'seo_id',
     ];
 }

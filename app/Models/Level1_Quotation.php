@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Quotation extends Model
+class Level1_Quotation extends Model
 {
     use HasFactory;
 
-    public $table = "detail_quotations";
+    public $table = "level1_quotations";
     protected $fillable = [
+        'image',
         'tittle',
         'display',
         'seo_id',

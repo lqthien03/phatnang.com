@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('display');
+            $table->tinyInteger('display');
         });
     }
 

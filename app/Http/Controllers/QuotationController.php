@@ -1,9 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Level1Product;
-use App\Models\Level2Product;
-use App\Models\Level3Product;
 use App\Models\Quotation;
 use Illuminate\Http\Request;
 
@@ -15,5 +12,24 @@ class QuotationController extends Controller
         $level3products = Level3Product::where('level2products_id',0);
         // $quotation = Quotation::all();
         return view('quotation', compact('level1products','level2products','level3products'));
+    public function show()
+    {
+        $quatation = Quotation::all();
+        return view('admin.quotation.quotation', compact('quatation'));
+    }
+    public function create()
+    {
+    }
+    public function store()
+    {
+    }
+    public function edit()
+    {
+    }
+    public function update()
+    {
+    }
+    public function delete()
+    {
     }
 }

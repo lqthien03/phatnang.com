@@ -16,12 +16,12 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('tittle');
-            $table->string('gallery');
-            $table->string('outstand');
-            $table->string('new');
-            $table->string('selling');
-            $table->string('display');
-            $table->string('information');
+            $table->tinyInteger('outstand');
+            $table->tinyInteger('display');
+
+            $table->unsignedBigInteger('level2_product_id');
+            $table->foreign('level2_product_id')->references('id')->on('level2_products');
+
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
             $table->unsignedBigInteger('level3_products_id');

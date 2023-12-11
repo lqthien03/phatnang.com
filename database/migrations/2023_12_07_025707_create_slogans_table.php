@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('slogans', function (Blueprint $table) {
             $table->id();
             $table->string('tittle');
-            $table->string('display');
+            $table->tinyInteger('display');
 
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
