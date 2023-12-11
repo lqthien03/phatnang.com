@@ -14,6 +14,7 @@ class SupportCustomerController extends Controller
     }
     public function create()
     {
+        return view('admin.customer_support_create');
     }
     public function store()
     {

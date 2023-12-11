@@ -9,12 +9,16 @@
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="sb-nav-fixed">
+
+    {{-- //// --}}
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="/dashboard">Blue WEB</a>
@@ -55,6 +59,7 @@
             </li>
         </ul>
     </nav>
+
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -312,24 +317,27 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn btn-success mt-3"><a href="/tag-product/create">Thêm
-                            mới</a></button>
-                    {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                     <section class="content">
-
                         <div class="card mb-4 mt-4">
+                            <div class="card-footer text-sm sticky-top">
+                                <a class="btn btn-sm bg-primary " href="/support-customer/create" title="Thêm mới"><i
+                                        class="fas fa-plus mr-2"></i>Thêm mới</a>
+                                <a class="btn btn-sm bg-danger " id="delete-all"
+                                    data-url="index.php?com=news&act=delete&type=ho-tro-khach-hang&p=1"
+                                    title="Xóa tất cả"><i class="far fa-trash-alt mr-2"></i>Xóa tất cả</a>
+
+                            </div>
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
                                 DataTable Example
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
-                                    @csrf
                                     <thead>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Hình</th>
                                             <th>Tiêu đề</th>
+                                            <th>Số điện thoại</th>
                                             <th>Hiển thị</th>
                                             <th>Thao tác</th>
                                         </tr>
@@ -337,40 +345,27 @@
                                     <tfoot>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Hình</th>
                                             <th>Tiêu đề</th>
+                                            <th>Số điện thoại</th>
                                             <th>Hiển thị</th>
                                             <th>Thao tác</th>
                                         </tr>
                                     </tfoot>
-                                    <tbody>
-                                        @foreach ($tag_product as $item)
+                                    {{-- <tbody>
+                                        @foreach ($support as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
                                                 <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->outstand }}</td>
+                                                <td>{{ $item->phone }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
-                                                    <a href="/tag-product/edit/{{ $item->id }}"><i
-                                                            class='bx bxs-edit bx-sm'></i></a>
-                                                    <form method="POST"
-                                                        action="{{ route('delete.tag_product', ['id' => $item->id]) }}"
-                                                        style="display: inline;"
-                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit"
-                                                            style="background: none; border: none; cursor: pointer;">
-                                                            <i class='bx bxs-trash-alt bx-sm'
-                                                                style='color:#ff0000'></i>
-                                                        </button>
-                                                    </form>
+                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
+                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
+                                                            style='color:#ff0000'></i></a>
                                                 </td>
                                             </tr>
-                                        @endforeach
                                     </tbody>
-
+                                    @endforeach --}}
                                 </table>
                             </div>
                         </div>

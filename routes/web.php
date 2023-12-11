@@ -64,35 +64,61 @@ Route::get('/setting', function () {
 });
 
 Route::controller(Category1Controller::class)->group(function () {
-    Route::get('/catagory-level-1', 'show')->name('show.setting');
+    Route::get('/catagory-level-1', 'show')->name('show.category1');
+    Route::get('/catagory-level-1/create', 'create')->name('create.category1');
+    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
+    Route::get('/catagory-level-1/{Tag_Product}', 'edit')->name('edit.category1');
+    Route::put('/catagory-level-1/{Tag_Product}', 'update')->name('update.category1');
+    Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
 });
 Route::controller(Category2Controller::class)->group(function () {
-    Route::get('/catagory-level-2', 'show')->name('show.setting');
+    Route::get('/catagory-level-2', 'show')->name('show.category2');
+    Route::get('/catagory-level-2/create', 'create')->name('create.category2');
+    Route::post('/catagory-level-2/store', 'store ')->name('store.category2');
+    Route::get('/catagory-level-2/{Tag_Product}', 'edit')->name('edit.category2');
+    Route::put('/catagory-level-2/{Tag_Product}', 'update')->name('update.category2');
+    Route::delete('/catagory-level-2/{id}', 'destroy')->name('delete.category2');
 });
 Route::controller(Category3Controller::class)->group(function () {
-    Route::get('/catagory-level-3', 'show')->name('show.setting');
+    Route::get('/catagory-level-3', 'show')->name('show.category3');
+    Route::get('/catagory-level-2/create', 'create')->name('create.category3');
+    Route::post('/catagory-level-2/store', 'store ')->name('store.category3');
+    Route::get('/catagory-level-2/{Tag_Product}', 'edit')->name('edit.category3');
+    Route::put('/catagory-level-2/{Tag_Product}', 'update')->name('update.category3');
+    Route::delete('/catagory-level-2/{id}', 'destroy')->name('delete.category3');
 });
 Route::controller(TagProductController::class)->group(function () {
-
-    Route::get('/tag-product', 'show')->name('show.tag_product');
+    Route::get('/tag-product','show')->name('show.tag_product');
+    Route::get('/tag-product/create', 'create')->name('create.tag_product');
+    Route::post('/tag-product/store', 'store ')->name('store.tag_product');
     Route::get('/tag-product/{Tag_Product}', 'edit')->name('edit.tag_product');
     Route::put('/tag-product/{Tag_Product}', 'update')->name('update.tag_product');
+    Route::delete('/tag-product/{id}', 'destroy')->name('delete.tag_product');
 });
 Route::controller(ProductController::class)->group(function () {
     Route::get('/product', 'show')->name('show.product');
+    Route::get('/product/create', 'create')->name('create.product');
+    Route::post('/product/store', 'store ')->name('store.product');
     Route::get('/product/{Product}', 'edit')->name('edit.product');
     Route::put('/product/{Product}', 'update')->name('update.product');
+    Route::delete('/product/{id}', 'destroy')->name('delete.product');
 });
 
 Route::controller(Quotation1Controller::class)->group(function () {
-    Route::get('/quotation-level-1', 'show')->name('show.quotation');
-    Route::get('/quotation/{Product}', 'edit')->name('edit.product');
-    Route::put('/quotation/{Product}', 'update')->name('update.product');
+    Route::get('/quotation-level-1', 'show')->name('show.quotation1');
+    Route::get('/quotation-level-1/create', 'create')->name('create.quotation1');
+    Route::post('/quotation-level-1/store', 'store ')->name('store.quotation1');
+    Route::get('/quotation-level-1/{Quotation}', 'edit')->name('edit.quotation1');
+    Route::put('/quotation-level-1/{Quotation}', 'update')->name('update.quotation1');
+    Route::delete('/quotation-level-1/{id}', 'destroy')->name('delete.quotation1');
 });
 Route::controller(QuotationController::class)->group(function () {
     Route::get('/quotation', 'show')->name('show.quotation');
-    Route::get('/quotation/{Product}', 'edit')->name('edit.product');
-    Route::put('/quotation/{Product}', 'update')->name('update.product');
+    Route::get('/quotation/create', 'create')->name('create.quotation');
+    Route::post('/quotation/store', 'store ')->name('store.quotation');
+    Route::get('/quotation/edit/{Quotation}', 'edit')->name('edit.quotation');
+    Route::put('/quotation/edit/{Quotation}', 'update')->name('update.quotation');
+    Route::delete('/quotation/{id}', 'destroy')->name('delete.quotation');
 });
 
 Route::controller(SupportCustomerController::class)->group(function () {
