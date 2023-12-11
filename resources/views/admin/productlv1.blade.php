@@ -329,6 +329,7 @@
                                   <table id="datatablesSimple">
                                 <thead>
                                     <tr>
+                                        <th>Số thứ tự</th>
                                         <th>Hình danh mục</th>
                                         <th>Tên danh mục</th>
                                         <th>Hiển thị</th>
@@ -337,6 +338,7 @@
                                 </thead>
                                 <tfoot>
                                     <tr>
+                                        <th>Số thứ tự</th>
                                         <th>Hình danh mục</th>
                                         <th>Tên danh mục</th>
                                         <th>Hiển thị</th>
@@ -346,9 +348,10 @@
                                 <tbody>
                                     @foreach($level1products as lv1)
                                     <tr>
+                                        <th>{{lv1->id}}</th>
                                         <th>{{lv1->image}}</th>
                                         <th>{{lv1->tittle}}</th>
-                                        <th></th>
+                                        <th></th> 
                                         <th></th>
                                     </tr>
                                     @endforeach

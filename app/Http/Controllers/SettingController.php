@@ -18,6 +18,7 @@ class SettingController extends Controller
         dd($request);
         $validated = $request->validated();
         $setting->update($request->all());
-        return view('admin.dashboard');
+        return view('admin.setting');
     }
+
 }

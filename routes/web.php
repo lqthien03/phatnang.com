@@ -17,6 +17,7 @@ use App\Http\Controllers\QuotationController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\SupportCustomerController;
 use App\Http\Controllers\TagProductController;
+use App\Http\COntrollers\PolicyController;
 use App\Models\Tag_Product;
 use Illuminate\Support\Facades\Route;
 
@@ -58,11 +59,38 @@ Route::get('/admin', function () {
 Route::get('detail-product', function () {
     return view('detail-product');
 });
-
-Route::get('/setting', function () {
-    return view('admin.setting');
+Route::controller(BlogController::class)->group(function () {
+    Route::get('/admin/blog', 'show')->name('show.blog');
+    Route::post('/crete.blog', 'update')->name('update.blog');
+    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
+    Route::get('/catagory-level-1/{Tag_Product}', 'edit')->name('edit.category1');
+    Route::put('/catagory-level-1/{Tag_Product}', 'update')->name('update.category1');
+    Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
 });
-
+Route::controller(IntroduceController::class)->group(function () {
+    Route::get('/admin/introduce', 'show')->name('show.introduce');
+    Route::post('/crete.blog', 'update')->name('update.blog');
+    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
+    Route::get('/catagory-level-1/{Tag_Product}', 'edit')->name('edit.category1');
+    Route::put('/catagory-level-1/{Tag_Product}', 'update')->name('update.category1');
+    Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
+});
+Route::controller(PolicyController::class)->group(function () {
+    Route::get('/admin/policy', 'show')->name('show.policy');
+    Route::post('/crete.polyci', 'update')->name('update.blog');
+    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
+    Route::get('/policy/{id}', 'edit')->name('edit.policy');
+    Route::put('/policy/{id}', 'update')->name('update.policy');
+    Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
+});
+Route::controller(SettingController::class)->group(function () {
+    Route::get('/setting', 'edit')->name('edit.setting');
+    Route::post('/update.setting', 'update')->name('update.setting');
+    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
+    Route::get('/catagory-level-1/{Tag_Product}', 'edit')->name('edit.category1');
+    Route::put('/catagory-level-1/{Tag_Product}', 'update')->name('update.category1');
+    Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
+});
 Route::controller(Category1Controller::class)->group(function () {
     Route::get('/catagory-level-1', 'show')->name('show.category1');
     Route::get('/catagory-level-1/create', 'create')->name('create.category1');

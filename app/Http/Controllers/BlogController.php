@@ -16,4 +16,8 @@ class BlogController extends Controller
         $blogs = Blogs::all();
         return view('index', compact('blogs','level1products','level2products','level3products'));
     }
+    public function show(){
+        $blog = Blogs::all();
+        return view('admin.blog', compact('blog'));
+    }
 }

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="{{ url('css/style.css') }}" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body class="sb-nav-fixed">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sidenav Light - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="{{ url('css/style.css') }}" rel="stylesheet" />
+        <!-- <link href="{{ url('css/table.css') }}" rel="stylesheet" /> -->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="/dashboard">Blue WEB</a>
+        <a class="navbar-brand ps-3" href="index.html">Blue WEB</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -36,7 +36,7 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="/setting/{setting}">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
                     <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                     <li>
                         <hr class="dropdown-divider" />
@@ -55,13 +55,13 @@
             </li>
         </ul>
     </nav>
-    <div id="layoutSidenav">
+        <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="/dashboard">
+                        <a class="nav-link" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
@@ -295,7 +295,7 @@
 
                         {{-- /// --}}
                         <div class="sb-sidenav-menu-heading">Cài đặt</div>
-                        <a class="nav-link" href="/setting">
+                        <a class="nav-link" href="charts.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Thiết lập thông tin
                         </a>
@@ -304,13 +304,15 @@
                             Tables
                         </a> --}}
                     </div>
-
-                    {{--  --}}
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Start Bootstrap
+                </div>
             </nav>
         </div>
-        {{-- main --}}
-        <div id="layoutSidenav_content">
-            <main>
+            <div id="layoutSidenav_content">
+                <main>
                 <div id="" class="container-fluid px-4">
                     <section class="content">
                         {{-- <table class="table rounded table-bordered mt-2">
@@ -325,21 +327,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                    @foreach($introduce as $in)
+                                @foreach ($policy as $po)
                                     <tr>
-                                        <th scope="row">{{ $in->id }}</th>
-                                        <td>{{ $in->image }}</td>
-                                        <td>{{ $in->tittle }}</td>
-                                        <td>{{ $in->outstand }}</td>
-                                        <td>{{ $in->display }}</td>
+                                        <th scope="row">{{ $po->id }}</th>
+                                        <td>{{ $po->image }}</td>
+                                        <td>{{ $po->tittle }}</td>
+                                        <td>{{ $po->outstand }}</td>
+                                        <td>{{ $po->display }}</td>
                                         <td>
                                             <a href=""><i class='bx bxs-edit bx-sm'></i></a>
                                             <a href=""><i class='bx bxs-trash-alt bx-sm'></i></a>
                                         </td>
                                     </tr>
-                             
                             </tbody>
-                            
+                            @endforeach
                         </table> --}}
                         <div class="card mb-4 mt-4">
                             <div class="card-header">
@@ -827,46 +828,48 @@
                                         </tr>
                                     </tbody> --}}
                                     <tbody>
-                                            @foreach($introduce as $in)
+                                        @foreach ($policy as $po)
                                             <tr>
-                                                <th scope="row">{{ $in->id }}</th>
-                                                <td>{{ $in->image }}</td>
-                                                <td>{{ $in->tittle }}</td>
-                                                <td>{{ $in->outstand }}</td>
-                                                <td>{{ $in->display }}</td>
+                                                <th scope="row">{{ $po->id }}</th>
+                                                <td> <img src="{{ URL::asset('uploads/images/' . $po->image)  }}" alt=""> </td>
+                                                <td>{{ $po->tittle }}</td>
+                                                <td>{{ $po->outstand }}</td>
+                                                <td>{{ $po->display }}</td>
                                                 <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
+                                                            <a href="/policy/{{$po->id}}"><i class='bx bxs-edit bx-sm'></i></a>
+                                                            <a href=""><i class='bx bxs-trash-alt bx-sm'
                                                             style='color:#ff0000'></i></a>
                                                 </td>
                                             </tr>
-                                            @endforeach
                                     </tbody>
-                                    
+                                    @endforeach
                                 </table>
                             </div>
                         </div>
                     </section>
                 </div>
-            </main>
-            @if ($errors->any())
-                @foreach ($errors->all() as $error)
-                    <p>{{ $error }}</p>
-                @endforeach
-            @endif
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        </script>
-        <script src="{{ url('js/scripts.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
-        <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous"></script>
-        <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
-
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    </body>
 </html>

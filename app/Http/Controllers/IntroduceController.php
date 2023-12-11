@@ -12,4 +12,8 @@ class IntroduceController extends Controller
         $introduce = Introduce::all();
         return view('introduce',compact('introduce','level1products'));
     }
+    public function show(){
+        $introduce = Introduce::all();
+        return view('admin.static_page.introduce', compact('introduce'));
+    }
 }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class seos extends Seeder
 {
@@ -40,6 +41,7 @@ class seos extends Seeder
 
             
         ];
+        DB::table('seos')->insert($seos);
 
     }
 }

@@ -14,7 +14,7 @@ class Level3_Product extends Model
         'image',
         'tittle',
         'display',
-        'detail_product_id',
+        'level2_product_id',
         'seo_id',
     ];
 }

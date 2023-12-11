@@ -12,6 +12,8 @@ class products extends Seeder
      */
     public function run(): void
     {
-        //
+        $products = [
+            ['image' => '', 'tittle', 'outstand' => '', 'display' => '', 'level2_product_id' => '', 'seo_id' => '', 'level3_products_id' => '', 'level1_products_id' => ''],
+        ];
     }
 }

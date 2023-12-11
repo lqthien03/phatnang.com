@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('level3_products', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('title');
+            $table->string('tittle');
             $table->tinyInteger('display');
 
             $table->unsignedBigInteger('level2_product_id');

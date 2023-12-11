@@ -138,7 +138,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
         <div class="menusp">
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
-                        <div class="menusp1 menusp0 active ">
+                        <div class="menusp1">
                                     <ul class="menusp2">
                                             @foreach($level1products as $pro1)
                                             <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $pro1->image) }}" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
