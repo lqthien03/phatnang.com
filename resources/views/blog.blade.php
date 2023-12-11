@@ -139,10 +139,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     <div class="wrap-content d-flex flex-wrap align-items-center justify-content-between">
         <div class="menusp">
             <a class="tieudedm" href="san-pham" title="Danh mục sản phẩm">Danh mục sản phẩm</a>
-                        <div class="menusp1  ">
-                                <ul class="menusp2">
+                        <div class="menusp1 menusp0 active ">
+                                    <ul class="menusp2">
                                             @foreach($level1products as $pro1)
-                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="thumbs/26x25x2/upload/product/dm01-1892.png?v=1701827465" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
+                                            <li><a class="transition" title="{{$pro1->tittle}}" href="san-phams?id={{$pro1->id}}"><img onerror="this.src='thumbs/26x25x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $pro1->image) }}" alt="{{$pro1->tittle}}"/>{{$pro1->tittle}}</a>
                                                     @if($pro1->Level1Childrent->count())
                                                     <ul>
                                                     @foreach($pro1->Level1Childrent as $pro2)            
@@ -162,12 +162,11 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                 </li>
 
                                             @endforeach
-                                            </ul>                                            
-                                        </ul>
+                                            </ul>
                             </div>
                     </div>
         <ul class="d-flex flex-wrap align-items-center justify-content-between ulmn">
-            <li><a class="transition " href="/" title="Trang chủ">Trang chủ</a></li>
+            <li><a class="transition active" href="/" title="Trang chủ">Trang chủ</a></li>
             <li class="line"></li>
             <li><a class="transition " href="bang-gia" title="Bảng báo giá">Bảng báo giá</a></li>
             <li class="line"></li>
