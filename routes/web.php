@@ -66,26 +66,26 @@ Route::get('/setting', function () {
 Route::controller(Category1Controller::class)->group(function () {
     Route::get('/catagory-level-1', 'show')->name('show.category1');
     Route::get('/catagory-level-1/create', 'create')->name('create.category1');
-    Route::post('/catagory-level-1/store', 'store ')->name('store.category1');
-    Route::get('/catagory-level-1/edit/{Tag_Product}', 'edit')->name('edit.category1');
-    Route::put('/catagory-level-1/edit/{Tag_Product}', 'update')->name('update.category1');
+    Route::post('/catagory-level-1/store', 'store')->name('store.category1');
+    Route::get('/catagory-level-1/edit/{category_level1}', 'edit')->name('edit.category1');
+    Route::put('/catagory-level-1/edit/{category_level1}', 'update')->name('update.category1');
     Route::delete('/catagory-level-1/{id}', 'destroy')->name('delete.category1');
 });
 Route::controller(Category2Controller::class)->group(function () {
     Route::get('/catagory-level-2', 'show')->name('show.category2');
     Route::get('/catagory-level-2/create', 'create')->name('create.category2');
-    Route::post('/catagory-level-2/store', 'store ')->name('store.category2');
+    Route::post('/catagory-level-2/store', 'store')->name('store.category2');
     Route::get('/catagory-level-2/{Tag_Product}', 'edit')->name('edit.category2');
     Route::put('/catagory-level-2/{Tag_Product}', 'update')->name('update.category2');
     Route::delete('/catagory-level-2/{id}', 'destroy')->name('delete.category2');
 });
 Route::controller(Category3Controller::class)->group(function () {
     Route::get('/catagory-level-3', 'show')->name('show.category3');
-    Route::get('/catagory-level-2/create', 'create')->name('create.category3');
-    Route::post('/catagory-level-2/store', 'store ')->name('store.category3');
-    Route::get('/catagory-level-2/{Tag_Product}', 'edit')->name('edit.category3');
-    Route::put('/catagory-level-2/{Tag_Product}', 'update')->name('update.category3');
-    Route::delete('/catagory-level-2/{id}', 'destroy')->name('delete.category3');
+    Route::get('/catagory-level-3/create', 'create')->name('create.category3');
+    Route::post('/catagory-level-3/store', 'store ')->name('store.category3');
+    Route::get('/catagory-level-3/{Tag_Product}', 'edit')->name('edit.category3');
+    Route::put('/catagory-level-3/{Tag_Product}', 'update')->name('update.category3');
+    Route::delete('/catagory-level-3/{id}', 'destroy')->name('delete.category3');
 });
 Route::controller(TagProductController::class)->group(function () {
     Route::get('/tag-product', 'show')->name('show.tag_product');

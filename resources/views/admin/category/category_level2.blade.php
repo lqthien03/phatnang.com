@@ -313,37 +313,13 @@
             <main>
                 <div id="" class="container-fluid px-4">
                     <section class="content">
-                        {{-- <table class="table rounded table-bordered mt-2">
-                            <thead>
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Hình</th>
-                                    <th scope="col">Tiêu đề</th>
-                                    <th scope="col">Nổi bật</th>
-                                    <th scope="col">Hiển thị</th>
-                                    <th scope="col">Thao tác</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($category_level1 as $item)
-                                    <tr>
-                                        <th scope="row">{{ $item->id }}</th>
-                                        <td>{{ $item->image }}</td>
-                                        <td>{{ $item->tittle }}</td>
-                                        <td>{{ $item->outstand }}</td>
-                                        <td>{{ $item->display }}</td>
-                                        <td>
-                                            <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                            <a href=""><i class='bx bxs-trash-alt bx-sm'></i></a>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                            @endforeach
-                        </table> --}}
+                        <button type="button" class="btn btn-success mt-3"><a href="/catagory-level-2/create">Thêm
+                                mới</a></button>
+                        {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                         <div class="card mb-4 mt-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                Danh sách sản phẩm cấp 2
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
@@ -371,13 +347,12 @@
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>{{ $item->image }}</td>
                                                 <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->outstand }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
-                                                    <a href="/catagory-level-1/edit/{{ $item->id }}"><i
+                                                    <a href="/catagory-level-2/edit/{{ $item->id }}"><i
                                                             class='bx bxs-edit bx-sm'></i></a>
                                                     <form method="POST"
-                                                        action="{{ route('delete.policy', ['id' => $item->id]) }}"
+                                                        action="{{ route('delete.category2', ['id' => $item->id]) }}"
                                                         style="display: inline;"
                                                         onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
                                                         @csrf
@@ -390,8 +365,9 @@
                                                     </form>
                                                 </td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    @endforeach
+
                                 </table>
                             </div>
                         </div>
