@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('tittle');
             $table->tinyInteger('display');
-
+            $table->string('content');
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');
         });

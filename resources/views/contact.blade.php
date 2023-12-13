@@ -439,11 +439,9 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div class="footer-news animate__animated animate__zoomIn wow">
                 <div class="title-footer">Chính sách hỗ trợ</div>
                 <ul class="footer-ul">
-                                            <li><a class="text-decoration-none" href="chinh-sach-tra-hang" title="Chính sách thanh toán">Chính sách thanh toán</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-bao-hanh" title="Chính sách bảo hành">Chính sách bảo hành</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-nguoi-dung" title="Chính sách người dùng">Chính sách người dùng</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-mua-hang" title="Chính sách mua hàng">Chính sách mua hàng</a></li>
-                                    </ul>
+                @foreach($policy as $po)
+                                                <li><a class="text-decoration-none" href="detail-policy/{{$po -> id}}" title="{{$po->tittle}}">{{$po->tittle}}</a></li>
+                                            @endforeach                                    </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
                                             <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>

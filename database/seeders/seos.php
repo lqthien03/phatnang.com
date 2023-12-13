@@ -38,6 +38,10 @@ class seos extends Seeder
             ['tittle' => 'VGA-GIGABYTE NEW', 'keyword' => 'card màn hình vga gigabyte mới', 'description' => ''],
             ['tittle' => 'VGA-GIGABYTE OLD', 'keyword' => 'card màn hình vga gigabyte cũ', 'description' => ''],
             ['tittle' => 'LAPTOP DELL', 'keyword' => 'laptop dell', 'description' => ''],
+            ['tittle' => 'Chính sách thanh toán', 'keyword' => 'Chính sách thanh toán', 'description' => ''],
+            ['tittle' => 'Chính sách bảo hành', 'keyword' => 'Chính sách bảo hành', 'description' => ''],
+            ['tittle' => 'Chính sách người dùng', 'keyword' => 'Chính sách người dùng', 'description' => ''],
+            ['tittle' => 'Chính sách mua hàng', 'keyword' => 'Chính sách mua hàng', 'description' => ''],
 
             
         ];

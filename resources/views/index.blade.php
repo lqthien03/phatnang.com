@@ -304,21 +304,13 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     <div class="slideshow">
         <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
         <div class="owl-carousel owl-theme owl-slideshow owl-loaded">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2874px, 0px, 0px); transition: all 0s ease 0s; width: 7664px;"><div class="owl-item cloned" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item active" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
-                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('assets/images/slider-4501.jpg') }}" alt="VI TÍNH PHÁT NĂNG"></a>
-                </div></div><div class="owl-item cloned" style="width: 958px;"><div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2874px, 0px, 0px); transition: all 0s ease 0s; width: 7664px;">
+                    @foreach($banner as $ba)
+                    <div class="owl-item active" style="width: 958px;"><div>
+                    <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $ba->image) }}" alt="VI TÍNH PHÁT NĂNG"></a>
+                    </div></div>
+                    @endforeach
+                    <div class="owl-item cloned" style="width: 958px;"><div>
                     <a href="" target="_blank" title=""><img onerror="this.src='thumbs/958x384x1/assets/images/noimage.png';" src="thumbs/958x384x1/upload/photo/829f46d195c25f9c06d3-7017.jpg" alt="VI TÍNH PHÁT NĂNG"></a>
                 </div></div></div></div><div class="owl-nav disabled"></div><div class="owl-dots disabled"></div></div>
         <p class="control-slideshow next-slideshow transition"><i class="fas fa-chevron-right"></i></p>
@@ -474,51 +466,55 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 	<div class="d-flex flex-wrap align-items-start justify-content-between">
 		<div class="left-intro animate__animated animate__zoomIn wow">
             <div class="tintuc_conlai">
-                            <div class="item_ttcl  d-flex flex-wrap align-items-start justify-content-between">
-                    <a class="img scale-img" href="5-laptop-ban-tot-gia-duoi-20-trieu-dong" title="5 laptop bán tốt giá dưới 20 triệu đồng"><img onerror="this.src='thumbs/140x120x1/assets/images/noimage.png';" src="thumbs/140x120x1/upload/news/a1-8554-1639990084-2212.jpg" alt="5 laptop bán tốt giá dưới 20 triệu đồng"/></a>
-                    <div class="tttt">
-                    	<span>Ngày 22/12/2021</span>
-	                    <h3><a class="ten motdong text-decoration-none" href="5-laptop-ban-tot-gia-duoi-20-trieu-dong" title="5 laptop bán tốt giá dưới 20 triệu đồng">5 laptop bán tốt giá dưới 20 triệu đồng</a></h3>
-	                    <p class="mota text-split">Laptop dưới 20 triệu đồng là phân khúc bán chạy tại Việt Nam nhờ cấu hình tốt, đa dạng cổng kết nối, phù hợp nhu cầu họp học trực tuyến.
-
-Ghi nhận tại một số hệ thống bán lẻ cho thấy, máy tính xách tay bán chạy nhất là các dòng từ 12 triệu đến 20 triệu đồng, với mức tăng trưởng 50% so với năm ngoái. Trong đó, các phiên bản của Acer, Dell, Asus, HP, Lenovo được nhiều người quan tâm.</p>
+                    @foreach($blog as $bl)
+                    <div class="item_ttcl  d-flex flex-wrap align-items-start justify-content-between">
+                                <a class="img scale-img" href="5-laptop-ban-tot-gia-duoi-20-trieu-dong" title="5 laptop bán tốt giá dưới 20 triệu đồng"><img onerror="this.src='thumbs/140x120x1/assets/images/noimage.png';" src="thumbs/140x120x1/upload/news/a1-8554-1639990084-2212.jpg" alt="5 laptop bán tốt giá dưới 20 triệu đồng"/></a>
+                                <div class="tttt">
+                    	            <span>{{$bl -> create_at}}</span>
+	                                <h3><a class="ten motdong text-decoration-none" href="detail-blog/{{$bl->id}}" title="{{$bl->tittle}}">{{$bl->tittle}}</a></h3>
+	                                <p class="mota text-split">{{$bl->content}}</p>
+                                </div>
                     </div>
-                </div>
-                            <div class="item_ttcl item_ttcl1 d-flex flex-wrap align-items-start justify-content-between">
-                    <a class="img scale-img" href="5-mau-man-hinh-may-tinh-phu-hop-cho-cong-viec" title="5 mẫu màn hình máy tính phù hợp cho công việc"><img onerror="this.src='thumbs/140x120x1/assets/images/noimage.png';" src="thumbs/140x120x1/upload/news/top-man-hinh-tot-nhat-nam-2020-danh-cho-game-thu-nc-3703.jpg" alt="5 mẫu màn hình máy tính phù hợp cho công việc"/></a>
-                    <div class="tttt">
-                    	<span>Ngày 17/12/2021</span>
-	                    <h3><a class="ten motdong text-decoration-none" href="5-mau-man-hinh-may-tinh-phu-hop-cho-cong-viec" title="5 mẫu màn hình máy tính phù hợp cho công việc">5 mẫu màn hình máy tính phù hợp cho công việc</a></h3>
-	                    <p class="mota text-split">Dell UltraSharp, LG UltraFine, Huawei MateView là những mẫu màn hình chất lượng cao, giá tốt, phù hợp cho công việc văn phòng, thiết kế đồ họa và giải trí.</p>
-                    </div>
-                </div>
-                            <div class="item_ttcl  d-flex flex-wrap align-items-start justify-content-between">
-                    <a class="img scale-img" href="tho-dao-da-khai-thac-het-90-bitcoin-tren-the-gioi" title="'Thợ đào' đã khai thác hết 90% Bitcoin trên thế giới"><img onerror="this.src='thumbs/140x120x1/assets/images/noimage.png';" src="thumbs/140x120x1/upload/news/download-4508.jpg" alt="'Thợ đào' đã khai thác hết 90% Bitcoin trên thế giới"/></a>
-                    <div class="tttt">
-                    	<span>Ngày 17/12/2021</span>
-	                    <h3><a class="ten motdong text-decoration-none" href="tho-dao-da-khai-thac-het-90-bitcoin-tren-the-gioi" title="'Thợ đào' đã khai thác hết 90% Bitcoin trên thế giới">'Thợ đào' đã khai thác hết 90% Bitcoin trên thế giới</a></h3>
-	                    <p class="mota text-split">Các &quot;thợ đào&quot; mất 12 năm để lấy được 90% trong tổng số 21 triệu Bitcoin, nhưng số còn lại phải đến năm 2140 mới khai thác hết.</p>
-                    </div>
-                </div>
-                            <div class="item_ttcl item_ttcl1 d-flex flex-wrap align-items-start justify-content-between">
-                    <a class="img scale-img" href="cap-quang-internet-mong-manh-the-nao" title="Cáp quang Internet 'mong manh' thế nào"><img onerror="this.src='thumbs/140x120x1/assets/images/noimage.png';" src="thumbs/140x120x1/upload/news/chnae6j2hnbegzfmvhgene-970-80-4252-1881-1639714018-7388.jpg" alt="Cáp quang Internet 'mong manh' thế nào"/></a>
-                    <div class="tttt">
-                    	<span>Ngày 17/12/2021</span>
-	                    <h3><a class="ten motdong text-decoration-none" href="cap-quang-internet-mong-manh-the-nao" title="Cáp quang Internet 'mong manh' thế nào">Cáp quang Internet 'mong manh' thế nào</a></h3>
-	                    <p class="mota text-split">Theo thống kê, trung bình cứ ba ngày lại có một sự cố đứt cáp ở đâu đó trên thế giới, khiến giai thoại &quot;cá mập cắn&quot; được lan truyền.
-
-Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã trở nên bình thường. Đằng sau nó là một hệ thống phức tạp gồm cáp ngầm, cáp dưới nước và mới đây là những &quot;chòm sao&quot; vệ tinh.</p>
-                    </div>
-                </div>
-                        </div>
+                    @endforeach
+            </div>
 		</div>
 		<div class="right-intro animate__animated animate__zoomIn wow">
 			<div class="videohome-intro">
-	            <div id="video-select"></div>			</div>
+	            <div id="video-select">
+                    <div class="video-main">
+                <iframe width="558" height="395" src="https://www.youtube.com/embed/e4kX1LbPywQ" title="Khắc phục lỗi không share được máy in trong win 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <select class="listvideos">
+                        <option value="22">Khắc phục lỗi không share được máy in trong win 10</option>
+                        <option value="23">Hướng dẫn chia sẻ máy in trong mạng lan| cách chia sẻ máy in| chia sẻ máy in trong mạng nội bộ</option>
+                        <option value="24">Khắc phục sự cố mở đươc file word nhưng không chỉnh sửa được</option>
+                        <option value="25">Tiểu công tử</option>
+
+                    </div>
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
             </div>
+<script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('.listvideos').change(function() 
+            {
+                var id = $(this).val();
+                $.ajax({
+		            url:'ajax/ajax_video.php',
+		            type: "POST",
+		            dataType: 'html',
+		            data: {id:id},
+		            success: function(result){
+		                $('.video-main').html(result);
+		            }
+		        });
+            });
+        });
+    </script>
     <div class="footer">
     <div class="footer-article">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
@@ -568,10 +564,9 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
             <div class="footer-news animate__animated animate__zoomIn wow">
                 <div class="title-footer">Chính sách hỗ trợ</div>
                 <ul class="footer-ul">
-                                            <li><a class="text-decoration-none" href="chinh-sach-tra-hang" title="Chính sách thanh toán">Chính sách thanh toán</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-bao-hanh" title="Chính sách bảo hành">Chính sách bảo hành</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-nguoi-dung" title="Chính sách người dùng">Chính sách người dùng</a></li>
-                                            <li><a class="text-decoration-none" href="chinh-sach-mua-hang" title="Chính sách mua hàng">Chính sách mua hàng</a></li>
+                                            @foreach($policy as $po)
+                                                <li><a class="text-decoration-none" href="detail-policy/{{$po -> id}}" title="{{$po->tittle}}">{{$po->tittle}}</a></li>
+                                            @endforeach
                                     </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
@@ -605,12 +600,12 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
     <a class="btn-phone btn-frame" href="tel:0938948862">
         <div class="animated infinite zoomIn kenit-alo-circle"></div>
         <div class="animated infinite pulse kenit-alo-circle-fill"></div>
-        <i><img src="assets/images/dienthoai.png" alt="Hotline"></i>
+        <i><img src="{{ URL::asset('uploads/images/dienthoai.png') }}" alt="Hotline"></i>
     </a>
     <a class="btn-zalo btn-frame" href="https://zalo.me/0938948862">
         <div class="animated infinite zoomIn kenit-alo-circle"></div>
         <div class="animated infinite pulse kenit-alo-circle-fill"></div>
-        <i><img src="assets/images/chatzalo.png" alt="Hotline"></i>
+        <i><img src="{{ URL::asset('uploads/images/chatzalo.png') }}" alt="Hotline"></i>
     </a>
         </div>
 
@@ -655,7 +650,7 @@ Ngày nay, việc sử dụng Internet qua mạng di động hay Wi-Fi đã tr�
     var WEBSITE_NAME = 'VI TÍNH PHÁT NĂNG';
     var TIMENOW = '06/12/2023';
     var SHIP_CART = false;
-    var GOTOP = 'assets/images/top.png';
+    var GOTOP = "{{ URL::asset('uploads/images/top.png') }}";
     var LANG = {
         'no_keywords': 'Chưa nhập từ khóa tìm kiếm',
         'delete_product_from_cart': 'Bạn muốn xóa sản phẩm này khỏi giỏ hàng ? ',

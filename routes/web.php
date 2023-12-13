@@ -53,7 +53,12 @@ Route::get('lien-he', function () {
 Route::get('test', function () {
     return view('test');
 });
+Route::get('detail-policy/{id}', [PolicyController::class, 'policy']);
+
 Route::get('detail-product/{id}',[DetailProductController::class, 'detail'] );
+
+Route::get('detail-blog/{id}', [BlogController::class, 'detail']);
+// ADMIN
 Route::get('/admin', function () {
     return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -301,7 +301,7 @@ input[type=number]::-webkit-inner-spin-button {
 .dt {
     width: 153px;
     display: block;
-    padding-left: 35px;
+    padding-left: 0px;
     background: url(../images/dt.png) no-repeat left center;
     color: #333;
     font-size: 15px;

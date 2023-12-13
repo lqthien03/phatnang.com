@@ -301,56 +301,31 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 <div class="breadCrumbs"><div class="wrap-content"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="text-decoration-none" href="https://phatnang.com/"><span>Trang chủ</span></a></li><li class="breadcrumb-item active"><a class="text-decoration-none" href="https://phatnang.com/gioi-thieu"><span>Giới thiệu</span></a></li></ol><script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"Gi\u1edbi thi\u1ec7u","item":"https:\/\/phatnang.com\/gioi-thieu"}]}</script></div></div> 
     <div class="wrap-main  w-clear">
                 <div class="d-flex flex-wrap align-items-start justify-content-between">
-            <div id="right"><h1 class="title-main"><span>VI TÍNH PHÁT NĂNG</span></h1>
-<div class="content-main baonoidung noidunggioithieu w-clear"><p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="color: rgb(0, 0, 0); font-weight: 400; font-size: 22px;"><strong><span style="color:blue;"><span style="font-family:Verdana,sans-serif;">- CHUYÊN CUNG CẤP LINH KIỆN MÁY TÍNH ,SỈ VÀ LẺ TẤT CẢ CÁC SẢN PHẨM CŨ VÀ MỚI</span></span></strong></span><br />
-<span style="font-size: 22px;"><font face="Verdana, Arial, Helvetica, sans-serif" style=""><strong style="color: rgb(0, 51, 204); font-weight: 400;">-</strong><font color="#000000"> </font></font><span style="color: rgb(0, 0, 255); font-weight: bold; font-family: Verdana, sans-serif;">NHẬN THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC</span></span></p>
 
-<p style="color:rgb(0, 0, 0);font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:justify;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;"><span style="font-size:22px;"><span style="color:#0000ff;"><strong><span style="font-family:Verdana,sans-serif;">ĐT : 0938948862 NHẪN </span></strong></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">Quý khách mua hàng số lượng </span></span></strong></span><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">hay lắp phòng nét</span></span></strong></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">Liên hệ: 0938 94 88 62  MR :NHẪN </span></span></strong></span><span style="font-size:22px;"><strong><span style="color:purple;"><span style="font-family:Verdana,sans-serif;">để được giá tốt nhất</span></span></strong></span></p>
-
-<hr />
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><b style="color: rgb(255, 0, 0); font-family: Roboto, sans-serif; font-size: 22px;">THỜI GIAN LÀM VIỆC</b></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- TỪ THỨ 2 ĐẾN THỨ 7</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- SÁNG 7h30 GIỜ ĐẾN 19 GIỜ TỐI</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- LÀM LUÔN TRƯA</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- CHỦ NHẬT 9 GIỜ ĐẾN 4H CHIỀU</strong> </span></span></span></p>
-
-<hr />
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><u><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>CHUYÊN CUNG CẤP LINH KIỆN MÁY TÍNH ,SỈ VÀ LẺ </strong></span></span></span></u></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>- TẤT CẢ CÁC SẢNG PHẨM MỚI VÀ CỦ</strong><br />
-<strong>- NHẬN THANH LÝ PHÒNG NET, CƠ QUANG TRƯỜNG HỌC</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>Liên hệ: </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0938 94 88 62 vs 0982 223 762  MR :NHẪN </strong></span></span></span><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>để được giá tốt nhất.</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Địa chỉ: 592 Khu Phố 9 Đường Phú Lợi, Phường Phú Hòa, Tp Thủ Dầu Một, Bình Dương</span></span></span></p>
-
-<p><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Điện Thoại : 0938 948 862 vs 0982 223 762</span></span></span></p>
-
-<p><span style="line-height:1.5;"><span style="font-size:22px;"><span style="color:#e74c3c;">- Email: </span><a href="mailto:ngodinhnhan82@gmail.com" target="_blank"><span style="color:#e74c3c;">ngodinhnhan82@gmail.com</span></a></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>NV BÁN HÀNG: </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0938.948.862     : MR NHẪN</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>KỶ  THUẬT      : </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0937 629 235     : MR THUẬN</strong></span></span></span></p>
-
-<p style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; line-height: 18px;"><span style="font-size:22px;"><span style="color:#2980b9;"><span style="font-family:Roboto,sans-serif;"><strong>Bảo Hành         : </strong></span></span><span style="color:#e74c3c;"><span style="font-family:Roboto,sans-serif;"><strong>0937 629 235    : MR THUẬN</strong></span></span></span></p>
-</div>
-<div class="share">
-	<b>Chia sẻ:</b>
-	<div class="social-plugin w-clear">
-        <div class="addthis_inline_share_toolbox_inq8">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<div id="right">
+    <h1 class="title-main"><span>{{$detailpolicy -> tittle}}</span></h1>
+    <div class="time-main"><i class="fas fa-calendar-week"></i><span>Ngày đăng: 10/04/2020 07:56 AM</span></div>
+    {{$detailpolicy -> content}}
+    <div class="share">
+        <b>Chia sẻ:</b>
+        <div class="social-plugin w-clear">
+            <div class="addthis_inline_share_toolbox_inq8">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            </div>
+            <div class="zalo-share-button" data-href="https://phatnang.com/chinh-sach-tra-hang" data-oaid="579745863508352884" data-layout="2" data-color="blue" data-customize="true">Chia sẻ</div>
         </div>
-        <div class="zalo-share-button" data-href="https://phatnang.com/gioi-thieu" data-oaid="579745863508352884" data-layout="2" data-color="blue" data-customize="true">Chia sẻ</div>
     </div>
-</div></div>
+     <div class="share othernews">
+    <b>Bài viết khác:</b>
+    <ul class="list-news-other">
+        @foreach($policy as $po)
+                    <li><a class="text-decoration-none" href="{{$po -> id}}" title="{{$po -> tittle}}">
+                {{$po -> tittle}} - 10/04/2020            </a></li>
+        @endforeach    
+            </ul>
+    <div class="pagination-home"></div>
+    </div>
+</div>
             <div id="left"><div class="danhmucct">
     <div class="tieude">Danh mục sản phẩm</div>
     <div class="danhmucl danhmuc">
@@ -598,10 +573,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             <div class="footer-news animate__animated animate__zoomIn wow">
                 <div class="title-footer">Chính sách hỗ trợ</div>
                 <ul class="footer-ul">
-                                                    @foreach($policy as $po)
-                                                <li><a class="text-decoration-none" href="detail-policy/{{$po -> id}}" title="{{$po->tittle}}">{{$po->tittle}}</a></li>
-                                                    @endforeach                                    
-                </ul>
+                                            @foreach($policy as $po)
+                                            <li><a class="text-decoration-none" href="detail-policy/{{$po->id}}" title="Chính sách thanh toán">{{$po -> tittle}}</a></li>
+                                            @endforeach
+                                        </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
                                             <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>
