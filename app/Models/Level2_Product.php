@@ -17,4 +17,11 @@ class Level2_Product extends Model
         'level1_product_id',    
         'seo_id',
     ];
+
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

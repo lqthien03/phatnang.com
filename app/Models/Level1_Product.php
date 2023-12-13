@@ -19,6 +19,14 @@ class Level1_Product extends Model
         'selling',
         'display',
         'seo_id',
+        'describe',
     ];
-    
+
+    // protected $attributes = ['outstand' => 1,];
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

@@ -17,7 +17,7 @@ class Category3Controller extends Controller
     public function create()
     {
         $category_level3 =  Level3_Product::all();
-        return view('admin.category.category_level3_create', compact('$category_level3'));
+        return view('admin.category.category_level3_create', compact('category_level3'));
     }
     public function store(Request $request)
     {
