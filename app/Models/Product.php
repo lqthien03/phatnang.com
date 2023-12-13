@@ -18,6 +18,41 @@ class Product extends Model
         'new',
         'selling',
         'display',
-        'display',
+        'product_code',
+        'discount',
+        'content',
+        'price',
+        'gallery',
+        'new_price',
+        'level1_product_id',
+        'level2_product_id',
+        'level3_product_id',
+        'tag_product_id',
+        'seo_id',
     ];
+
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
+
+    public function level1_product()
+    {
+        return $this->belongsTo(Level1_Product::class, 'level1_product_id', 'id');
+    }
+
+    public function level2_product()
+    {
+        return $this->belongsTo(Level2_Product::class, 'level2_product_id', 'id');
+    }
+    public function level3_product()
+    {
+        return $this->belongsTo(Level3_Product::class, 'level3_product_id', 'id');
+    }
+    public function tag_product()
+    {
+        return $this->belongsTo(Tag_Product::class, 'tag_product_id', 'id');
+    }
 }

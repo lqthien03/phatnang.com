@@ -349,7 +349,6 @@
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>{{ $item->image }}</td>
                                                 <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->outstand }}</td>
                                                 <td>{{ $item->display }}</td>
                                                 <td>
                                                     <a href="/tag-product/edit/{{ $item->id }}"><i

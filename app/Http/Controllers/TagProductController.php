@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UpdateTagProductRequest;
+use App\Models\Seo;
 use App\Models\Tag_Product;
 use Illuminate\Http\Request;
 
@@ -23,15 +24,30 @@ class TagProductController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request);
         $request->validate([
             'image' => 'required',
             'tittle' => 'required',
-            'outstand' => 'required',
-            'display' => 'required',
-
+            // 'outstand' => 'required',
+            'display' => 'integer',
         ]);
 
-        $tag_Product = Tag_Product::create($request->all());
+        $tag_product = Tag_Product::create($request->only([
+            'image',
+            'tittle',
+            // 'outstand',
+            'display',
+            'seo_id',
+        ]));
+
+        $seo = Seo::create($request->only([
+            'tittle',
+            'keyword',
+            'description',
+        ]));
+
+        $tag_product->seo()->associate($seo);
+        $tag_product->save();
         return redirect()->route('show.tag_product')->with('success', 'Bản ghi đã được tạo thành công!');
     }
     public function edit(Tag_Product $tag_Product)

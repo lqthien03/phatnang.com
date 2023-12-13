@@ -14,7 +14,25 @@ class Level3_Product extends Model
         'image',
         'tittle',
         'display',
-        'detail_product_id',
+        'level2_product_id',
+        'level1_product_id',
         'seo_id',
     ];
+
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
+
+    public function level1_product()
+    {
+        return $this->belongsTo(Level1_Product::class, 'level1_product_id', 'id');
+    }
+
+    public function level2_product()
+    {
+        return $this->belongsTo(Level2_Product::class, 'level2_product_id', 'id');
+    }
 }

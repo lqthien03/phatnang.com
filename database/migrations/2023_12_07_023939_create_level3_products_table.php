@@ -17,8 +17,12 @@ return new class extends Migration
             $table->string('tittle');
             $table->tinyInteger('display')->nullable;
 
-            $table->unsignedBigInteger('detail_product_id');
-            $table->foreign('detail_product_id')->references('id')->on('detail_products');
+            $table->unsignedBigInteger('level2_product_id');
+            $table->foreign('level2_product_id')->references('id')->on('level2_products');
+
+            $table->unsignedBigInteger('level1_product_id');
+            $table->foreign('level1_product_id')->references('id')->on('level1_products');
+
 
             $table->unsignedBigInteger('seo_id');
             $table->foreign('seo_id')->references('id')->on('seos');

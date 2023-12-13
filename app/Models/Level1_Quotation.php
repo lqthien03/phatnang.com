@@ -11,9 +11,17 @@ class Level1_Quotation extends Model
 
     public $table = "level1_quotations";
     protected $fillable = [
-        // 'image',
+        'image',
         'tittle',
         'display',
         'seo_id',
+
+
     ];
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

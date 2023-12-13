@@ -446,8 +446,8 @@
                                                     <option selected>Chọn danh mục</option>
                                                     @foreach ($category_level2 as $item)
                                                         <option value="{{ $item->id }}"
-                                                            data-id="{{ $item->id }}" name="level3_product_id ">
-                                                            {{ $item->tittle }}</option>0
+                                                            data-id="{{ $item->id }}" name="level1_product_id ">
+                                                            {{ $item->tittle }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>

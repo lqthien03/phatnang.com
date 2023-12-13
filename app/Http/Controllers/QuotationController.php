@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Level1_Product;
 use App\Models\Quotation;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class QuotationController extends Controller
     public function create()
     {
         $quatation = Quotation::all();
-        return view('admin.quotation.quotation_create', compact('quatation'));
+        $category_level1 = Level1_Product::all();
+        return view('admin.quotation.quotation_create', compact('quatation', 'category_level1'));
     }
     public function store(Request $request)
     {
@@ -33,7 +35,6 @@ class QuotationController extends Controller
     }
     public function update()
     {
-        
     }
     public function destroy($id)
     {

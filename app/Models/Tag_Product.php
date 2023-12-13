@@ -16,4 +16,11 @@ class Tag_Product extends Model
         'outstand',
         'display',
     ];
+
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

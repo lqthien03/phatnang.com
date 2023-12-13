@@ -27,7 +27,7 @@ class Category2Controller extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
+        dd($request);
         $request->validate([
             'image' => 'required',
             'tittle' => 'required',
@@ -55,7 +55,7 @@ class Category2Controller extends Controller
 
     public function edit(Level2_Product $category_level2)
     {
-        return view('admin.category.category_level2_edit', compact('$category_level2'));
+        return view('admin.category.category_level2_edit', compact('category_level2'));
     }
 
     public function update(Level2_Product $category_level2, UpdateCategory2Request $request)

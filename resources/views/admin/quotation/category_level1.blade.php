@@ -1,3 +1,4 @@
+2
 <!DOCTYPE html>
 <html lang="en">
 
@@ -312,7 +313,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn btn-success mt-3"><a href="/tag-product/create">Thêm
+                    <button type="button" class="btn btn-success mt-3"><a href="/quotation-level-1/create">Thêm
                             mới</a></button>
                     {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                     <section class="content">
@@ -343,12 +344,11 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        @foreach ($support as $item)
+                                        @foreach ($level1_Quotation as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
-                                                {{-- <td>{{ $item->image }}</td> --}}
+                                                <td>{{ $item->image }}</td>
                                                 <td>{{ $item->tittle }}</td>
-                                                {{-- <td>{{ $item->outstand }}</td> --}}
                                                 <td>{{ $item->display }}</td>
                                                 <td>
                                                     <a href=""><i class='bx bxs-edit bx-sm'></i></a>
@@ -356,8 +356,9 @@
                                                             style='color:#ff0000'></i></a>
                                                 </td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    @endforeach
+
                                 </table>
                             </div>
                         </div>
