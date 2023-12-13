@@ -17,7 +17,7 @@ class BlogController extends Controller
         $level2products = Level2Product::where('level1products_id',0);
         $level3products = Level3Product::where('level2products_id',0);
         $blogs = Blogs::all();
-        return view('index', compact('blogs','level1products','level2products','level3products','policy'));
+        return view('blog', compact('blogs','level1products','level2products','level3products','policy'));
     }
     public function show(){
         $blog = Blogs::all();

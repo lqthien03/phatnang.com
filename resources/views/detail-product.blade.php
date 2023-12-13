@@ -378,90 +378,15 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 <h2 class="title-main"><span>Sản phẩm cùng loại</span></h2>
 <div class="content-main w-clear">
         <div class="grid-page">
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/15359-ram-laptop-kingston-4g-d4-2666s19-4970.jpg?v=1701847840" alt="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)">Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)</a></h3>
+            @foreach($spcungloai as $cu)
+            <div class="product animate__animated animate__zoomIn wow">
+                <a class="pic-product scale-img" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="{{$cu->tittle}}"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $cu->image) }}" alt="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)"/></a>
+                <h3 class="name-product"><a class="text-split text-decoration-none" href="ram-laptop-kingston-4gb-ddr4-2666s19-1rx16-sodimm-kvr26s19s64" title="Ram Laptop Kingston 4GB DDR4-2666S19 1Rx16 SODIMM (KVR26S19S6/4)">{{$cu->tittle}}</a></h3>
                 <p class="price-product">
                                             <span class="price-new">Liên hệ</span>
                                     </p>
             </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-hp-340s-g7-36a43pa" title="Laptop HP 340s G7 36A43PA"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/19822laptophp340sg736a43pa1-7509.jpg?v=1701847840" alt="Laptop HP 340s G7 36A43PA"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-hp-340s-g7-36a43pa" title="Laptop HP 340s G7 36A43PA">Laptop HP 340s G7 36A43PA</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-hp-340s-g7-240q3pa" title="Laptop HP 340s G7 240Q3PA"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/18851018851laptophp340sg7240q3pa1-3836.jpg?v=1701847840" alt="Laptop HP 340s G7 240Q3PA"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-hp-340s-g7-240q3pa" title="Laptop HP 340s G7 240Q3PA">Laptop HP 340s G7 240Q3PA</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-asus-zenbook-flip-13-oled-ux363ea-hp532t" title="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20851laptopasuszenbookflip13ux363eahp532t9-4829.jpg?v=1701847840" alt="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-zenbook-flip-13-oled-ux363ea-hp532t" title="Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T">Laptop Asus ZenBook Flip 13 OLED UX363EA-HP532T</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-dell-inspiron-n3511a-p112f001abl-core-i3-1115g4-4gb-256gb-intel-uhd-156-inch-fhd-win-10-office-den" title="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3930820677laptopdellinspiron3511p112f001abl1-7302.jpg?v=1701847840" alt="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-inspiron-n3511a-p112f001abl-core-i3-1115g4-4gb-256gb-intel-uhd-156-inch-fhd-win-10-office-den" title="Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)">Laptop Dell Inspiron N3511A P112F001ABL (Core™ i3-1115G4 | 4GB | 256GB | Intel UHD | 15.6-inch FHD | Win 10 | Office | Đen)</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="ram-laptop-kingston-8gb-ddr4-2666s19-kvr26s19s68" title="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/18355-kvr26s19s6-8-2832.jpg?v=1701847840" alt="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="ram-laptop-kingston-8gb-ddr4-2666s19-kvr26s19s68" title="Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)">Ram Laptop Kingston 8GB DDR4-2666S19- (KVR26S19S6/8)</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-asus-vivobook-a515ea-bq1530t" title="Laptop Asus VivoBook A515EA-BQ1530T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20655asusvivobooka515eabq1530t-4559.jpg?v=1701847840" alt="Laptop Asus VivoBook A515EA-BQ1530T"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-vivobook-a515ea-bq1530t" title="Laptop Asus VivoBook A515EA-BQ1530T">Laptop Asus VivoBook A515EA-BQ1530T</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-dell-vostro-3400-70253900-core-i5-1135g7-8gb-256gb-intel-iris-xe-140-inch-fhd-win-10-office" title="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3919744234vostro3400ha1-6175.jpg?v=1701847840" alt="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-vostro-3400-70253900-core-i5-1135g7-8gb-256gb-intel-iris-xe-140-inch-fhd-win-10-office" title="Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)">Laptop Dell Vostro 3400 70253900 (Core™ i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0-inch FHD | Win 10 | Office)</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-asus-vivobook-a515ea-l11171t" title="Laptop Asus Vivobook A515EA-L11171T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20779asusvivobooka515eal11171t-9105.jpg?v=1701847840" alt="Laptop Asus Vivobook A515EA-L11171T"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-vivobook-a515ea-l11171t" title="Laptop Asus Vivobook A515EA-L11171T">Laptop Asus Vivobook A515EA-L11171T</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-dell-g15-5511a-p105f006agr-core-i7-11800h-8gb-512gb-rtx-3050-4gb-156-inch-fhd-win-11-office-xam" title="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/dell-g15-8099.jpg?v=1701847840" alt="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-g15-5511a-p105f006agr-core-i7-11800h-8gb-512gb-rtx-3050-4gb-156-inch-fhd-win-11-office-xam" title="Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)">Laptop Dell G15 5511A P105F006AGR (Core™ i7-11800H | 8GB | 512GB | RTX 3050 4GB | 15.6 Inch FHD | Win 11 | Office | Xám)</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-asus-rog-strix-g15-g513qc-hn015t" title="Laptop Asus ROG Strix G15 G513QC-HN015T"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/20023laptopasusrogstrixg15g513qchn015t1-3038.jpg?v=1701847840" alt="Laptop Asus ROG Strix G15 G513QC-HN015T"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-asus-rog-strix-g15-g513qc-hn015t" title="Laptop Asus ROG Strix G15 G513QC-HN015T">Laptop Asus ROG Strix G15 G513QC-HN015T</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
-                    <div class="product animate__animated animate__zoomIn wow">
-                <a class="pic-product scale-img" href="laptop-dell-latitude-3520-70251590-core-i7-1165g7-8gb-256gb-intel-iris-xe-156-inch-fhd-fedora-den" title="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="thumbs/600x577x1/upload/product/3826320047laptopdelllatitude3520702515901-1786.jpg?v=1701847840" alt="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)"/></a>
-                <h3 class="name-product"><a class="text-split text-decoration-none" href="laptop-dell-latitude-3520-70251590-core-i7-1165g7-8gb-256gb-intel-iris-xe-156-inch-fhd-fedora-den" title="Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)">Laptop Dell Latitude 3520 70251590 (Core i7-1165G7 | 8GB | 256GB | Intel Iris Xe | 15.6 inch FHD | Fedora | Đen)</a></h3>
-                <p class="price-product">
-                                            <span class="price-new">Liên hệ</span>
-                                    </p>
-            </div>
+            @endforeach
                 </div>
     <div class="clear"></div>
     <div class="pagination-home"></div>
@@ -521,10 +446,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                             @endforeach                                    </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
-                                            <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon03-26051.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon05-30622.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon07-43933.png" alt=""></a>
+                                            <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-ins.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-face.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-twi.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-sna.png') }}" alt=""></a>
                                     </div>
                             </div>
             <div class="footer-news animate__animated animate__zoomIn wow">

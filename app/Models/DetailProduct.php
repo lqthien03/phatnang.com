@@ -23,4 +23,5 @@ class DetailProduct extends Model
     {
         return $this->hasMany(Image::class);
     }
+    
 }

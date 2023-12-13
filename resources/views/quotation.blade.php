@@ -3311,10 +3311,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                             @endforeach                                    </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
-                                            <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon03-26051.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon05-30622.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon07-43933.png" alt=""></a>
+                                            <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-ins.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-face.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-twi.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-sna.png') }}" alt=""></a>
                                     </div>
                             </div>
             <div class="footer-news animate__animated animate__zoomIn wow">

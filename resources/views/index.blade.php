@@ -152,7 +152,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                                                     @if($pro2->Level2Childrent->count())
                                                                         @foreach($pro2->Level2Childrent as $pro3)
                                                                         <ul>
-                                                                            <li><a class="transition" title="Intel Pentium" href="san-phamss?id={{$pro3->id}}">{{$pro3->tittle}}</a></li>
+                                                                            <li><a class="transition" title="{{$pro3->tittle}}" href="san-phamss?id={{$pro3->id}}">{{$pro3->tittle}}</a></li>
                                                                         </ul>
                                                                         @endforeach
                                                                     @endif
@@ -382,10 +382,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                     @foreach($details as $de)
                     <div class="owl-item active" style="width: 215.2px; margin-right: 18px;">
                         <div class="product animate__ animate__zoomIn wow animated" style="visibility: visible; animation-name: zoomIn;">
-                        <a class="pic-product scale-img" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $de->image) }}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"></a>
-                        <h3 class="name-product"><a class="text-split text-decoration-none" href="nguon-fsp-power-supply-hydro-series-model-hd700-active-pfc-80-plus-bronze" title="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)">{{$de->tittle}}</a></h3>
+                        <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="{{$de->tittle}}"><img onerror="this.src='thumbs/600x577x1/assets/images/noimage.png';" src="{{ URL::asset('uploads/images/' . $de->image) }}" alt="Nguồn FSP Power Supply HYDRO Series Model HD700 Active PFC (80 Plus Bronze/Màu Đen)"></a>
+                        <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="{{$de->tittle}}">{{$de->tittle}}</a></h3>
                         <p class="price-product">
-                                            <span class="price-new">850.000đ</span>
+                        <span class="price-new">Liên hệ</span>
                                     </p>
                         </div>
                     </div>
@@ -432,6 +432,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     </div>
 <div class="khungsp">   
 @foreach($level1products as $pro1)
+@if($loop->index < 5)
 <div class="mod_danhmuc">
 	<div class="wrap-content">
 		<h2 class="title-main tc"><span><b> {{$pro1->tittle}} </b></span></h2>
@@ -439,21 +440,25 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 		<div class="grid-page">
                         @if($pro1->Level1ChildrentProduct->count())
                         @foreach($pro1->Level1ChildrentProduct as $de)
+                        @if($loop->index < 4)
 						<div class="product animate__animated animate__zoomIn wow">
 	            <a class="pic-product scale-img" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><img onerror="this.src='{{$de->image}}';" src="{{ URL::asset('uploads/images/' . $de->image) }}" alt="GAMING HEADSET H120G HP"/></a>
 	            	            <p class="ma"> <b> {{$de->tittel}} </b></p>
 	            	            <h3 class="name-product"><a class="text-split text-decoration-none" href="detail-product/{{$de->id}}" title="GAMING HEADSET H120G HP"><b> {{$de->tittle}} </b></a></h3>
 	            <p class="price-product">
+                                            <span class="price-new">Liên hệ</span>
 	                	                    <span class="price-new">{{$de->selling}}</span>
-	                    <span class="price-old">290.000đ</span>
-	                    <span class="price-per">-2%</span>
+	                    <!-- <span class="price-old">290.000đ</span>
+	                    <span class="price-per">-2%</span> -->
 	                	            </p>
 	                    </div>  
+                        @endif
                         @endforeach
                         @endif
 				</div>
 	</div>
 </div>
+@endif
 @endforeach
 </div>
 
@@ -515,23 +520,23 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             });
         });
     </script>
-    <div class="footer">
+<div class="footer">    
     <div class="footer-article">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
             <div class="footer-news animate__animated animate__zoomIn wow">
                 <h2 class="ten-footer">VI TÍNH PHÁT NĂNG BÌNH DƯƠNG</h2>
                 <div class="info-footer"><p><span style="color:#f1c40f;"><strong>UY TÍN - NHANH CHÓNG - GIÁ TỐT</strong></span></p>
 
-<p>- Địa Chỉ: 592 Phú Lợi, P. Phú Hoà, TP. TDM, Bình Dương</p>
+    <p>- Địa Chỉ: 592 Phú Lợi, P. Phú Hoà, TP. TDM, Bình Dương</p>
 
-<p>- Điện Thoại: <strong>0938 948 862</strong> <em>or</em><strong> 0982 223 762 Mr NHẪN</strong></p>
+    <p>- Điện Thoại: <strong>0938 948 862</strong> <em>or</em><strong> 0982 223 762 Mr NHẪN</strong></p>
 
-<p>- Email: ngodinhnhan82@gmail.com - Website: <a href="https://phatnang.com/"><span style="color:#ffffff;">https://phatnang.com/</span></a></p>
+    <p>- Email: ngodinhnhan82@gmail.com - Website: <a href="https://phatnang.com/"><span style="color:#ffffff;">https://phatnang.com/</span></a></p>
 
-<hr />
-<p><span style="color:#ffff33;"><u><strong>Lưu ý: Vi Tính Phát Năng chỉ sử dụng giao dịch với các tài khoản sau:</strong></u></span></p>
+    <hr />
+    <p><span style="color:#ffff33;"><u><strong>Lưu ý: Vi Tính Phát Năng chỉ sử dụng giao dịch với các tài khoản sau:</strong></u></span></p>
 
-<table align="center" border="0" cellpadding="1" cellspacing="0" style="width:95%;">
+    <table align="center" border="0" cellpadding="1" cellspacing="0" style="width:95%;">
 	<thead>
 		<tr>
 			<th scope="col" style="width: 755px; text-align: left;"><span style="font-size:12px;"><strong><span style="font-family:Courier New,Courier,monospace;"><span style="line-height:1;">- TK NGÂN HÀNG ACB-NGÔ ĐÌNH NHẪN</span></span></strong></span></th>
@@ -546,20 +551,20 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
 			<td style="width: 113px;"><span style="font-size:12px;"><strong><span style="font-family:Courier New,Courier,monospace;"><span style="line-height:1;">0281000305570 </span></span></strong></span></td>
 		</tr>
 	</tbody>
-</table>
+    </table>
 
-<hr />
-<p><span style="font-size:12px;"><span style="font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;">- Thiết kế website <a href="https://www.facebook.com/trunghien.pham.33/"><span style="color:#ffffff;">Phạm Trung Hiền</span></a> - 0909.137.499</span></span></p>
+    <hr />
+    <p><span style="font-size:12px;"><span style="font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;">- Thiết kế website <a href="https://www.facebook.com/trunghien.pham.33/"><span style="color:#ffffff;">Phạm Trung Hiền</span></a> - 0909.137.499</span></span></p>
 
-<table border="0" cellpadding="0" cellspacing="0" style="width: 427px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 427px;">
 	<tbody>
 		<tr>
 			<td style="width: 253px;"><span style="font-size:12px;"><span style="font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;">- Website được chứng nhận và bảo vệ bởi: </span></span></td>
 			<td style="width: 167px;"><a class="dmca-badge" href="//www.dmca.com/Protection/Status.aspx?ID=7dfcb530-7fee-42ab-8175-2daa4ed041ff" title="DMCA.com Protection Status"><img alt="DMCA.com Protection Status" src="https://images.dmca.com/Badges/dmca_protected_sml_120am.png?ID=7dfcb530-7fee-42ab-8175-2daa4ed041ff" /></a></td>
 		</tr>
 	</tbody>
-</table>
-</div>
+    </table>
+    </div>
             </div>
             <div class="footer-news animate__animated animate__zoomIn wow">
                 <div class="title-footer">Chính sách hỗ trợ</div>
@@ -570,10 +575,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                     </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
-                                            <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon03-26051.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon05-30622.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon07-43933.png" alt=""></a>
+                                            <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-ins.png') }}" alt=""></a>
+    <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-face.png') }}" alt=""></a>
+    <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-twi.png') }}" alt=""></a>
+    <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-sna.png') }}" alt=""></a>
                                     </div>
                             </div>
             <div class="footer-news animate__animated animate__zoomIn wow">
@@ -754,6 +759,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
             </a>
         </li>
     </ul>
+</div>
 </div>
 </div>
 </body>

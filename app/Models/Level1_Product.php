@@ -20,4 +20,5 @@ class Level1_Product extends Model
         'display',
         'seo_id',
     ];
+    
 }

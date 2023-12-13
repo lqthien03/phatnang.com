@@ -47,6 +47,10 @@ class DetailProductController extends Controller
         $level2products = Level2Product::where('level1products_id',0);
         $level3products = Level3Product::where('level2products_id',0);
         $detail = DetailProduct::findOrFail($id);
-        return view('detail-product', compact('detail', 'level1products', 'level2products', 'level3products','policy'));
+        $category = DetailProduct::find($id);
+        $cungloai = $category->level1_products_id;
+        $spcungloai = DetailProduct::where('level1_products_id', $cungloai)->get();
+        // $cungloai = DetailProduct::where('level1products_id',$idlv);
+        return view('detail-product', compact('detail', 'level1products', 'level2products', 'level3products','policy','spcungloai'));
     }
 }

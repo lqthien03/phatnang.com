@@ -513,7 +513,7 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
     <div class="tieude">Hỗ trợ khách hàng</div>
     <div id="tinmoi">
                     <div class="item_ht d-flex flex-wrap justify-content-between align-items-center">
-                <a class="img" href="https://zalo.me/0938948862"><img src="assets/images/icon-zalo.jpg" alt="Zalo" /></a>
+                <a class="img" href="https://zalo.me/0938948862"><img src="{{ URL::asset('uploads/images/icon-zalo.jpg') }}" alt="Zalo" /></a>
                 <div class="ttht">
                     <a class="ten" href="tel:09389488620982223762" title="BỘ PHẬN KINH DOANH SỈ">BỘ PHẬN KINH DOANH SỈ</a>
                     <a class="mota mb-0" href="tel:09389488620982223762">Mr. Nhẫn: 0938 948 862 OR 0982 223 762</a>
@@ -579,10 +579,10 @@ src="https://www.facebook.com/tr?id=734190170889666&ev=PageView&noscript=1"
                                         </ul>
                  
                 <div class="social-footer d-flex flex-wrap">
-                                            <a href="" target="_blank"><img src="upload/photo/icon01-28940.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon03-26051.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon05-30622.png" alt=""></a>
-                                            <a href="" target="_blank"><img src="upload/photo/icon07-43933.png" alt=""></a>
+                                            <a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-ins.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-face.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-twi.png') }}" alt=""></a>
+<a href="" target="_blank"><img src="{{ URL::asset('uploads/images/icon-sna.png') }}" alt=""></a>
                                     </div>
                             </div>
             <div class="footer-news animate__animated animate__zoomIn wow">

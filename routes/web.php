@@ -10,7 +10,7 @@ use App\Http\Controllers\Category3Controller;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
-
+use App\Http\Controllers\StaticPageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Quotation1Controller;
@@ -19,6 +19,8 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\SupportCustomerController;
 use App\Http\Controllers\TagProductController;
 use App\Http\COntrollers\PolicyController;
+use App\Http\COntrollers\VideoController;
+
 use App\Models\Tag_Product;
 use Illuminate\Support\Facades\Route;
 
@@ -43,13 +45,10 @@ Route::get('san-phams', [DetailProductController::class, 'allinonelv1']);
 Route::get('san-phamss', [DetailProductController::class, 'allinonelv3']);
 
 Route::get('thanh-ly-phong-net', [LiquidationController::class, 'all']);
+Route::get('liquidation/{id}', [LiquidationController::class, 'detail']);
 Route::get('tin-tuc', [BlogController::class, 'all']);
-Route::get('video', function () {
-    return view('video');
-});
-Route::get('lien-he', function () {
-    return view('contact');
-});
+Route::get('video', [VideoController::class, 'all']);
+Route::get('lien-he', [ContactController::class, 'all']);
 Route::get('test', function () {
     return view('test');
 });
@@ -194,6 +193,14 @@ Route::controller(NewsController::class)->group(function () {
 
 Route::controller(ContactController::class)->group(function () {
     Route::get('/contact', 'show')->name('show.news');
+    Route::get('/contact/create', 'create')->name('create.news');
+    Route::post('/contact/store', 'store ')->name('store.news');
+    Route::get('/contact/edit/{Quotation}', 'edit')->name('edit.news');
+    Route::put('/contact/edit/{Quotation}', 'update')->name('update.news');
+    Route::delete('/contact/{id}', 'destroy')->name('delete.news');
+});
+Route::controller(StaticPageController::class)->group(function () {
+    Route::get('/introduce', 'showintroduce')->name('show.introduce');
     Route::get('/contact/create', 'create')->name('create.news');
     Route::post('/contact/store', 'store ')->name('store.news');
     Route::get('/contact/edit/{Quotation}', 'edit')->name('edit.news');

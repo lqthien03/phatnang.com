@@ -42,6 +42,7 @@ class seos extends Seeder
             ['tittle' => 'Chính sách bảo hành', 'keyword' => 'Chính sách bảo hành', 'description' => ''],
             ['tittle' => 'Chính sách người dùng', 'keyword' => 'Chính sách người dùng', 'description' => ''],
             ['tittle' => 'Chính sách mua hàng', 'keyword' => 'Chính sách mua hàng', 'description' => ''],
+            ['tittle' => 'Giới thiệu Vi tính Phát Năng', 'keyword' => 'Giới thiệu Vi tính Phát Năng', 'description' => ''],
 
             
         ];
