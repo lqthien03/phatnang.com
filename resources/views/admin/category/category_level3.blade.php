@@ -312,7 +312,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn btn-success mt-3"><a href="/catagory-level-3/create">Thêm
+                    <button type="button" class="btn mt-3" style="background-color:#65B741; color:#fff"><a href="/catagory-level-3/create">Thêm
                             mới</a></button>
                     {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                     <section class="content">
@@ -345,7 +345,13 @@
                                         @foreach ($category_level3 as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
+                                                <td>
+                                                    @if ($item->image)
+                                                        <img src="{{ asset($item->image) }}" alt="Hình ảnh">
+                                                    @else
+                                                        Không có hình ảnh
+                                                    @endif
+                                                </td>
                                                 <td>{{ $item->tittle }}</td>
                                                 <td>
                                                     <input class="form-check-input" type="checkbox"

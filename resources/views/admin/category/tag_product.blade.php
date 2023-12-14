@@ -312,8 +312,9 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn btn-success mt-3"><a href="/tag-product/create">Thêm
-                            mới</a></button>
+                    <button type="button" class="btn mt-3" style="background-color:#65B741; color:#fff">
+                        <a href="/tag-product/create" style="text-decoration: none; color: inherit;">Thêm mới</a>
+                    </button>
                     {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                     <section class="content">
 
@@ -347,9 +348,20 @@
                                         @foreach ($tag_product as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
+                                                <td>
+                                                    @if ($item->image)
+                                                        <img src="{{ asset($item->image) }}" alt="Hình ảnh">
+                                                    @else
+                                                        Không có hình ảnh
+                                                    @endif
+                                                </td>
                                                 <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->display }}</td>
+                                                <td>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="{{ $item->display }}" name="display"
+                                                        id="flexCheckDefault"
+                                                        {{ $item->display == 1 ? 'checked' : '' }}>
+                                                </td>
                                                 <td>
                                                     <a href="/tag-product/edit/{{ $item->id }}"><i
                                                             class='bx bxs-edit bx-sm'></i></a>
@@ -361,6 +373,7 @@
                                                         @method('DELETE')
                                                         <button type="submit"
                                                             style="background: none; border: none; cursor: pointer;">
+
                                                             <i class='bx bxs-trash-alt bx-sm'
                                                                 style='color:#ff0000'></i>
                                                         </button>

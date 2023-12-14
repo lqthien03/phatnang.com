@@ -387,14 +387,15 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('store.category1') }}" method="post">
+            <form action="{{ route('store.category1') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <main>
                     <div id="" class="container-fluid px-4 row">
 
                         <div class="col-8">
                             <div>
-                                <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                                <button type="submit" class="btn mt-3"
+                                    style="background-color:#65B741;color:#fff">Lưu</button>
                                 <button type="button" class="btn btn-warning mt-3"><a href="">Làm
                                         lại</a></button>
                                 <button type="button" class="btn btn-danger mt-3"><a
@@ -448,8 +449,11 @@
                                                     <div class="text-center m-t-20">
                                                         <button class="btn btn-primary">Upload Now</button>
                                                     </div> --}}
-                                                <form action="" method="post" class="dropzone dz-clickable"
-                                                    enctype="multipart/form-data">
+
+                                                {{-- enctype="multipart/form-data"> --}}
+
+                                                <form action="/upload-endpoint" method="post"
+                                                    class="dropzone dz-clickable" enctype="multipart/form-data">
                                                     @csrf
                                                     <input type="file" name="image" accept="image/*"
                                                         placeholder="Chọn hình">
@@ -457,7 +461,6 @@
                                                         <button type="submit" class="btn btn-primary">Upload
                                                             Now</button>
                                                     </div>
-
                                                 </form>
                                             </div>
                                         </div>

@@ -24,23 +24,36 @@ class Category1Controller extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'image' => 'required',
-            'tittle' => 'required',
-            'display' => 'integer',
-            'describe' => 'required',
-            'image' => 'required',
-            'keyword' => 'required',
-            'description' => 'required',
-        ]);
+        // $request->validate([
+        //     'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        //     'tittle' => 'required',
+        //     'display' => 'integer',
+        //     'describe' => 'required',
+        //     'image' => 'required',
+        //     'file_upload' => 'required',
+        //     'keyword' => 'required',
+        //     'description' => 'required',
+        // ]);
 
-        // dd($request);
 
-        $category_level1 = Level1_Product::create($request->only([
-            'image',
-            'tittle',
-            'display',
-            'describe',
+
+        if ($request->has('image')) {
+            $file = $request->image;
+            $file_name = $file->getClientOriginalName();
+
+            // $file_name = time() . '-' . 'product' . '.' . $ext;
+            $file->move(public_path('uploads'), $file_name);
+        }
+        // $request->merge(['image' => $file_name]);
+        dd($request->all());
+
+
+        $category_level1 = Level1_Product::create(([
+            'image' => $request->input('image'),
+            // 'image' => $imagePath ?? null,
+            'tittle' => $request->input('tittle'),
+            'display' => $request->input('display'),
+            'describe' => $request->input('describe'),
         ]));
 
         $seo = Seo::create($request->only([

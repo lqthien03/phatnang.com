@@ -394,7 +394,8 @@
 
                         <div class="col-8">
                             <div>
-                                <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                                <button type="submit" class="btn mt-3"
+                                    style="background-color:#65B741;color:#fff">Lưu</button>
                                 <button type="button" class="btn btn-warning mt-3"><a href="">Làm
                                         lại</a></button>
                                 <button type="button" class="btn btn-danger mt-3"><a
