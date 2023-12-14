@@ -124,7 +124,7 @@ Route::controller(QuotationController::class)->group(function () {
 Route::controller(SupportCustomerController::class)->group(function () {
     Route::get('/support-customer', 'show')->name('show.support_customer');
     Route::get('/support-customer/create', 'create')->name('create.support_customer');
-    Route::post('/support-customer/store', 'store ')->name('store.support_customer');
+    Route::post('/support-customer/store', 'store')->name('store.support_customer');
     Route::get('/support-customer/edit/{Quotation}', 'edit')->name('edit.support_customer');
     Route::put('/support-customer/edit/{Quotation}', 'update')->name('update.support_customer');
     Route::delete('/support-customer/{id}', 'destroy')->name('delete.support_customer');

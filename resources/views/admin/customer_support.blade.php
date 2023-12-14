@@ -361,7 +361,13 @@
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>{{ $item->tittle }}</td>
                                                 <td>{{ $item->phone }}</td>
-                                                <td>{{ $item->display }}</td>
+                                                {{-- <td>{{ $item->display }}</td> --}}
+                                                <td>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="{{ $item->display }}" name="display"
+                                                        id="flexCheckDefault"
+                                                        {{ $item->display == 1 ? 'checked' : '' }}>
+                                                </td>
                                                 <td>
                                                     <a href="/support-customer/edit/{{ $item->id }}"><i
                                                             class='bx bxs-edit bx-sm'></i></a>
@@ -379,8 +385,9 @@
                                                     </form>
                                                 </td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    @endforeach
+
                                 </table>
                             </div>
                         </div>

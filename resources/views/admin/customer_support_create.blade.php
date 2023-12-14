@@ -9,16 +9,89 @@
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f7fb;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .card .card-header h5:after {
+            content: "";
+            background-color: #d2d2d2;
+            width: 101px;
+            height: 1px;
+            position: absolute;
+            bottom: 6px;
+            left: 20px;
+        }
+
+        .card .card-block {
+            padding: 1.25rem;
+        }
+
+        .dropzone.dz-clickable {
+            cursor: pointer;
+        }
+
+        .dropzone {
+            min-height: 150px;
+            border: 1px solid rgba(42, 42, 42, 0.05);
+            background: rgba(204, 204, 204, 0.15);
+            padding: 20px;
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+            box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+
+        .btn-primary,
+        .sweet-alert button.confirm,
+        .wizard>.actions a {
+            background-color: #4099ff;
+            border-color: #4099ff;
+            color: #fff;
+            cursor: pointer;
+            -webkit-transition: all ease-in .3s;
+            transition: all ease-in .3s;
+        }
+
+        .btn {
+            border-radius: 2px;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 10px 19px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
-
-    {{-- //// --}}
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="/dashboard">Blue WEB</a>
@@ -59,7 +132,6 @@
             </li>
         </ul>
     </nav>
-
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -315,63 +387,78 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <main>
-                <div id="" class="container-fluid px-4">
-                    <section class="content">
-                        <div class="card mb-4 mt-4">
-                            <div class="card-footer text-sm sticky-top">
-                                <a class="btn btn-sm bg-primary " href="/support-customer/create" title="Thêm mới"><i
-                                        class="fas fa-plus mr-2"></i>Thêm mới</a>
-                                <a class="btn btn-sm bg-danger " id="delete-all"
-                                    data-url="index.php?com=news&act=delete&type=ho-tro-khach-hang&p=1"
-                                    title="Xóa tất cả"><i class="far fa-trash-alt mr-2"></i>Xóa tất cả</a>
-
-                            </div>
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                DataTable Example
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Số điện thoại</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Số điện thoại</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </tfoot>
-                                    {{-- <tbody>
-                                        @foreach ($support as $item)
-                                            <tr>
-                                                <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->phone }}</td>
-                                                <td>{{ $item->display }}</td>
-                                                <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
-                                                </td>
-                                            </tr>
-                                    </tbody>
-                                    @endforeach --}}
-                                </table>
-                            </div>
+            <form action="{{ route('store.support_customer') }}" method="post">
+                @csrf
+                <main>
+                    <div id="" class="container-fluid px-4 row">
+                        <div>
+                            <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                            <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                                    lại</a></button>
+                            <button type="button" class="btn btn-danger mt-3"><a href="">Thoát</a></button>
                         </div>
-                    </section>
-                </div>
-            </main>
+                        <div class="col-8">
+
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Nội dung Hỗ trợ khách hàng
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                    đề</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="tittle">
+                                        </div>
+
+                                        <div class="form-check mb-3 ms-3 me-3">
+                                            <input type="hidden" value="0" name="display">
+                                            <input class="form-check-input" type="checkbox" value="1"
+                                                name="display" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <b>Hiển thị</b>
+                                            </label>
+                                        </div>
+                                        <input type="hidden" value="1" name="number">
+                                    </div>
+
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-4">
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Danh mục Hỗ trợ khách hàng
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Điện
+                                                    thoại</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="phone">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label"><b>Zalo</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="zalo">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                </main>
+            </form>
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
                     <p>{{ $error }}</p>
@@ -380,15 +467,18 @@
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        </script>
-        <script src="{{ url('js/scripts.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
-        <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous"></script>
-        <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="{{ url('js/scripts.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
 </body>
 

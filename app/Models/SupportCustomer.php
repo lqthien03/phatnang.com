@@ -17,4 +17,7 @@ class SupportCustomer extends Model
         'phone',
         'zalo',
     ];
+
+    public $timestamps = false;
+
 }

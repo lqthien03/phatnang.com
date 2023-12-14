@@ -17,8 +17,18 @@ class SupportCustomerController extends Controller
         $support = SupportCustomer::all();
         return view('admin.customer_support_create', compact('support'));
     }
-    public function store()
+    public function store(Request $request)
     {
+        $request->validate([
+            'tittle' => 'required',
+            'display' => 'required',
+            'phone' => 'required',
+            'zalo' => 'required',
+        ]);
+
+        $support = SupportCustomer::create($request->all());
+        // $support = save();
+        return redirect()->route('show.support_customer')->with('success', 'Bản ghi đã được tạo thành công!');
     }
     public function edit()
     {

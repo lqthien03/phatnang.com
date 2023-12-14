@@ -25,6 +25,12 @@ class QuotationController extends Controller
             'image' => 'required',
             'tittle' => 'required',
             'display' => 'required',
+            'level1_product_id' => 'required',
+            'link_product' => 'required',
+            'unit_price' => 'required',
+            'wholesale_price' => 'required',
+            'guarantee' => 'required',
+            'seo_id' => 'required',
         ]);
 
         $quatation = Quotation::create($request->all());

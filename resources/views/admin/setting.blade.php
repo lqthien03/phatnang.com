@@ -311,18 +311,20 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
+
                     <section class="content">
                         <form class="validation-form" novalidate method="post"
                             action="{{ route('update.setting', $setting) }}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
-                            <div class="card-footer text-sm sticky-top">
-                                <button type="submit" class="btn btn-sm bg-gradient-primary submit-check"><i
-                                        class="far fa-save mr-2"></i>Lưu</button>
-                                <button type="reset" class="btn btn-sm bg-gradient-secondary"><i
-                                        class="fas fa-redo mr-2"></i>Làm lại</button>
+                            <div>
+                                <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                                <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                                        lại</a></button>
+                                <button type="button" class="btn btn-danger mt-3"><a
+                                        href="">Thoát</a></button>
                             </div>
-                            <div class="card card-primary card-outline text-sm">
+                            <div class="card card-primary card-outline text-sm mb-4 mt-4">
                                 <div class="card-header">
                                     <i class="fas fa-table me-1"></i>
                                     Thông tin chung
