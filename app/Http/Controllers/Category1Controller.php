@@ -13,7 +13,6 @@ class Category1Controller extends Controller
     public function show()
     {
         $category_level1 = Level1_Product::all();
-        // 9
         return view('admin.category.category_level1', compact('category_level1'));
     }
     public function create()
@@ -24,33 +23,15 @@ class Category1Controller extends Controller
 
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        //     'tittle' => 'required',
-        //     'display' => 'integer',
-        //     'describe' => 'required',
-        //     'image' => 'required',
-        //     'file_upload' => 'required',
-        //     'keyword' => 'required',
-        //     'description' => 'required',
-        // ]);
-
-
-
         if ($request->has('image')) {
             $file = $request->image;
             $file_name = $file->getClientOriginalName();
-
-            // $file_name = time() . '-' . 'product' . '.' . $ext;
             $file->move(public_path('uploads'), $file_name);
         }
-        // $request->merge(['image' => $file_name]);
-        dd($request->all());
-
+        $request->merge(['image' => $file_name]);
 
         $category_level1 = Level1_Product::create(([
-            'image' => $request->input('image'),
-            // 'image' => $imagePath ?? null,
+            'image' => $file_name,
             'tittle' => $request->input('tittle'),
             'display' => $request->input('display'),
             'describe' => $request->input('describe'),
@@ -61,7 +42,6 @@ class Category1Controller extends Controller
             'keyword',
             'description',
         ]));
-        // dd($category_level1);
         $category_level1->seo()->associate($seo);
         $category_level1->save();
 
@@ -77,16 +57,28 @@ class Category1Controller extends Controller
     }
     public function update(Level1_Product $category_level1, UpdateCategory1Request $request)
     {
-        dd($category_level1);
+        dd($request);
         $validated = $request->validated();
-        $category_level1->update($request->all());
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = $image->getClientOriginalName();
+            $image->storeAs('uploads', $imageName, 'public');
+            $category_level1->image = $imageName;
+        }
+        $category_level1->display = $request->has('display') ? true : false;
+        $category_level1->display = $request->has('outstand') ? true : false;
+        $category_level1->display = $request->has('level2_product_id') ? true : false;
+        $category_level1->display = $request->has('seo_id') ? true : false;
+        $category_level1->tittle = $request->input('tittle');
+        $category_level1->describe = $request->input('describe');
+        $category_level1->save();
         return back();
     }
 
     public function destroy($id)
     {
         $category_level1 = Level1_Product::find($id);
-
         $category_level1->delete();
         return back();
     }

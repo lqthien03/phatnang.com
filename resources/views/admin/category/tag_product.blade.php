@@ -63,12 +63,12 @@
                         <div class="sb-sidenav-menu-heading">Core</div>
                         <a class="nav-link" href="/dashboard">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Dashboard
+                            Dasboard
                         </a>
-                        <div class="sb-sidenav-menu-heading">Interface</div>
+                        <div class="sb-sidenav-menu-heading">Quản lý</div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"> </i></div>
                             Quản lý sản phẩm
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
@@ -85,217 +85,113 @@
 
                         {{-- ///// --}}
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            data-bs-target="#collapsePages1" aria-expanded="false" aria-controls="collapsePages1">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
                             Quản lý bảng báo giá
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages1" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Danh mục cấp 1
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Bảng báo giá
-                                    <div class="sb-sidenav-collapse-arrow"></i></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="/quotation-level-1">Danh mục cấp 1</a>
+                                <a class="nav-link" href="/quotation">Bảng báo giá</a>
+
                             </nav>
                         </div>
                         {{-- /// --}}
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            data-bs-target="#collapsePages2" aria-expanded="false" aria-controls="collapsePages2">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
                             Quản lý hỗ trợ khách hàng
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages2" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Hỗ trợ khách hàng
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="/support-customer">Hỗ trợ khách hàng</a>
                             </nav>
                         </div>
                         {{-- ///// --}}
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            data-bs-target="#collapsePages3" aria-expanded="false" aria-controls="collapsePages3">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-folder"></i></div>
                             Quản lý trang tĩnh
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Giới thiệu
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Thanh lý phòng net
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Slogan tin tức & video
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Liên hệ
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Footer
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="#">Giới thiệu</a>
+                                <a class="nav-link" href="#">Thanh lý phòng net</a>
+                                <a class="nav-link" href="#">Slogan tin tức & video</a>
+                                <a class="nav-link" href="#">Liên hệ</a>
+                                <a class="nav-link" href="#">Footer</a>
+
                             </nav>
                         </div>
                         {{-- //// --}}
+
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            data-bs-target="#collapsePages4" aria-expanded="false" aria-controls="collapsePages4">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-photo-film"></i></div>
                             Quản lý hình ảnh - video
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages4" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Hình ảnh chia sẻ trang chủ
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Logo
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Favicon
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Banner quảng cáo
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Slideshow
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Tiêu chí
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Mạng xã hội
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Video
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
+                                <a class="nav-link" href="#">Logo</a>
+                                <a class="nav-link" href="#">Favicon</a>
+                                <a class="nav-link" href="#">Banner quảng cáo</a>
+                                <a class="nav-link" href="#">Slideshow</a>
+                                <a class="nav-link" href="#">Tiêu chí</a>
+                                <a class="nav-link" href="#">Mạng xã hội</a>
+                                <a class="nav-link" href="#">Video</a>
+
                             </nav>
                         </div>
-                        {{-- //// --}}
 
                         {{-- //// --}}
 
+                        {{-- //// --}}
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            data-bs-target="#collapsePages5" aria-expanded="false" aria-controls="collapsePages5">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Quản lý bài viết
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Tin tức
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Chính sách
-                                    <div class="sb-sidenav-collapse-arrow"></i></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <a class="nav-link" href="#">Chính sách</a>
+
                             </nav>
                         </div>
-
                         {{-- ///// --}}
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            data-bs-target="#collapsePages6" aria-expanded="false" aria-controls="collapsePages6">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                             Quản lý SEO page
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                        <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Sản phẩm
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Bảng báo giá
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Tin tức
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
-                                    Video
-                                    <div class="sb-sidenav-collapse-arrow"></div>
-                                </a>
+                            <nav class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link" href="#">Sản phẩm</a>
+                                <a class="nav-link" href="#">Bảng báo giá</a>
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <a class="nav-link" href="#">Video</a>
+
+
                             </nav>
                         </div>
                         {{-- //// --}}
 
                         {{-- /// --}}
                         <div class="sb-sidenav-menu-heading">Cài đặt</div>
-                        <a class="nav-link" href="/setting">
+                        <a class="nav-link" href="/setting/1">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Thiết lập thông tin
                         </a>
@@ -304,8 +200,8 @@
                             Tables
                         </a> --}}
                     </div>
+                </div>
 
-                    {{--  --}}
             </nav>
         </div>
         {{-- main --}}
@@ -350,7 +246,9 @@
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>
                                                     @if ($item->image)
-                                                        <img src="{{ asset($item->image) }}" alt="Hình ảnh">
+                                                        <img src="{{ URL::asset('uploads/' . $item->image) }}"
+                                                            alt="Hình ảnh" width="25" height="25"
+                                                            style="text-align:center">
                                                     @else
                                                         Không có hình ảnh
                                                     @endif

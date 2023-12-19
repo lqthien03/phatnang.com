@@ -24,20 +24,22 @@ class TagProductController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
-        $request->validate([
-            'image' => 'required',
-            'tittle' => 'required',
-            // 'outstand' => 'required',
-            'display' => 'integer',
-        ]);
+        // $request->validate([
+        //     'image' => 'required',
+        //     'tittle' => 'required',
+        //     'display' => 'integer',
+        // ]);
+        if ($request->has('image')) {
+            $file = $request->image;
+            $file_name = $file->getClientOriginalName();
+            $file->move(public_path('uploads'), $file_name);
+        }
+        $request->merge(['image' => $file_name]);
 
-        $tag_product = Tag_Product::create($request->only([
-            'image',
-            'tittle',
-            // 'outstand',
-            'display',
-            'seo_id',
+        $tag_product = Tag_Product::create(([
+            'image'=> $file_name,
+            'tittle' => $request->input('tittle'),
+            'display'=> $request->input('display'),
         ]));
 
         $seo = Seo::create($request->only([

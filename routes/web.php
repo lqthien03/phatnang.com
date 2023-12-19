@@ -1,19 +1,33 @@
 <?php
 
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\Category1Controller;
 use App\Http\Controllers\Category2Controller;
 use App\Http\Controllers\Category3Controller;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FaviconController;
+use App\Http\Controllers\LogoController;
+use App\Http\Controllers\NetworkSocietyController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Quotation1Controller;
 use App\Http\Controllers\QuotationController;
+use App\Http\Controllers\SeoNewsController;
+use App\Http\Controllers\SeoProductController;
+use App\Http\Controllers\SeoQuotationController;
+use App\Http\Controllers\SeoVideoController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SlideshowController;
+use App\Http\Controllers\SloganController;
 use App\Http\Controllers\SupportCustomerController;
 use App\Http\Controllers\TagProductController;
+use App\Http\Controllers\VideoController;
+use App\Models\SeoProduct;
+use App\Models\SeoQuotation;
 use App\Models\Tag_Product;
 use Illuminate\Support\Facades\Route;
 
@@ -166,6 +180,93 @@ Route::controller(ContactController::class)->group(function () {
     Route::put('/contact/edit/{Quotation}', 'update')->name('update.news');
     Route::delete('/contact/{id}', 'destroy')->name('delete.news');
 });
+
+Route::controller(SloganController::class)->group(function () {
+    Route::get('/slogan/{slogan}', 'edit')->name('edit.slogan');
+    Route::put('/slogan/edit/{slogan}', 'update')->name('update.slogan');
+});
+
+Route::controller(VideoController::class)->group(function () {
+    Route::get('/image-video/videos', 'show')->name('show.video');
+    Route::get('/image-video/videos/create', 'create')->name('create.video');
+    Route::post('/image-video/videos/store', 'store')->name('store.video');
+    Route::get('/image-video/videos/edit/{video}', 'edit')->name('edit.video');
+    Route::put('/image-video/videos/update/{video}', 'update')->name('update.video');
+    Route::delete('/image-video/videos/{id}', 'destroy')->name('delete.image_video.video');
+});
+
+Route::controller(NetworkSocietyController::class)->group(function () {
+    Route::get('/image-video/network-society', 'show')->name('show.network-society');
+    Route::get('/image-video/network-society/create', 'create')->name('create.network-society');
+    Route::post('/image-video/network-society/store', 'store')->name('store.network-society');
+    Route::get('/image-video/network-society/edit/{video}', 'edit')->name('edit.network-society');
+    Route::put('/image-video/network-society/update/{video}', 'update')->name('update.network-society');
+    Route::delete('/image-video/network-society/{id}', 'destroy')->name('delete.image_video.network-society');
+});
+Route::controller(FaviconController::class)->group(function () {
+    // Route::get('/image-video/favicon', 'show')->name('show.slidershow');
+    // Route::get('/image-video/favicon/create', 'create')->name('create.favicon');
+    // Route::post('/image-video/favicon/store', 'store')->name('store.favicon');
+    Route::get('/image-video/favicon/edit/{favicon}', 'edit')->name('edit.favicon');
+    Route::put('/image-video/favicon/update/{favicon}', 'update')->name('update.favicon');
+    Route::delete('/image-video/favicon/{id}', 'destroy')->name('delete.image_video.favicon');
+});
+Route::controller(BannerController::class)->group(function () {
+    // Route::get('/image-video/favicon', 'show')->name('show.slidershow');
+    // Route::get('/image-video/favicon/create', 'create')->name('create.favicon');
+    // Route::post('/image-video/favicon/store', 'store')->name('store.favicon');
+    Route::get('/image-video/banner/edit/{banner}', 'edit')->name('edit.banner');
+    Route::put('/image-video/banner/update/{banner}', 'update')->name('update.banner');
+    // Route::delete('/image-video/banner/{id}', 'destroy')->name('delete.image_video.banner');
+});
+Route::controller(LogoController::class)->group(function () {
+    // Route::get('/image-video/logo', 'show')->name('show.logo');
+    // Route::get('/image-video/logo/create', 'create')->name('create.logo');
+    // Route::post('/image-video/logo/store', 'store')->name('store.logo');
+    Route::get('/image-video/logo/edit/{logo}', 'edit')->name('edit.logo');
+    Route::put('/image-video/logo/update/{logo}', 'update')->name('update.logo');
+    Route::delete('/image-video/logo/{id}', 'destroy')->name('delete.image_video.logo');
+});
+Route::controller(SlideshowController::class)->group(function () {
+    Route::get('/image-video/slideshow', 'show')->name('show.slideshow');
+    Route::get('/image-video/slidershow/create', 'create')->name('create.slideshow');
+    Route::post('/image-video/slidershow/store', 'store')->name('store.slideshow');
+    Route::get('/image-video/slidershow/edit/{video}', 'edit')->name('edit.slideshow');
+    Route::put('/image-video/slidershow/update/{video}', 'update')->name('update.slideshow');
+    Route::delete('/image-video/slidershow/{id}', 'destroy')->name('delete.image_video.slideshow');
+});
+Route::controller(CriteriaController::class)->group(function () {
+    Route::get('/image-video/criteria', 'show')->name('show.criteria');
+    Route::get('/image-video/criteria/create', 'create')->name('create.criteria');
+    Route::post('/image-video/criteria/store', 'store')->name('store.criteria');
+    Route::get('/image-video/criteria/edit/{criteria}', 'edit')->name('edit.criteria');
+    Route::put('/image-video/criteria/update/{criteria}', 'update')->name('update.criteria');
+    Route::delete('/image-video/criteria/{id}', 'destroy')->name('delete.image_video.criteria');
+});
+Route::controller(SeoNewsController::class)->group(function () {
+    Route::get('/seo-page/news/edit/{news}', 'edit')->name('edit.seo_page.news');
+    Route::put('/seo-page/news/update/{news}', 'update')->name('update.seo_page.news');
+});
+Route::controller(SeoProductController::class)->group(function () {
+    Route::get('/seo-page/product/edit/{product}', 'edit')->name('edit.seo_page.product');
+    Route::put('/seo-page/product/update/{product}', 'update')->name('update.seo_page.product');
+});
+Route::controller(SeoQuotationController::class)->group(function () {
+    Route::get('/seo-page/quotation/edit/{quotation}', 'edit')->name('edit.seo_page.quotation');
+    Route::put('/seo-page/quotation/update/{quotation}', 'update')->name('update.seo_page.quotation');
+});
+Route::controller(SeoVideoController::class)->group(function () {
+    Route::get('/seo-page/video/edit/{video}', 'edit')->name('edit.seo_page.video');
+    Route::put('/seo-page/video/update/{video}', 'update')->name('update.seo_page.video');
+});
+
+
+
+
+
+
+
+
 
 
 

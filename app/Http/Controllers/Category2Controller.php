@@ -27,21 +27,30 @@ class Category2Controller extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
-        $request->validate([
-            'image' => 'required',
-            'tittle' => 'required',
-            'display' => 'required',
-            'keyword' => 'required',
-            'description' => 'required',
-            'level1_product_id' => 'required|exists:level1_products,id',
+        // dd($request->all());
+        // $request->validate([
+        //     'image' => 'required',
+        //     'tittle' => 'required',
+        //     'display' => 'required',
+        //     'keyword' => 'required',
+        //     'description' => 'required',
+        //     'level1_product_id' => 'integer|exists:level1_products,id',
 
-        ]);
+        // ]);
+        // dd($request);
+        if ($request->has('image')) {
+            $file = $request->image;
+            $file_name = $file->getClientOriginalName();
+            $file->move(public_path('uploads'), $file_name);
+        }
 
-        $category_level2 = Level2_Product::create($request->only([
-            'image',
-            'tittle',
-            'display',
+        $request->merge(['image' => $file_name]);
+
+        $category_level2 = Level2_Product::create(([
+            'image' => $file_name,
+            'tittle' => $request->input('tittle'),
+            'display' => $request->input('display'),
+            'level1_product_id' => $request->input('level1_product_id')
         ]));
         $seo = Seo::create($request->only([
             'tittle',

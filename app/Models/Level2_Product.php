@@ -14,7 +14,7 @@ class Level2_Product extends Model
         'image',
         'tittle',
         'display',
-        'level3_product_id',
+        'level1_product_id',
         'seo_id',
     ];
 

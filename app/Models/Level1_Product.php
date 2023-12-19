@@ -15,11 +15,9 @@ class Level1_Product extends Model
         'tittle',
         'outstand',
         'display',
-        'level2_product_id',
         'seo_id',
         'describe',
     ];
-
     // protected $attributes = ['outstand' => 1,];
     public $timestamps = false;
 

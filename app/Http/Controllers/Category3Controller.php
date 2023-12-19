@@ -26,22 +26,28 @@ class Category3Controller extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
-        $request->validate([
-            'image' => 'required',
-            'tittle' => 'required',
-            'display' => 'integer',
-            'keyword' => 'required',
-            'description' => 'required',
-            'level1_product_id' => 'integer',
-            'level2_product_id' => 'integer',
-        ]);
+        // $request->validate([
+        //     'image' => 'required',
+        //     'tittle' => 'required',
+        //     'display' => 'integer',
+        //     'keyword' => 'required',
+        //     'description' => 'required',
+        //     'level1_product_id' => 'integer',
+        //     'level2_product_id' => 'integer',
+        // ]);
+        if ($request->has('image')) {
+            $file = $request->image;
+            $file_name = $file->getClientOriginalName();
+            $file->move(public_path('uploads'), $file_name);
+        }
+        $request->merge(['image' => $file_name]);
 
-        $category_level3 = Level3_Product::create($request->only([
-            'image',
-            'tittle',
-            'display',
-            'level1_product_id',
-            'level2_product_id',
+        $category_level3 = Level3_Product::create(([
+            'image'=> $file_name,
+            'tittle'=> $request->input('tittle'),
+            'display'=> $request->input('display'),
+            'level1_product_id'=> $request->input('level1_product_id'),
+            'level2_product_id'=> $request->input('level2_product_id'),
         ]));
         $seo = Seo::create($request->only([
             'tittle',
