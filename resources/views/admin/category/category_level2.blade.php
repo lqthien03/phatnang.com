@@ -31,6 +31,8 @@
             </div>
         </form>
         <!-- Navbar-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
+            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -123,7 +125,7 @@
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Giới thiệu</a>
                                 <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="#">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/slogan/1">Slogan tin tức & video</a>
                                 <a class="nav-link" href="#">Liên hệ</a>
                                 <a class="nav-link" href="#">Footer</a>
 
@@ -141,13 +143,13 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
-                                <a class="nav-link" href="#">Logo</a>
-                                <a class="nav-link" href="#">Favicon</a>
-                                <a class="nav-link" href="#">Banner quảng cáo</a>
-                                <a class="nav-link" href="#">Slideshow</a>
-                                <a class="nav-link" href="#">Tiêu chí</a>
-                                <a class="nav-link" href="#">Mạng xã hội</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
+                                <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
+                                <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
+                                <a class="nav-link" href="/image-video/slideshow">Slideshow</a>
+                                <a class="nav-link" href="/image-video/criteria">Tiêu chí</a>
+                                <a class="nav-link" href="/image-video/network-society">Mạng xã hội</a>
+                                <a class="nav-link" href="/image-video/videos">Video</a>
 
                             </nav>
                         </div>
@@ -179,10 +181,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Bảng báo giá</a>
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>

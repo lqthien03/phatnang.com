@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function show()
+    public function edit($id)
     {
-        $contact = Contact::all();
+        $contact = Contact::findOrFail($id);
+        $seo = $contact->seo;
         return view('admin.static_page.contact', compact('contact'));
     }
 }

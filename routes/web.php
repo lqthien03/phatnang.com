@@ -8,6 +8,9 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaviconController;
+use App\Http\Controllers\FooterController;
+use App\Http\Controllers\IntroduceController;
+use App\Http\Controllers\LiquidationController;
 use App\Http\Controllers\LogoController;
 use App\Http\Controllers\NetworkSocietyController;
 use App\Http\Controllers\NewsController;
@@ -181,10 +184,7 @@ Route::controller(ContactController::class)->group(function () {
     Route::delete('/contact/{id}', 'destroy')->name('delete.news');
 });
 
-Route::controller(SloganController::class)->group(function () {
-    Route::get('/slogan/{slogan}', 'edit')->name('edit.slogan');
-    Route::put('/slogan/edit/{slogan}', 'update')->name('update.slogan');
-});
+
 
 Route::controller(VideoController::class)->group(function () {
     Route::get('/image-video/videos', 'show')->name('show.video');
@@ -199,8 +199,8 @@ Route::controller(NetworkSocietyController::class)->group(function () {
     Route::get('/image-video/network-society', 'show')->name('show.network-society');
     Route::get('/image-video/network-society/create', 'create')->name('create.network-society');
     Route::post('/image-video/network-society/store', 'store')->name('store.network-society');
-    Route::get('/image-video/network-society/edit/{video}', 'edit')->name('edit.network-society');
-    Route::put('/image-video/network-society/update/{video}', 'update')->name('update.network-society');
+    Route::get('/image-video/network-society/edit/', 'edit')->name('edit.network-society');
+    Route::put('/image-video/network-society/update/', 'update')->name('update.network-society');
     Route::delete('/image-video/network-society/{id}', 'destroy')->name('delete.image_video.network-society');
 });
 Route::controller(FaviconController::class)->group(function () {
@@ -258,6 +258,28 @@ Route::controller(SeoQuotationController::class)->group(function () {
 Route::controller(SeoVideoController::class)->group(function () {
     Route::get('/seo-page/video/edit/{video}', 'edit')->name('edit.seo_page.video');
     Route::put('/seo-page/video/update/{video}', 'update')->name('update.seo_page.video');
+});
+
+
+Route::controller(ContactController::class)->group(function () {
+    Route::get('/static-page/contact/{id}', 'edit')->name('edit.static_page.contact');
+    Route::put('/static-page/contact/{id}', 'update')->name('update.static_page.contact');
+});
+Route::controller(FooterController::class)->group(function () {
+    Route::get('/static-page/footer/{footer}', 'edit')->name('edit.static_page.footer');
+    Route::put('/static-page/footer/{footer}', 'update')->name('update.static_page.footer');
+});
+Route::controller(IntroduceController::class)->group(function () {
+    Route::get('/static-page/introduce/{id}', 'edit')->name('edit.static_page.introduce');
+    Route::put('/static-page/introduce/{id}', 'update')->name('update.static_page.introduce');
+});
+Route::controller(LiquidationController::class)->group(function () {
+    Route::get('/static-page/liquidation/{id}', 'edit')->name('edit.static_page.liquidation');
+    Route::put('/static-page/liquidation/{id}', 'update')->name('update.static_page.liquidation');
+});
+Route::controller(SloganController::class)->group(function () {
+    Route::get('/static-page/slogan/{slogan}', 'edit')->name('edit.static_page.slogan');
+    Route::put('/static-page/slogan/{slogan}', 'update')->name('update.static_page.slogan');
 });
 
 

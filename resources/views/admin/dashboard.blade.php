@@ -39,6 +39,7 @@
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
+
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
@@ -49,6 +50,8 @@
             </div>
         </form>
         <!-- Navbar-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -72,6 +75,7 @@
                 </ul>
             </li>
         </ul>
+
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
@@ -139,11 +143,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="/slogan/1">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -197,10 +201,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="/static-page/product/1">Sản phẩm</a>
-                                <a class="nav-link" href="/static-page/quotation/1">Bảng báo giá</a>
-                                <a class="nav-link" href="/static-page/news/1">Tin tức</a>
-                                <a class="nav-link" href="/static-page/video/1">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>

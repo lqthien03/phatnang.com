@@ -22,7 +22,7 @@ class UpdateCategory1Request extends FormRequest
     public function rules(): array
     {
         $category1_id = $this->category_level1->id;
-
+        
         return [
             'image' => 'image|mimes:jpg,jpeg,png,gif|max:2048',
             'tittle' => 'required|string|unique:level1_products,tittle,' . $category1_id,

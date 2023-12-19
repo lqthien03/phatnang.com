@@ -13181,3 +13181,12 @@ body {
     font-size: 0.75rem;
     border-radius: 0.375rem !important;
 }
+
+.center-image {
+    display: block;
+    /* Để hình ảnh hiển thị dạng block */
+    margin: 0 auto;
+    /* Để căn giữa theo chiều ngang */
+    text-align: center;
+    /* Căn giữa theo chiều ngang trong trường hợp hình ảnh nằm trong một phần tử có text-align: center */
+}

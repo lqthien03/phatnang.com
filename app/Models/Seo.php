@@ -17,4 +17,9 @@ class Seo extends Model
     ];
 
     public $timestamps = false;
+
+    public function introduces()
+    {
+        return $this->hasMany(Introduce::class, 'keyword', 'keyword');
+    }
 }

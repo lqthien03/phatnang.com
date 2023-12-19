@@ -5,18 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SeoNews extends Model
+class Introduce extends Model
 {
     use HasFactory;
 
-    public $table = "seo_news";
+    public $table = "introduces";
     protected $fillable = [
         'image',
-        'seo_id',
         'tittle',
-        'keyword',
-        'description',
+        'display',
+        'content',
+        'seo_id',
     ];
-
     public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

@@ -108,6 +108,8 @@
             </div>
         </form>
         <!-- Navbar-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
+            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -282,7 +284,8 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('update.banner', $banner) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('update.seo_page.product', $product) }}" method="post"
+                enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <main>
@@ -292,7 +295,7 @@
                             <button type="button" class="btn btn-danger mt-3"><a href="#">Làm
                                     lại</a></button>
                             <section class="content">
-                                <div class="row card mb-4 mt-4">
+                                <div class="row card mb-4 mt-4 ms-1 me-1">
                                     <div class="card-header">
                                         <i class="fas fa-table me-1"></i>
                                         Chi tiết Favicon
@@ -306,7 +309,7 @@
                                                 <form action="/upload-endpoint" method="post"
                                                     class="dropzone dz-clickable" enctype="multipart/form-data">
                                                     @csrf
-                                                    <img src="{{ URL::asset('uploads/' . $banner->image) }}"
+                                                    <img src="{{ URL::asset('uploads/' . $product->image) }}"
                                                         alt="hình ảnh" width="30" height="30">
                                                     <input type="file" name="image" accept="image/*"
                                                         placeholder="Chọn hình">
@@ -320,32 +323,40 @@
                                         <strong class="d-block mt-2 mb-2 text-sm">Width: 122 px - Height: 100 px
                                             (.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF)</strong>
                                     </div>
-                                    {{-- <div class="col-md-3">
-                                        <img src="{{ URL::asset('uploads/' . $logo->image) }}" alt="hình ảnh"
-                                            width="30" height="30">
-                                    </div> --}}
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label"><b>Link:</b></label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="" name="link"
-                                            value="{{ old('link') ?? $banner->first()->link }}">
+                                </div>
+                            </section>
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class=" row card-header">
+                                        <div class="col-6">
+                                            <i class="fas fa-table me-1"></i>Nội dung SEO
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <button type="button" class="btn btn-success"><a href="">Tạo
+                                                    seo</a></button>
+                                        </div>
+
                                     </div>
 
-                                    <div class="form-check mb-3 ms-3 me-3">
-                                        <input type="hidden" value="0" name="display">
-                                        <input class="form-check-input" type="checkbox"
-                                            value="{{ old('display') ?? $banner->first()->display }}"
-                                            id="flexCheckDefault" name="display"
-                                            {{ $banner->first()->display == 1 ? 'checked' : '' }}>
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Hiển thị
-                                        </label>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label"><b>Link:</b></label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="" name="tittle"
-                                            value="{{ old('tittle') ?? $banner->first()->tittle }}">
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
+                                                    (vi):</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                name="tittle" value="{{ old('tittle') ?? $product->tittle }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
+                                                    (vi):</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                name="keyword" value="{{ old('keyword') ?? $product->keyword }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label"><b>SEO
+                                                    Description
+                                                    (vi):</b></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">{{ old('description') ?? $product->description }}</textarea>
+                                        </div>
                                     </div>
 
                                 </div>
