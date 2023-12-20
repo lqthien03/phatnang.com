@@ -186,8 +186,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>

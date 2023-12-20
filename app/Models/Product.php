@@ -20,6 +20,7 @@ class Product extends Model
         'display',
         'product_code',
         'discount',
+        'describe',
         'content',
         'price',
         'gallery',

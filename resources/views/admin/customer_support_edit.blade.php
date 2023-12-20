@@ -1,4 +1,3 @@
-2
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +12,83 @@
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f7fb;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .card .card-header h5:after {
+            content: "";
+            background-color: #d2d2d2;
+            width: 101px;
+            height: 1px;
+            position: absolute;
+            bottom: 6px;
+            left: 20px;
+        }
+
+        .card .card-block {
+            padding: 1.25rem;
+        }
+
+        .dropzone.dz-clickable {
+            cursor: pointer;
+        }
+
+        .dropzone {
+            min-height: 150px;
+            border: 1px solid rgba(42, 42, 42, 0.05);
+            background: rgba(204, 204, 204, 0.15);
+            padding: 20px;
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+            box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+
+        .btn-primary,
+        .sweet-alert button.confirm,
+        .wizard>.actions a {
+            background-color: #4099ff;
+            border-color: #4099ff;
+            color: #fff;
+            cursor: pointer;
+            -webkit-transition: all ease-in .3s;
+            transition: all ease-in .3s;
+        }
+
+        .btn {
+            border-radius: 2px;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 10px 19px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -209,85 +285,84 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <main>
-                <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn " style="background-color:#65B741; color:#fff"><a
-                            href="/catagory-level-1/create">Thêm
-                            mới</a></button>
-                    {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
-                    <section class="content">
-                        <div class="card mb-4 mt-4">
-
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                DataTable Example
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        @foreach ($level1_Quotation as $item)
-                                            <tr>
-                                                <th scope="row">{{ $item->id }}</th>
-                                                <td style="text-align: center; vertical-align: middle;">
-                                                    @if ($item->image)
-                                                        <img src="{{ URL::asset('uploads/' . $item->image) }}"
-                                                            alt="Hình ảnh" width="40" height="40"
-                                                            style="text-align:center">
-                                                    @else
-                                                        Không có hình ảnh
-                                                    @endif
-                                                </td>
-                                                <td>{{ $item->tittle }}</td>
-                                                <td>
-                                                    <input class="form-check-input" type="checkbox"
-                                                        value="{{ $item->display }}" name="display"
-                                                        id="flexCheckDefault"
-                                                        {{ $item->display == 1 ? 'checked' : '' }}>
-                                                </td>
-                                                <td>
-                                                    <a href="/quotation-level-1/edit/{{ $item->id }}"><i
-                                                            class='bx bxs-edit bx-sm'></i></a>
-                                                    <form method="POST"
-                                                        action="{{ route('delete.quotation1', ['id' => $item->id]) }}"
-                                                        style="display: inline;"
-                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit"
-                                                            style="background: none; border: none; cursor: pointer;">
-                                                            <i class='bx bxs-trash-alt bx-sm'
-                                                                style='color:#ff0000'></i>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
-
-                                </table>
-                            </div>
+            <form action="{{ route('update.support_customer', $support) }}" method="post">
+                @csrf
+                @method('PUT')
+                <main>
+                    <div id="" class="container-fluid px-4 row">
+                        <div>
+                            <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                            <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                                    lại</a></button>
+                            <button type="button" class="btn btn-danger mt-3"><a href="">Thoát</a></button>
                         </div>
-                    </section>
-                </div>
-            </main>
+                        <div class="col-8">
+
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Nội dung Hỗ trợ khách hàng
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                    đề</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="tittle"
+                                                value="{{ old('tittle') ?? $support->first()->tittle }}">
+                                        </div>
+
+                                        <div class="form-check mb-3 ms-3 me-3">
+                                            <input type="hidden" type="0" name="display">
+                                            <input class="form-check-input" type="checkbox"
+                                                value="{{ old('display') ?? $support->first()->display }}"
+                                                id="flexCheckDefault" name="display"
+                                                {{ $support->first()->display == 1 ? 'checked' : '' }}>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Hiển thị
+                                            </label>
+                                        </div>
+                                        {{-- <input type="hidden" value="1" name="number"> --}}
+                                    </div>
+
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-4">
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Danh mục Hỗ trợ khách hàng
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Điện
+                                                    thoại</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="phone"
+                                                value="{{ old('phone') ?? $support->first()->phone }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label"><b>Zalo</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="zalo"
+                                                value="{{ old('zalo') ?? $support->first()->zalo }}">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                </main>
+            </form>
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
                     <p>{{ $error }}</p>
@@ -296,15 +371,18 @@
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        </script>
-        <script src="{{ url('js/scripts.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
-        <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous"></script>
-        <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="{{ url('js/scripts.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
 </body>
 

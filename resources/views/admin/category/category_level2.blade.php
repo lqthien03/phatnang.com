@@ -32,7 +32,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -123,11 +123,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="/slogan/1">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -166,8 +166,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -247,7 +247,7 @@
                                                 <td>
                                                     @if ($item->image)
                                                         <img src="{{ URL::asset('uploads/' . $item->image) }}"
-                                                            alt="Hình ảnh" width="25" height="25"
+                                                            alt="Hình ảnh" width="40" height="40"
                                                             style="text-align:center">
                                                     @else
                                                         Không có hình ảnh

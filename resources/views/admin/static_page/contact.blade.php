@@ -200,11 +200,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="/slogan/1">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -243,8 +243,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -285,7 +285,7 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('update.static_page.introduce', $introduce) }}" method="post"
+            <form action="{{ route('update.static_page.contact', $contact) }}" method="post"
                 enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
@@ -303,27 +303,27 @@
                                         <i class="fas fa-table me-1"></i>
                                         Nội dung sản phẩm
                                     </div>
-                                    <input type="hidden" name="seo_id" value="{{ $introduce->first()->seo_id }}">
+                                    <input type="hidden" name="seo_id" value="{{ $contact->first()->seo_id }}">
                                     <div>
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
                                                     đề</b></label>
                                             <input type="text" class="form-control" id="exampleFormControlInput1"
                                                 placeholder=""
-                                                value="{{ old('tittle') ?? $introduce->first()->tittle }}"
+                                                value="{{ old('tittle') ?? $contact->first()->tittle }}"
                                                 name="tittle">
                                         </div>
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
                                                     tả</b></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="content">{{ old('describe') ?? $introduce->first()->content }}</textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="content">{{ old('describe') ?? $contact->first()->content }}</textarea>
                                         </div>
                                         <div class="form-check mb-3 ms-3 me-3">
                                             <input type="hidden" type="0" name="display">
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $introduce->first()->display }}"
+                                                value="{{ old('display') ?? $contact->first()->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $introduce->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $contact->first()->display == 1 ? 'checked' : '' }}>
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
@@ -344,7 +344,7 @@
 
                                                 <h5>File Upload</h5>
                                                 <img class="center-image"
-                                                    src="{{ URL::asset('uploads/' . $introduce->image) }}"
+                                                    src="{{ URL::asset('uploads/' . $contact->image) }}"
                                                     alt="hình ảnh" width="100" height="100" style="">
                                             </div>
                                             <div class="card-block">

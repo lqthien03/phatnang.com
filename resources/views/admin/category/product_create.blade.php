@@ -116,7 +116,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -207,11 +207,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="#">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -227,13 +227,13 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
-                                <a class="nav-link" href="#">Logo</a>
-                                <a class="nav-link" href="#">Favicon</a>
-                                <a class="nav-link" href="#">Banner quảng cáo</a>
-                                <a class="nav-link" href="#">Slideshow</a>
-                                <a class="nav-link" href="#">Tiêu chí</a>
-                                <a class="nav-link" href="#">Mạng xã hội</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
+                                <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
+                                <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
+                                <a class="nav-link" href="/image-video/slideshow">Slideshow</a>
+                                <a class="nav-link" href="/image-video/criteria">Tiêu chí</a>
+                                <a class="nav-link" href="/image-video/network-society">Mạng xã hội</a>
+                                <a class="nav-link" href="/image-video/videos">Video</a>
 
                             </nav>
                         </div>
@@ -250,8 +250,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -265,10 +265,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Bảng báo giá</a>
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>
@@ -292,9 +292,18 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('store.product') }}" method="post">
+            <form action="{{ route('store.product') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <main>
+                    {{-- <input type="hidden" name="seo_id" value="{{ $product->seo->id }}"> --}}
+                    <input type="hidden" name="level1_product_id" value="{{ $category_level1->first()->id }}">
+                    <input type="hidden" name="level2_product_id" value="{{ $category_level2->first()->id }}">
+                    <input type="hidden" name="level3_product_id" value="{{ $category_level3->first()->id }}">
+                    <input type="hidden" name="tag_product_id" value="{{ $tag_product->first()->id }}">
+                    <input type="hidden" name="gallery" value="1">
+                    <input type="hidden" name="outstand" value="1">
+                    <input type="hidden" name="selling" value="1">
+                    <input type="hidden" name="new" value="1">
                     <div id="" class="container-fluid px-4 row">
                         <div>
                             <button type="submit" class="btn btn-success mt-3">Lưu</button>
@@ -310,7 +319,7 @@
                                         <i class="fas fa-table me-1"></i>
                                         Nội dung sản phẩm
                                     </div>
-                                    <hr>
+
                                     <div>
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
@@ -318,15 +327,16 @@
                                             <input type="text" class="form-control" id="exampleFormControlInput1"
                                                 placeholder="" name="tittle">
                                         </div>
+
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
                                                     tả</b></label>
-                                            <textarea class="form-control" id="editor1" rows="3" name="describe"></textarea>
+                                            <textarea class="form-control" id="editor" rows="5" name="describe"></textarea>
                                         </div>
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><b>
                                                     Nội dung</b></label>
-                                            <textarea class="form-control" id="editor2" rows="3" name="content"></textarea>
+                                            <textarea class="form-control" id="editor" rows="5" name="content"></textarea>
                                         </div>
 
                                     </div>
@@ -562,20 +572,38 @@
         crossorigin="anonymous"></script>
     <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 
-    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script src="./node_modules/ckeditor4/ckeditor.js"></script>
+    {{-- <script src="{{ asset('ckeditor/ckeditor.js') }}"></script> --}}
+
+
     {{-- <script>
-        CKEDITOR.replace('editor');
+        CKEDITOR.replace('editor', {
+            licenseKey: 'your license key'
+        });
     </script> --}}
-
-
-    <script>
+    {{-- <script>
         ClassicEditor
-            .create(document.querySelector('#editor1', '#editor2'))
+            .create(document.querySelector('#editor'),{
+                ckfinder:{
+                    uploadUrl:'{{route('ckeditor.upload').'?_token='.csrf_token()}}'
+                }
+            })
+            .then(editor => {
+                console.log(editor);
+            })
             .catch(error => {
                 console.error(error);
             });
-    </script>
+    </script> --}}
+    {{-- <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script> --}}
 
 </body>
 

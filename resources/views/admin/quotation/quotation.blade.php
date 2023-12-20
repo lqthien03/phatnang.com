@@ -32,7 +32,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -123,11 +123,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="#">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -143,13 +143,13 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
-                                <a class="nav-link" href="#">Logo</a>
-                                <a class="nav-link" href="#">Favicon</a>
-                                <a class="nav-link" href="#">Banner quảng cáo</a>
-                                <a class="nav-link" href="#">Slideshow</a>
-                                <a class="nav-link" href="#">Tiêu chí</a>
-                                <a class="nav-link" href="#">Mạng xã hội</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
+                                <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
+                                <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
+                                <a class="nav-link" href="/image-video/slideshow">Slideshow</a>
+                                <a class="nav-link" href="/image-video/criteria">Tiêu chí</a>
+                                <a class="nav-link" href="/image-video/network-society">Mạng xã hội</a>
+                                <a class="nav-link" href="/image-video/videos">Video</a>
 
                             </nav>
                         </div>
@@ -166,8 +166,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -181,10 +181,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Bảng báo giá</a>
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>
@@ -210,37 +210,11 @@
         <div id="layoutSidenav_content">
             <main>
                 <div id="" class="container-fluid px-4">
-                    <button type="button" class="btn btn-success mt-3"><a href="/quotation/create">Thêm
+                    <button type="button" class="btn mt-3" style="background-color:#65B741; color:#fff"><a
+                            href="/catagory-level-1/create">Thêm
                             mới</a></button>
                     {{-- <button type="button" class="btn btn-danger mt-3"></button> --}}
                     <section class="content">
-                        {{-- <table class="table rounded table-bordered mt-2">
-                            <thead>
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Hình</th>
-                                    <th scope="col">Tiêu đề</th>
-                                    <th scope="col">Nổi bật</th>
-                                    <th scope="col">Hiển thị</th>
-                                    <th scope="col">Thao tác</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($category_level1 as $item)
-                                    <tr>
-                                        <th scope="row">{{ $item->id }}</th>
-                                        <td>{{ $item->image }}</td>
-                                        <td>{{ $item->tittle }}</td>
-                                        <td>{{ $item->outstand }}</td>
-                                        <td>{{ $item->display }}</td>
-                                        <td>
-                                            <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                            <a href=""><i class='bx bxs-trash-alt bx-sm'></i></a>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                            @endforeach
-                        </table> --}}
                         <div class="card mb-4 mt-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
@@ -251,7 +225,7 @@
                                     <thead>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Hình</th>
+
                                             <th>Tiêu đề</th>
                                             <th>Hiển thị</th>
                                             <th>Thao tác</th>
@@ -260,7 +234,7 @@
                                     <tfoot>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Hình</th>
+
                                             <th>Tiêu đề</th>
                                             <th>Hiển thị</th>
                                             <th>Thao tác</th>
@@ -270,9 +244,14 @@
                                         @foreach ($quatation as $item)
                                             <tr>
                                                 <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
+
                                                 <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->display }}</td>
+                                                <td>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="{{ $item->display }}" name="display"
+                                                        id="flexCheckDefault"
+                                                        {{ $item->display == 1 ? 'checked' : '' }}>
+                                                </td>
                                                 <td>
                                                     <a href="/quotation/edit/{{ $item->id }}"><i
                                                             class='bx bxs-edit bx-sm'></i></a>
@@ -290,8 +269,9 @@
                                                     </form>
                                                 </td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    @endforeach
+
                                 </table>
                             </div>
                         </div>

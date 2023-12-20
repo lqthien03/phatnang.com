@@ -12,6 +12,83 @@
     <link href="{{ url('css/style.css') }}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f2f7fb;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .card .card-header h5:after {
+            content: "";
+            background-color: #d2d2d2;
+            width: 101px;
+            height: 1px;
+            position: absolute;
+            bottom: 6px;
+            left: 20px;
+        }
+
+        .card .card-block {
+            padding: 1.25rem;
+        }
+
+        .dropzone.dz-clickable {
+            cursor: pointer;
+        }
+
+        .dropzone {
+            min-height: 150px;
+            border: 1px solid rgba(42, 42, 42, 0.05);
+            background: rgba(204, 204, 204, 0.15);
+            padding: 20px;
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+            box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+
+        .btn-primary,
+        .sweet-alert button.confirm,
+        .wizard>.actions a {
+            background-color: #4099ff;
+            border-color: #4099ff;
+            color: #fff;
+            cursor: pointer;
+            -webkit-transition: all ease-in .3s;
+            transition: all ease-in .3s;
+        }
+
+        .btn {
+            border-radius: 2px;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 10px 19px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -32,7 +109,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -123,11 +200,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="#">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -143,13 +220,13 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
-                                <a class="nav-link" href="#">Logo</a>
-                                <a class="nav-link" href="#">Favicon</a>
-                                <a class="nav-link" href="#">Banner quảng cáo</a>
-                                <a class="nav-link" href="#">Slideshow</a>
-                                <a class="nav-link" href="#">Tiêu chí</a>
-                                <a class="nav-link" href="#">Mạng xã hội</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
+                                <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
+                                <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
+                                <a class="nav-link" href="/image-video/slideshow">Slideshow</a>
+                                <a class="nav-link" href="/image-video/criteria">Tiêu chí</a>
+                                <a class="nav-link" href="/image-video/network-society">Mạng xã hội</a>
+                                <a class="nav-link" href="/image-video/videos">Video</a>
 
                             </nav>
                         </div>
@@ -166,8 +243,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -181,10 +258,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Bảng báo giá</a>
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>
@@ -208,56 +285,144 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <main>
-                <div id="" class="container-fluid px-4">
-                    <section class="content">
-                        <div class="card mb-4 mt-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                DataTable Example
+            <form action="{{ route('store.quotation') }}" method="post">
+                @csrf
+                <main>
+                    <div id="" class="container-fluid px-4 row">
+
+                        <div class="col-8">
+                            <div>
+                                <button type="submit" class="btn btn-success mt-3">Lưu</button>
+                                <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                                        lại</a></button>
+                                <button type="button" class="btn btn-danger mt-3"><a
+                                        href="">Thoát</a></button>
                             </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Hình</th>
-                                            <th>Tiêu đề</th>
-                                            <th>Hiển thị</th>
-                                            <th>Thao tác</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        @foreach ($category_level2 as $item)
-                                            <tr>
-                                                <th scope="row">{{ $item->id }}</th>
-                                                <td>{{ $item->image }}</td>
-                                                <td>{{ $item->tittle }}</td>
-                                                <td>{{ $item->outstand }}</td>
-                                                <td>{{ $item->display }}</td>
-                                                <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
-                                                </td>
-                                            </tr>
-                                    </tbody>
-                                    @endforeach
-                                </table>
-                            </div>
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Nội dung sản phẩm
+                                    </div>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                    đề</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="tittle"
+                                                value="{{ old('tittle') ?? $quatation->tittle }}">
+                                        </div>
+
+                                        <div class="form-check mb-3 ms-3 me-3">
+                                            <input type="hidden" type="0" name="display">
+                                            <input class="form-check-input" type="checkbox"
+                                                value="{{ old('display') ?? $quatation->first()->display }}"
+                                                id="flexCheckDefault" name="display"
+                                                {{ $quatation->first()->display == 1 ? 'checked' : '' }}>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Hiển thị
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
                         </div>
-                    </section>
-                </div>
-            </main>
+                        <div class="col-4 mt-5">
+                            <section class="content mt-5">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Danh mục bảng báo giá
+                                    </div>
+                                    <div>
+                                        <div class=" mb-2 ms-3 me-3 mx-auto">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Doanh mục cấp
+                                                    1:</b></label>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select" id="inputGroupSelect01"
+                                                    name="level1_product_id">
+                                                    <option selected>Chọn danh mục</option>
+                                                    @foreach ($category_level1 as $item)
+                                                        <option value="{{ $item->id }}"
+                                                            data-id="{{ $item->id }}">
+                                                            {{ $item->tittle }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Link sản
+                                                    phẩm:</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="link_product"
+                                                value="{{ old('link_product') ?? $quatation->first()->link_product }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Đơn
+                                                    giá:</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="unit_price"
+                                                value="{{ old('unit_price') ?? $quatation->first()->unit_price }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Giá
+                                                    sỉ:</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="wholesale_price"
+                                                value="{{ old('wholesale_price') ?? $quatation->first()->wholesale_price }}">
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Bảo
+                                                    hành:</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="guarantee"
+                                                value="{{ old('guarantee') ?? $quatation->first()->guarantee }}">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                        <section class="content">
+                            <div class="card mb-4 mt-4">
+                                <div class=" row card-header">
+                                    <div class="col-6">
+                                        <i class="fas fa-table me-1"></i>Nội dung SEO
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <button type="button" class="btn btn-success"><a href="">Tạo
+                                                seo</a></button>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
+                                                (vi):</b></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            name="tittle" value="{{ old('tittle') ?? $quatation->seo->tittle }}">
+                                    </div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
+                                                (vi):</b></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            name="keyword" value="{{ old('keyword') ?? $quatation->seo->keyword }}">
+                                    </div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label"><b>SEO
+                                                Description
+                                                (vi):</b></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">{{ old('tittle') ?? $quatation->seo->description }}</textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                </main>
+            </form>
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
                     <p>{{ $error }}</p>
@@ -266,15 +431,18 @@
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        </script>
-        <script src="{{ url('js/scripts.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
-        <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous"></script>
-        <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="{{ url('js/scripts.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="{{ url('assets/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ url('assets/demo/chart-bar-demo.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
 </body>
 

@@ -55,10 +55,10 @@ class Category1Controller extends Controller
         // dd($category_level1);
         return view('admin.category.category_level1_edit', compact('category_level1'));
     }
-    public function update(Level1_Product $category_level1, UpdateCategory1Request $request)
+    public function update(Request $request, $id)
     {
-
-        $validated = $request->validated();
+        $category_level1 = Level1_Product::findOrFail($id);
+        $seo = $category_level1->seo;
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
@@ -66,12 +66,17 @@ class Category1Controller extends Controller
             $image->storeAs('uploads', $imageName, 'public');
             $category_level1->image = $imageName;
         }
-        $category_level1->title = $request->input('title');
-        $category_level1->outstand = $request->has('outstand') ? 1 : 0; // Giả sử outstand là kiểu boolean
-        $category_level1->display = $request->has('display') ? 1 : 0; // Giả sử display là kiểu boolean
-        $category_level1->seo_id = $request->input('seo_id');
+        $category_level1->tittle = $request->input('tittle');
         $category_level1->describe = $request->input('describe');
+        $category_level1->outstand = $request->has('outstand');
+        $category_level1->display = $request->has('display');
+        $category_level1->seo_id = $request->input('seo_id');
+
+        $seo->tittle = $request->input('tittle');
+        $seo->keyword = $request->input('keyword');
+        $seo->description = $request->input('description');
         $category_level1->save();
+        $seo->save();
         return back();
     }
 

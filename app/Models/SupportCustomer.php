@@ -13,11 +13,9 @@ class SupportCustomer extends Model
     protected $fillable = [
         'tittle',
         'display',
-        'number',
         'phone',
         'zalo',
     ];
 
     public $timestamps = false;
-
 }

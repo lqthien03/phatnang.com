@@ -24,4 +24,8 @@ class Level2_Product extends Model
     {
         return $this->belongsTo(Seo::class, 'seo_id', 'id');
     }
+    public function level2_product()
+    {
+        return $this->belongsTo(Level1_Product::class, 'level1_product_id', 'id');
+    }
 }

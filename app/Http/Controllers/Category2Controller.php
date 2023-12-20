@@ -27,17 +27,6 @@ class Category2Controller extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
-        // $request->validate([
-        //     'image' => 'required',
-        //     'tittle' => 'required',
-        //     'display' => 'required',
-        //     'keyword' => 'required',
-        //     'description' => 'required',
-        //     'level1_product_id' => 'integer|exists:level1_products,id',
-
-        // ]);
-        // dd($request);
         if ($request->has('image')) {
             $file = $request->image;
             $file_name = $file->getClientOriginalName();
@@ -62,13 +51,35 @@ class Category2Controller extends Controller
         return redirect()->route('show.category2')->with('success', 'Bản ghi đã được tạo thành công!');
     }
 
-    public function edit(Level2_Product $category_level2)
+    public function edit($id)
     {
-        return view('admin.category.category_level2_edit', compact('category_level2'));
+        $category_level2 = Level2_Product::with(['seo', 'level2_product'])->find($id);
+        $category_level1 = Level1_Product::all();
+        return view('admin.category.category_level2_edit', compact('category_level2', 'category_level1'));
     }
 
-    public function update(Level2_Product $category_level2, UpdateCategory2Request $request)
+    public function update(Request $request, $id)
     {
+        $category_level2 = Level2_Product::findOrFail($id);
+        $seo = $category_level2->seo;
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = $image->getClientOriginalName();
+            $image->storeAs('uploads', $imageName, 'public');
+            $category_level2->image = $imageName;
+        }
+        $category_level2->tittle = $request->input('tittle');
+        $category_level2->level1_product_id = $request->input('level1_product_id');
+        $category_level2->display = $request->has('display');
+        $category_level2->seo_id = $request->input('seo_id');
+
+        $seo->tittle = $request->input('tittle');
+        $seo->keyword = $request->input('keyword');
+        $seo->description = $request->input('description');
+        $category_level2->save();
+        $seo->save();
+        return back();
     }
 
     public function destroy($id)

@@ -32,7 +32,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -123,11 +123,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="#">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -143,13 +143,13 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
                                 <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
-                                <a class="nav-link" href="#">Logo</a>
-                                <a class="nav-link" href="#">Favicon</a>
-                                <a class="nav-link" href="#">Banner quảng cáo</a>
-                                <a class="nav-link" href="#">Slideshow</a>
-                                <a class="nav-link" href="#">Tiêu chí</a>
-                                <a class="nav-link" href="#">Mạng xã hội</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
+                                <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
+                                <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
+                                <a class="nav-link" href="/image-video/slideshow">Slideshow</a>
+                                <a class="nav-link" href="/image-video/criteria">Tiêu chí</a>
+                                <a class="nav-link" href="/image-video/network-society">Mạng xã hội</a>
+                                <a class="nav-link" href="/image-video/videos">Video</a>
 
                             </nav>
                         </div>
@@ -166,8 +166,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -181,10 +181,10 @@
                         <div class="collapse" id="collapsePages6" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Sản phẩm</a>
-                                <a class="nav-link" href="#">Bảng báo giá</a>
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Video</a>
+                                <a class="nav-link" href="/seo-page/product/edit/1">Sản phẩm</a>
+                                <a class="nav-link" href="/seo-page/quotation/edit/1">Bảng báo giá</a>
+                                <a class="nav-link" href="/seo-page/news/edit/1">Tin tức</a>
+                                <a class="nav-link" href="/seo-page/video/edit/1">Video</a>
 
 
                             </nav>
@@ -247,7 +247,7 @@
                                                 <td>
                                                     @if ($item->image)
                                                         <img src="{{ URL::asset('uploads/' . $item->image) }}"
-                                                            alt="Hình ảnh" width="25" height="25"
+                                                            alt="Hình ảnh" width="40" height="40"
                                                             style="text-align:center">
                                                     @else
                                                         Không có hình ảnh
@@ -261,9 +261,20 @@
                                                         {{ $item->display == 1 ? 'checked' : '' }}>
                                                 </td>
                                                 <td>
-                                                    <a href=""><i class='bx bxs-edit bx-sm'></i></a>
-                                                    <a href=""><i class='bx bxs-trash-alt bx-sm'
-                                                            style='color:#ff0000'></i></a>
+                                                    <a href="/catagory-level-3/edit/{{ $item->id }}"><i
+                                                            class='bx bxs-edit bx-sm'></i></a>
+                                                    <form method="POST"
+                                                        action="{{ route('delete.category3', ['id' => $item->id]) }}"
+                                                        style="display: inline;"
+                                                        onsubmit="return confirm('Bạn có chắc chắn muốn xóa bản ghi này không?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit"
+                                                            style="background: none; border: none; cursor: pointer;">
+                                                            <i class='bx bxs-trash-alt bx-sm'
+                                                                style='color:#ff0000'></i>
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach

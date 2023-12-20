@@ -37,9 +37,9 @@ class TagProductController extends Controller
         $request->merge(['image' => $file_name]);
 
         $tag_product = Tag_Product::create(([
-            'image'=> $file_name,
+            'image' => $file_name,
             'tittle' => $request->input('tittle'),
-            'display'=> $request->input('display'),
+            'display' => $request->input('display'),
         ]));
 
         $seo = Seo::create($request->only([
@@ -52,14 +52,32 @@ class TagProductController extends Controller
         $tag_product->save();
         return redirect()->route('show.tag_product')->with('success', 'Bản ghi đã được tạo thành công!');
     }
-    public function edit(Tag_Product $tag_Product)
+    public function edit($id)
     {
-        return view('admin.category.tag_product_edit', compact('tag_Product'));
+        $tag_product = Tag_Product::with(['seo'])->find($id);
+        return view('admin.category.tag_product_edit', compact('tag_product'));
     }
-    public function update(Tag_Product $tag_Product, UpdateTagProductRequest $request)
+    public function update(Request $request, $id)
     {
-        $validated = $request->validated();
-        $tag_Product->update($request->all());
+        $tag_Product = Tag_Product::findOrFail($id);
+        $seo = $tag_Product->seo;
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = $image->getClientOriginalName();
+            $image->storeAs('uploads', $imageName, 'public');
+            $tag_Product->image = $imageName;
+        }
+        $tag_Product->tittle = $request->input('tittle');
+        $tag_Product->display = $request->has('display');
+        $tag_Product->seo_id = $request->input('seo_id');
+
+        $seo->tittle = $request->input('tittle');
+        $seo->keyword = $request->input('keyword');
+        $seo->description = $request->input('description');
+        $tag_Product->save();
+        $seo->save();
+
         return back();
     }
 

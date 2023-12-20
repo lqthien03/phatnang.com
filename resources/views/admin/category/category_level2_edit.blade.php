@@ -109,7 +109,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -200,11 +200,11 @@
                         <div class="collapse" id="collapsePages3" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                                <a class="nav-link" href="#">Thanh lý phòng net</a>
-                                <a class="nav-link" href="/slogan/1">Slogan tin tức & video</a>
-                                <a class="nav-link" href="#">Liên hệ</a>
-                                <a class="nav-link" href="#">Footer</a>
+                                <a class="nav-link" href="/static-page/introduce/1">Giới thiệu</a>
+                                <a class="nav-link" href="/static-page/liquidation/1">Thanh lý phòng net</a>
+                                <a class="nav-link" href="/static-page/slogan/1">Slogan tin tức & video</a>
+                                <a class="nav-link" href="/static-page/contact/1">Liên hệ</a>
+                                <a class="nav-link" href="/static-page/footer/1">Footer</a>
 
                             </nav>
                         </div>
@@ -243,8 +243,8 @@
                         <div class="collapse" id="collapsePages5" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Tin tức</a>
-                                <a class="nav-link" href="#">Chính sách</a>
+                                <a class="nav-link" href="/news">Tin tức</a>
+                                <a class="nav-link" href="/policy">Chính sách</a>
 
                             </nav>
                         </div>
@@ -285,127 +285,155 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <main>
-                <div id="" class="container-fluid px-4 row">
-                    <div class="col-8">
+            <form action="{{ route('update.category2', $category_level2) }}" method="post"
+                enctype="multipart/form-data">
+                @csrf
+                @method('PUT')
+                <main>
+                    <div id="" class="container-fluid px-4 row">
+                        <div>
+                            <button type="submit" class="btn mt-3"
+                                style="background-color:#65B741;color:#fff">Lưu</button>
+                            <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                                    lại</a></button>
+                            <button type="button" class="btn btn-danger mt-3"><a href="">Thoát</a></button>
+                        </div>
+                        <div class="col-8">
+
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Nội dung sản phẩm
+                                        <input type="hidden" name="seo_id" value="{{ $category_level2->seo_id }}">
+                                    </div>
+                                    <div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                    đề</b></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="" name="tittle"
+                                                value="{{ old('tittle') ?? $category_level2->first()->tittle }}">
+                                        </div>
+
+                                        <div class="form-check mb-3 ms-3 me-3">
+                                            <input type="hidden" type="0" name="display">
+                                            <input class="form-check-input" type="checkbox"
+                                                value="{{ old('display') ?? $category_level2->first()->display }}"
+                                                id="flexCheckDefault" name="display"
+                                                {{ $category_level2->first()->display == 1 ? 'checked' : '' }}>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Hiển thị
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-4">
+                            <section class="content">
+                                <div class="card mb-4 mt-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-table me-1"></i>
+                                        Danh mục cấp 1
+                                    </div>
+                                    <div>
+                                        <div class="mb-4 ms-3 me-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
+                                                    đề</b></label>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select" id="inputGroupSelect01"
+                                                    name="level1_product_id">
+                                                    <option selected>Chọn danh mục</option>
+                                                    @foreach ($category_level1 as $item)
+                                                        <option value="{{ $item->id }}"
+                                                            data-id="{{ $item->id }}" name="level1_product_id">
+                                                            {{ $item->tittle }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <section class="">
+                                <div class="row d-flex justify-content-center ">
+                                    <div class="">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>File Upload</h5>
+                                                <img class="center-image"
+                                                    src="{{ URL::asset('uploads/' . $category_level2->image) }}"
+                                                    alt="hình ảnh" width="50" height="50" style="">
+                                            </div>
+                                            <div class="card-block">
+                                                <form action="/upload-endpoint" method="post"
+                                                    class="dropzone dz-clickable" enctype="multipart/form-data">
+                                                    @csrf
+                                                    <input type="file" name="image" accept="image/*"
+                                                        placeholder="Chọn hình">
+                                                    <div class="text-center m-t-20">
+                                                        <button type="submit" class="btn btn-primary">Upload
+                                                            Now</button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                         <section class="content">
                             <div class="card mb-4 mt-4">
-                                <div class="card-header">
-                                    <i class="fas fa-table me-1"></i>
-                                    Nội dung sản phẩm
+                                <div class=" row card-header">
+                                    <div class="col-6">
+                                        <i class="fas fa-table me-1"></i>Nội dung SEO
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <button type="button" class="btn btn-success"><a href="">Tạo
+                                                seo</a></button>
+                                    </div>
+
                                 </div>
+
                                 <div>
                                     <div class="mb-3 ms-3 me-3">
-                                        <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
-                                                đề</b></label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="">
+                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
+                                                (vi):</b></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            name="tittle"
+                                            value="{{ old('tittle') ?? $category_level2->seo->tittle }}">
                                     </div>
                                     <div class="mb-3 ms-3 me-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
-                                                tả</b></label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
+                                                (vi):</b></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            name="keyword"
+                                            value="{{ old('keyword') ?? $category_level2->seo->keyword }}">
+                                    </div>
+                                    <div class="mb-3 ms-3 me-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label"><b>SEO
+                                                Description
+                                                (vi):</b></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">{{ old('description') ?? $category_level2->seo->description }}</textarea>
                                     </div>
                                 </div>
 
                             </div>
                         </section>
-                    </div>
-                    <div class="col-4">
-                        <section class="">
-                            <div class="row d-flex justify-content-center mt-4">
-
-                                <div class="col-md-10">
-
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>File Upload</h5>
-                                        </div>
-                                        <div class="card-block">
-                                            <form action="#" class="dropzone dz-clickable">
-
-                                                <div class="dz-default dz-message"><span>Drop files here to
-                                                        upload</span></div>
-                                            </form>
-                                            <div class="text-center m-t-20">
-                                                <button class="btn btn-primary">Upload Now</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{-- <div class="card card-primary card-outline text-sm">
-                                <div class="card-header">
-                                    <h3 class="card-title">Hình ảnh Sản phẩm cấp 1</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
-                                                class="fas fa-minus"></i></button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="photoUpload-zone">
-                                        <div class="photoUpload-detail" id="photoUpload-preview"><img class="rounded"
-                                                src="../upload/product/dm01-1892.png"
-                                                onerror="src='assets/images/noimage.png'" alt="Alt Photo" /></div>
-                                        <label class="photoUpload-file" id="photo-zone" for="file-zone">
-                                            <input type="file" name="file" id="file-zone">
-                                            <i class="fas fa-cloud-upload-alt"></i>
-                                            <p class="photoUpload-drop">Kéo và thả hình vào đây</p>
-                                            <p class="photoUpload-or">hoặc</p>
-                                            <p class="photoUpload-choose btn btn-sm bg-gradient-success">Chọn hình</p>
-                                        </label>
-                                        <div class="photoUpload-dimension">Width: 26 px - Height: 25 px
-                                            (.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF)</div>
-                                    </div>
-                                </div>
-                            </div> --}}
-                    </div>
-                    </section>
-                    <section class="content">
-                        <div class="card mb-4 mt-4">
-                            <div class=" row card-header">
-                                <div class="col-6">
-                                    <i class="fas fa-table me-1"></i>Nội dung SEO
-                                </div>
-                                <div class="col-6 text-end">
-                                    <button type="button" class="btn btn-success">Success</button>
-                                </div>
-
-                            </div>
-
-                            <div>
-                                <div class="mb-3 ms-3 me-3">
-                                    <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
-                                            (vi):</b></label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="">
-                                </div>
-                                <div class="mb-3 ms-3 me-3">
-                                    <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
-                                            (vi):</b></label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="">
-                                </div>
-                                <div class="mb-3 ms-3 me-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label"><b>SEO Description
-                                            (vi):</b></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-                </div>
-
-
+                </main>
+            </form>
+            @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>
+                @endforeach
+            @endif
         </div>
-        </main>
-        @if ($errors->any())
-            @foreach ($errors->all() as $error)
-                <p>{{ $error }}</p>
-            @endforeach
-        @endif
+
+
     </div>
 
 

@@ -30,13 +30,23 @@ class SupportCustomerController extends Controller
         // $support = save();
         return redirect()->route('show.support_customer')->with('success', 'Bản ghi đã được tạo thành công!');
     }
-    public function edit()
+    public function edit($id)
     {
+        $support = SupportCustomer::findOrFail($id);
+        return view('admin.customer_support_edit', compact('support'));
     }
-    public function update()
+    public function update(Request $request, $id)
     {
+        $support = SupportCustomer::findOrFail($id);
+        $support->tittle = $request->input('tittle');
+        $support->display = $request->input('display');
+        $support->phone = $request->input('phone');
+        $support->zalo = $request->input('zalo');
+
+        $support->save();
+        return back();
     }
-    public function delete($id)
+    public function destroy($id)
     {
         $support = SupportCustomer::find($id);
         $support->delete();
