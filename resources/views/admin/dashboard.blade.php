@@ -82,7 +82,7 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Bảng điều khiển</div>
                         <a class="nav-link" href="/dashboard">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dasboard
@@ -162,7 +162,8 @@
                         <div class="collapse" id="collapsePages4" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion">
-                                <a class="nav-link" href="#">Hình ảnh chia sẻ trang chủ</a>
+                                <a class="nav-link" href="/image-video/image-home/edit/1">Hình ảnh chia sẻ trang
+                                    chủ</a>
                                 <a class="nav-link" href="/image-video/logo/edit/1">Logo</a>
                                 <a class="nav-link" href="/image-video/favicon/edit/1">Favicon</a>
                                 <a class="nav-link" href="/image-video/banner/edit/1">Banner quảng cáo</a>
@@ -238,7 +239,7 @@
                             <div class="card bg-primary text-white mb-4">
                                 <div class="card-body">Cấu hình website</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View more</a>
+                                    <a class="small text-white stretched-link" href="/setting/1">View more</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -247,7 +248,7 @@
                             <div class="card bg-warning text-white mb-4">
                                 <div class="card-body">Tài khoản</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View more</a>
+                                    <a class="small text-white stretched-link" href="/account/1">View more</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -256,7 +257,8 @@
                             <div class="card bg-success text-white mb-4">
                                 <div class="card-body">Đổi mật khẩu</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View more</a>
+                                    <a class="small text-white stretched-link" href="/account/update-password/1">View
+                                        more</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -265,7 +267,7 @@
                             <div class="card bg-danger text-white mb-4">
                                 <div class="card-body">Thư liên hệ</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View more</a>
+                                    <a class="small text-white stretched-link" href="/contact-letter">View more</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>

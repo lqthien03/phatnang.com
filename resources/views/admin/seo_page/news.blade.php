@@ -109,7 +109,7 @@
         </form>
         <!-- Navbar-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><a
-            href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
+                href="https://phatnang.vn"><i class='bx bx-log-out bx-sm' style="color: #6c757d"></i></a></button>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -309,7 +309,7 @@
                                                 <form action="/upload-endpoint" method="post"
                                                     class="dropzone dz-clickable" enctype="multipart/form-data">
                                                     @csrf
-                                                    <img src="{{ URL::asset('uploads/' . $product->image) }}"
+                                                    <img src="{{ URL::asset('uploads/' . $news->image) }}"
                                                         alt="hình ảnh" width="30" height="30">
                                                     <input type="file" name="image" accept="image/*"
                                                         placeholder="Chọn hình">

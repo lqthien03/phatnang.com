@@ -338,14 +338,6 @@
                                                 <h5>File Upload</h5>
                                             </div>
                                             <div class="card-block">
-                                                {{-- <form action="#" class="dropzone dz-clickable">
-
-                                                        <div class="dz-default dz-message"><span>Drop files here to
-                                                                upload</span></div>
-                                                    </form>
-                                                    <div class="text-center m-t-20">
-                                                        <button class="btn btn-primary">Upload Now</button>
-                                                    </div> --}}
                                                 <form action="" method="post" class="dropzone dz-clickable"
                                                     enctype="multipart/form-data">
                                                     @csrf
@@ -355,7 +347,6 @@
                                                         <button type="submit" class="btn btn-primary">Upload
                                                             Now</button>
                                                     </div>
-
                                                 </form>
                                             </div>
                                         </div>

@@ -50,6 +50,7 @@ class QuotationController extends Controller
     }
     public function update(Request $request, $id)
     {
+        // dd($request);
         $quatation = Quotation::findOrFail($id);
         $seo = $quatation->seo;
 
@@ -60,7 +61,7 @@ class QuotationController extends Controller
             $quatation->image = $imageName;
         }
         $quatation->tittle = $request->input('tittle');
-        $quatation->display = $request->input('display');
+        $quatation->display = $request->has('display');
         $quatation->link_product = $request->input('link_product');
         $quatation->unit_price = $request->input('unit_price');
         $quatation->wholesale_price = $request->input('wholesale_price');

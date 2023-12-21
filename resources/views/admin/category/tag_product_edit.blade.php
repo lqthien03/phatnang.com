@@ -285,11 +285,13 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('store.tag_product') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('update.tag_product', $tag_product) }}" method="post"
+                enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <main>
                     <div id="" class="container-fluid px-4 row">
-
+                        <input type="hidden" value="{{ $tag_product->seo_id }}" name="seo_id">
                         <div class="col-8">
                             <div>
                                 <button type="submit" class="btn mt-3"
@@ -311,7 +313,7 @@
                                                     đề</b></label>
                                             <input type="text" class="form-control" id="exampleFormControlInput1"
                                                 placeholder="" name="tittle"
-                                                value="{{ old('tittle') ?? $tag_product->first()->tittle }}">
+                                                value="{{ old('tittle') ?? $tag_product->tittle }}">
                                         </div>
                                         {{-- <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
@@ -319,11 +321,14 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="describe"></textarea>
                                         </div> --}}
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="display">
+
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $tag_product->first()->display }}"
+                                                value="{{ old('display') ?? $tag_product->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $tag_product->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $tag_product->display == 1 ? 'checked' : '' }}>
+                                            @if (!$tag_product)
+                                                <input type="hidden" name="display" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
@@ -340,6 +345,9 @@
                                         <div class="card mt-5">
                                             <div class="card-header">
                                                 <h5>File Upload</h5>
+                                                <img class="center-image"
+                                                    src="{{ URL::asset('uploads/' . $tag_product->image) }}"
+                                                    alt="hình ảnh" width="50" height="50" style="">
                                             </div>
                                             <div class="card-block">
                                                 {{-- <form action="#" class="dropzone dz-clickable">
@@ -391,7 +399,8 @@
                                         <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
                                                 (vi):</b></label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            name="keyword" value="{{ old('keyword') ?? $tag_product->seo->keyword }}">
+                                            name="keyword"
+                                            value="{{ old('keyword') ?? $tag_product->seo->keyword }}">
                                     </div>
                                     <div class="mb-3 ms-3 me-3">
                                         <label for="exampleFormControlTextarea1" class="form-label"><b>SEO

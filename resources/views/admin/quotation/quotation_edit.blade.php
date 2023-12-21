@@ -285,8 +285,9 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('store.quotation') }}" method="post">
+            <form action="{{ route('update.quotation', $quatation) }}" method="post">
                 @csrf
+                @method('PUT')
                 <main>
                     <div id="" class="container-fluid px-4 row">
 
@@ -303,6 +304,7 @@
                                     <div class="card-header">
                                         <i class="fas fa-table me-1"></i>
                                         Nội dung sản phẩm
+                                        <input type="hidden" name="seo_id" value="{{ $quatation->seo_id }}">
                                     </div>
                                     <div>
                                         <div class="mb-3 ms-3 me-3">
@@ -314,11 +316,14 @@
                                         </div>
 
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="display">
+
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $quatation->first()->display }}"
+                                                value="{{ old('display') ?? $quatation->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $quatation->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $quatation->display == 1 ? 'checked' : '' }}>
+                                            @if (!$quatation)
+                                                <input type="hidden" name="display" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
@@ -342,7 +347,6 @@
                                             <div class="input-group mb-3">
                                                 <select class="form-select" id="inputGroupSelect01"
                                                     name="level1_product_id">
-                                                    <option selected>Chọn danh mục</option>
                                                     @foreach ($category_level1 as $item)
                                                         <option value="{{ $item->id }}"
                                                             data-id="{{ $item->id }}">

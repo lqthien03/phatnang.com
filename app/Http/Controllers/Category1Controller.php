@@ -53,13 +53,14 @@ class Category1Controller extends Controller
     {
         $category_level1 = Level1_Product::with(['seo'])->find($id);
         // dd($category_level1);
+        // dd($category_level1->display);
         return view('admin.category.category_level1_edit', compact('category_level1'));
     }
     public function update(Request $request, $id)
     {
         $category_level1 = Level1_Product::findOrFail($id);
         $seo = $category_level1->seo;
-
+        // dd($category_level1->display);
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = $image->getClientOriginalName();
@@ -71,11 +72,10 @@ class Category1Controller extends Controller
         $category_level1->outstand = $request->has('outstand');
         $category_level1->display = $request->has('display');
         $category_level1->seo_id = $request->input('seo_id');
-
+        $category_level1->save();
         $seo->tittle = $request->input('tittle');
         $seo->keyword = $request->input('keyword');
         $seo->description = $request->input('description');
-        $category_level1->save();
         $seo->save();
         return back();
     }

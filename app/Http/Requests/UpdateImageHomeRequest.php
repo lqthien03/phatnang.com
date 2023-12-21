@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateSeoQuotationRequest extends FormRequest
+class UpdateImageHomeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,12 +21,10 @@ class UpdateSeoQuotationRequest extends FormRequest
      */
     public function rules(): array
     {
-        $seo_quotation_id = $this->quotation->id;
+        $image_home = $this->image_home->id;
         return [
-            'image' => 'image|mimes:jpg,jpeg,png,gif|max:2048' . $seo_quotation_id,
-            'tittle' => 'required|string|unique:seo_news,tittle,' . $seo_quotation_id,
-            'keyword' => 'required|string|unique:seo_news,keyword,' . $seo_quotation_id,
-            'description' => 'required|string|unique:seo_news,description,' . $seo_quotation_id,
+            'image' => 'image|mimes:jpg,jpeg,png,gif|max:2048' . $image_home,
+            'display' => 'integer|integer|unique:home_images,display,' . $image_home,
         ];
     }
 }

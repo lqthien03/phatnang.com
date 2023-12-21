@@ -320,14 +320,17 @@
                                                     đề</b></label>
                                             <input type="text" class="form-control" id="exampleFormControlInput1"
                                                 placeholder="" name="tittle"
-                                                value="{{ old('tittle') ?? $category_level3->first()->tittle }}">
+                                                value="{{ old('tittle') ?? $category_level3->tittle }}">
                                         </div>
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="display">
+
                                             <input class="form-check-input" type="checkbox"
                                                 value="{{ old('display') ?? $category_level3->first()->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $category_level3->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $category_level3->display == 1 ? 'checked' : '' }}>
+                                            @if (!$category_level3)
+                                                <input type="hidden" name="display" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
@@ -353,7 +356,6 @@
                                             <div class="input-group mb-3">
                                                 <select class="form-select" id="inputGroupSelect01"
                                                     name="level1_product_id">
-                                                    <option selected>Chọn danh mục</option>
                                                     @foreach ($category_level1 as $item)
                                                         <option value="{{ $item->id }}"
                                                             data-id="{{ $item->id }}">
@@ -369,7 +371,6 @@
                                             <div class="input-group mb-3">
                                                 <select class="form-select" id="inputGroupSelect01"
                                                     name="level2_product_id">
-                                                    <option selected>Chọn danh mục</option>
                                                     @foreach ($category_level2 as $item)
                                                         <option value="{{ $item->id }}"
                                                             data-id="{{ $item->id }}">

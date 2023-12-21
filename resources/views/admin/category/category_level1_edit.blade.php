@@ -309,31 +309,38 @@
                                             <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
                                                     đề</b></label>
                                             <input type="text" class="form-control" id="exampleFormControlInput1"
-                                                placeholder=""
-                                                value="{{ old('tittle') ?? $category_level1->first()->tittle }}"
+                                                placeholder="" value="{{ old('tittle') ?? $category_level1->tittle }}"
                                                 name="tittle">
                                         </div>
                                         <div class="mb-3 ms-3 me-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
                                                     tả</b></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="describe">{{ old('describe') ?? $category_level1->first()->describe }}</textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="describe">{{ old('describe') ?? $category_level1->describe }}</textarea>
                                         </div>
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="display">
+
+
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $category_level1->first()->display }}"
+                                                value="{{ old('display') ?? $category_level1->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $category_level1->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $category_level1->display == 1 ? 'checked' : '' }}>
+
+                                            @if (!$category_level1)
+                                                <input type="hidden" name="display" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
                                         </div>
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="outstand">
+
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('outstand') ?? $category_level1->first()->outstand }}"
+                                                value="{{ old('outstand') ?? $category_level1->outstand }}"
                                                 id="flexCheckDefault" name="outstand"
-                                                {{ $category_level1->first()->outstand == 1 ? 'checked' : '' }}>
+                                                {{ $category_level1->outstand == 1 ? 'checked' : '' }}>
+                                            @if (!$category_level1)
+                                                <input type="hidden" name="outstand" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Nổi bật
                                             </label>
@@ -442,35 +449,6 @@
         crossorigin="anonymous"></script>
     <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
-    {{-- <script>
-        // Sử dụng JavaScript để lắng nghe sự kiện khi người dùng chọn file
-        document.getElementById('imageInput').addEventListener('change', function(event) {
-            var files = event.target.files;
-
-            // Kiểm tra nếu người dùng đã chọn hình ảnh
-            if (files.length > 0) {
-                // Lặp qua từng file và hiển thị hình ảnh trước khi upload
-                for (var i = 0; i < files.length; i++) {
-                    var file = files[i];
-                    var reader = new FileReader();
-
-                    reader.onload = function(e) {
-                        // Tạo thẻ <img> để hiển thị hình ảnh trước khi upload
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.style.width = '150px'; // Thiết lập kích thước hình ảnh
-
-                        // Thêm hình ảnh vào phần previewImages
-                        var previewImages = document.getElementById('previewImages');
-                        previewImages.innerHTML = ''; // Xóa hình ảnh cũ trước khi thêm hình ảnh mới
-                        previewImages.appendChild(img);
-                    };
-
-                    reader.readAsDataURL(file); // Đọc và hiển thị hình ảnh
-                }
-            }
-        });
-    </script> --}}
 </body>
 
 

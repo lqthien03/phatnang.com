@@ -1,14 +1,17 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\Category1Controller;
 use App\Http\Controllers\Category2Controller;
 use App\Http\Controllers\Category3Controller;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ContactLetterController;
 use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaviconController;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\ImageHomeController;
 use App\Http\Controllers\IntroduceController;
 use App\Http\Controllers\LiquidationController;
 use App\Http\Controllers\LogoController;
@@ -203,10 +206,12 @@ Route::controller(NetworkSocietyController::class)->group(function () {
     Route::put('/image-video/network-society/update/', 'update')->name('update.network-society');
     Route::delete('/image-video/network-society/{id}', 'destroy')->name('delete.image_video.network-society');
 });
+Route::controller(ImageHomeController::class)->group(function () {
+    Route::get('/image-video/image-home/edit/{image_home}', 'edit')->name('edit.image-home');
+    Route::put('/image-video/image-home/update/{image_home}', 'update')->name('update.image-home');
+    Route::delete('/image-video/image-home/{id}', 'destroy')->name('delete.image_video.image-home');
+});
 Route::controller(FaviconController::class)->group(function () {
-    // Route::get('/image-video/favicon', 'show')->name('show.slidershow');
-    // Route::get('/image-video/favicon/create', 'create')->name('create.favicon');
-    // Route::post('/image-video/favicon/store', 'store')->name('store.favicon');
     Route::get('/image-video/favicon/edit/{favicon}', 'edit')->name('edit.favicon');
     Route::put('/image-video/favicon/update/{favicon}', 'update')->name('update.favicon');
     Route::delete('/image-video/favicon/{id}', 'destroy')->name('delete.image_video.favicon');
@@ -278,6 +283,19 @@ Route::controller(SloganController::class)->group(function () {
 
 
 
+Route::controller(ContactLetterController::class)->group(function () {
+    Route::get('/contact-letter', 'show')->name('show.contact_letter');
+    Route::get('/contact-letter/edit/{contact_letter}', 'edit')->name('edit.contact_letter');
+    Route::put('/contact-letter/update/{contact_letter}', 'update')->name('update.contact_letter');
+    Route::delete('/contact-letter/{id}', 'destroy')->name('delete.contact_letter');
+});
+
+Route::controller(AccountController::class)->group(function () {
+    Route::get('/account/{account}', 'edit')->name('edit.account');
+    Route::put('/account/{account}', 'update')->name('update.account');
+    Route::get('/account/update-password/{account}', 'edit_password')->name('edit_password.account');
+    Route::put('/account/update-password/{account}', 'update_password')->name('update_password.account');
+});
 
 
 

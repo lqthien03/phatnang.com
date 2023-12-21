@@ -24,11 +24,6 @@ class TagProductController extends Controller
 
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'image' => 'required',
-        //     'tittle' => 'required',
-        //     'display' => 'integer',
-        // ]);
         if ($request->has('image')) {
             $file = $request->image;
             $file_name = $file->getClientOriginalName();

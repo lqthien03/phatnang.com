@@ -315,17 +315,14 @@
                                                 placeholder="" name="tittle"
                                                 value="{{ $level1_Quotation->tittle }}">
                                         </div>
-                                        {{-- <div class="mb-3 ms-3 me-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label"><b>Mô
-                                                    tả</b></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="describe"></textarea>
-                                        </div> --}}
                                         <div class="form-check mb-3 ms-3 me-3">
-                                            <input type="hidden" type="0" name="display">
                                             <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $level1_Quotation->first()->display }}"
+                                                value="{{ old('display') ?? $level1_Quotation->display }}"
                                                 id="flexCheckDefault" name="display"
-                                                {{ $level1_Quotation->first()->display == 1 ? 'checked' : '' }}>
+                                                {{ $level1_Quotation->display == 1 ? 'checked' : '' }}>
+                                            @if (!$level1_Quotation)
+                                                <input type="hidden" name="display" value="0">
+                                            @endif
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Hiển thị
                                             </label>
@@ -347,14 +344,6 @@
                                                     alt="hình ảnh" width="50" height="50" style="">
                                             </div>
                                             <div class="card-block">
-                                                {{-- <form action="#" class="dropzone dz-clickable">
-
-                                                        <div class="dz-default dz-message"><span>Drop files here to
-                                                                upload</span></div>
-                                                    </form>
-                                                    <div class="text-center m-t-20">
-                                                        <button class="btn btn-primary">Upload Now</button>
-                                                    </div> --}}
                                                 <form action="" method="post" class="dropzone dz-clickable"
                                                     enctype="multipart/form-data">
                                                     @csrf

@@ -36,4 +36,10 @@ class Setting extends Model
     ];
 
     // protected $attributes = ['id_status_activate' => 1, 'id_status_connect' => 1,];
+    public $timestamps = false;
+
+    public function seo()
+    {
+        return $this->belongsTo(Seo::class, 'seo_id', 'id');
+    }
 }

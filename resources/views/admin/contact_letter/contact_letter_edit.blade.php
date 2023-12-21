@@ -285,148 +285,100 @@
         </div>
         {{-- main --}}
         <div id="layoutSidenav_content">
-            <form action="{{ route('update.category2', $category_level2) }}" method="post"
+            <form action="{{ route('update.contact_letter', $contact_letter) }}" method="post"
                 enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <main>
                     <div id="" class="container-fluid px-4 row">
-                        <div>
-                            <button type="submit" class="btn mt-3"
-                                style="background-color:#65B741;color:#fff">Lưu</button>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success mt-3">Cập nhật</button>
                             <button type="button" class="btn btn-warning mt-3"><a href="">Làm
                                     lại</a></button>
                             <button type="button" class="btn btn-danger mt-3"><a href="">Thoát</a></button>
-                        </div>
-                        <div class="col-8">
-
                             <section class="content">
                                 <div class="card mb-4 mt-4">
                                     <div class="card-header">
-                                        <i class="fas fa-table me-1"></i>
-                                        Nội dung sản phẩm
-                                        <input type="hidden" name="seo_id" value="{{ $category_level2->seo_id }}">
+                                        {{-- <i class='bx bxs-user-badge bx-sm' style="color: black"></i> --}}
+                                        <i class="fa-solid fa-user"></i>
+                                        Thông tin liên hệ
                                     </div>
-                                    <div>
-                                        <div class="mb-3 ms-3 me-3">
-                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
-                                                    đề</b></label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="" name="tittle"
-                                                value="{{ old('tittle') ?? $category_level2->tittle }}">
-                                        </div>
-
-                                        <div class="form-check mb-3 ms-3 me-3">
-
-                                            <input class="form-check-input" type="checkbox"
-                                                value="{{ old('display') ?? $category_level2->display }}"
-                                                id="flexCheckDefault" name="display"
-                                                {{ $category_level2->display == 1 ? 'checked' : '' }}>
-                                            @if (!$category_level2)
-                                                <input type="hidden" name="display" value="0">
-                                            @endif
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Hiển thị
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col-4">
-                            <section class="content">
-                                <div class="card mb-4 mt-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-table me-1"></i>
-                                        Danh mục cấp 1
-                                    </div>
-                                    <div>
-                                        <div class="mb-4 ms-3 me-3">
-                                            <label for="exampleFormControlInput1" class="form-label"><b>Tiêu
-                                                    đề</b></label>
-                                            <div class="input-group mb-3">
-                                                <select class="form-select" id="inputGroupSelect01"
-                                                    name="level1_product_id">
-                                                    @foreach ($category_level1 as $item)
-                                                        <option value="{{ $item->id }}"
-                                                            data-id="{{ $item->id }}" name="level1_product_id">
-                                                            {{ $item->tittle }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
-                            <section class="">
-                                <div class="row d-flex justify-content-center ">
                                     <div class="">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h5>File Upload</h5>
-                                                <img class="center-image"
-                                                    src="{{ URL::asset('uploads/' . $category_level2->image) }}"
-                                                    alt="hình ảnh" width="50" height="50" style="">
+                                        <div class="row">
+                                            <div class="col mb-3 ms-3 me-3">
+                                                <label for="exampleFormControlInput1" class="form-label"><b>Họ
+                                                        tên:</b></label>
+                                                <input type="text" class="form-control"
+                                                    id="exampleFormControlInput1" placeholder=""
+                                                    value="{{ old('name') ?? $contact_letter->first()->name }}"
+                                                    name="name">
                                             </div>
-                                            <div class="card-block">
-                                                <form action="/upload-endpoint" method="post"
-                                                    class="dropzone dz-clickable" enctype="multipart/form-data">
-                                                    @csrf
-                                                    <input type="file" name="image" accept="image/*"
-                                                        placeholder="Chọn hình">
-                                                    <div class="text-center m-t-20">
-                                                        <button type="submit" class="btn btn-primary">Upload
-                                                            Now</button>
-                                                    </div>
-
-                                                </form>
+                                            <div class="col mb-3 ms-3 me-3">
+                                                <label for="exampleFormControlInput1" class="form-label"><b>Điện
+                                                        thoại:</b></label>
+                                                <input type="text" class="form-control"
+                                                    id="exampleFormControlInput1" placeholder=""
+                                                    value="{{ old('phone') ?? $contact_letter->first()->phone }}"
+                                                    name="phone">
+                                            </div>
+                                            <div class="col mb-3 ms-3 me-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label"><b>Email:</b></label>
+                                                <input type="text" class="form-control"
+                                                    id="exampleFormControlInput1" placeholder=""
+                                                    value="{{ old('email') ?? $contact_letter->first()->email }}"
+                                                    name="email">
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col mb-3 ms-3 me-3">
+                                                <label for="exampleFormControlInput1" class="form-label"><b>Địa
+                                                        chỉ:</b></label>
+                                                <input type="text" class="form-control"
+                                                    id="exampleFormControlInput1" placeholder=""
+                                                    value="{{ old('address') ?? $contact_letter->first()->address }}"
+                                                    name="address">
+                                            </div>
+                                            <div class="col mb-3 ms-3 me-3">
+                                                <label for="exampleFormControlInput1" class="form-label"><b>Chủ
+                                                        đề:</b></label>
+                                                <input type="text" class="form-control"
+                                                    id="exampleFormControlInput1" placeholder=""
+                                                    value="{{ old('topic') ?? $contact_letter->first()->topic }}"
+                                                    name="topic">
+                                            </div>
+                                            <div class="col mb-3 ms-3 me-3">
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label"><b>Nội
+                                                    dung</b></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="content">{{ old('content') ?? $contact_letter->first()->content }}</textarea>
+                                        </div>
+                                        <div class="mb-3 ms-3 me-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label"><b>Ghi
+                                                    chú</b></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="note">{{ old('note') ?? $contact_letter->first()->note }}</textarea>
+                                        </div>
+
+
                                     </div>
+
                                 </div>
                             </section>
                         </div>
-                        <section class="content">
-                            <div class="card mb-4 mt-4">
-                                <div class=" row card-header">
-                                    <div class="col-6">
-                                        <i class="fas fa-table me-1"></i>Nội dung SEO
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <button type="button" class="btn btn-success"><a href="">Tạo
-                                                seo</a></button>
-                                    </div>
 
-                                </div>
 
-                                <div>
-                                    <div class="mb-3 ms-3 me-3">
-                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Title
-                                                (vi):</b></label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            name="tittle"
-                                            value="{{ old('tittle') ?? $category_level2->seo->tittle }}">
-                                    </div>
-                                    <div class="mb-3 ms-3 me-3">
-                                        <label for="exampleFormControlInput1" class="form-label"><b>SEO Keywords
-                                                (vi):</b></label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            name="keyword"
-                                            value="{{ old('keyword') ?? $category_level2->seo->keyword }}">
-                                    </div>
-                                    <div class="mb-3 ms-3 me-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label"><b>SEO
-                                                Description
-                                                (vi):</b></label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">{{ old('description') ?? $category_level2->seo->description }}</textarea>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </section>
+                    </div>
                 </main>
+                {{-- <button type="button" class="btn btn-success mt-3">Cập nhật</button>
+                <button type="button" class="btn btn-warning mt-3"><a href="">Làm
+                        lại</a></button>
+                <button type="button" class="btn btn-danger mt-3"><a href="">Thoát</a></button> --}}
             </form>
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
@@ -449,6 +401,8 @@
         crossorigin="anonymous"></script>
     <script src="{{ url('js/datatables-simple-demo.js') }}"></script>
 
+
 </body>
+
 
 </html>
